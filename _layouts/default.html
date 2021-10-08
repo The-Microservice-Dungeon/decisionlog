@@ -27,7 +27,7 @@
     <li class="sig"><a href="{{ site.url }}{{ '' | relative_url }}">Home</a></li>
     <li class="title">Aspects:</li>
     {% for aspect in site.aspects %}
-      <li class="sig"><a href="{{ site.url }}{{ aspect.url | relative_url }}">{{ aspect.title }}</a></li>
+      <li class="sig"><a href="{{ site.url }}{{ aspect.url | relative_url }}">{{ aspect.label }}</a></li>
     {% endfor %}
     <li class="title">Teams:</li>
     {% for team in site.teams %}

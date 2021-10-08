@@ -2,6 +2,7 @@
 type: aspect
 acronym: documentation
 title: Documentation
+label: Doc
 ---
 
 This aspect deals with all architectural decisions **how** to do developer documentation - architecture descriptions, 
