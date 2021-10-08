@@ -1,0 +1,61 @@
+{% assign decision_list = include.mydecision_list %}
+{% assign typefilter = include.typefilter %}
+{% assign group_acronym = include.group_acronym %}
+
+{% comment %}
+If a typefilter ("team" or "sig") is specified, then two additional filterings are done:
+1) only the corresponding decision types are filtered.
+2) the decision is only listed, if it fits to the group_acronym
+{% endcomment %}
+{% if typefilter %}
+    {% assign decision_list = decision_list | where_exp: "dec", "dec.belongs_to == group_acronym" %}
+{% endif %}
+
+
+{% assign done_group_decisions = decision_list |  where:"status","_5_presented" %}
+{% assign decision_list = decision_list | where_exp: "dec", "dec.status != '_5_presented'" %}
+
+{% assign done_team_decisions = decision_list |  where:"status","_3_team_agreed" %}
+{% assign decision_list = decision_list | where_exp: "dec", "dec.status != '_3_team_agreed'" %}
+
+{% assign deadline_groups = decision_list | group_by: "deadline" | sort: "name" %}
+{% assign decision_list = "" | split: ";" %}
+{% for group in deadline_groups %}
+    {% assign sublist = group.items | sort: "status" %}
+    {% assign decision_list = decision_list | concat: sublist %}
+{% endfor %}
+
+{% assign decision_list = decision_list | concat: done_group_decisions | concat: done_team_decisions %}
+
+<table>
+    <thead>
+    <tr>
+        <th width="12%">Status</th>
+        <th width="58%">Title</th>
+        <th width="15%">Responsible</th>
+        <th width="15%">Deadline</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for decision in decision_list %}
+    <tr>
+        {% include /functions/error-icon-string.html mydecision=decision %}
+        {% if error_icon_string.size == 0 %}
+            {% include /functions/todo-icon-string.html mydecision=decision %}
+        {% else %}
+            {% assign todo_icon_string = "" %}
+        {% endif %}
+
+        {% include /functions/get-status-infos.html mydecision=decision %}
+        <td><img class={{ status_class }} src="{{ site.url }}{{ status_filename | relative_url }}"/> {{ error_icon_string }}{{ todo_icon_string }}</td>
+
+        {% assign decision_file_name = decision.url %}
+        <td><a href="{{ site.url }}{{ decision_file_name | relative_url }}">{{ decision.title }}</a> </td>
+        {% include /functions/resolve-names.html mydecision=decision %}
+        <td>{{ responsible_string }}</td>
+        {% include /functions/is-decision-open.html mydecision=decision %}
+        <td>{% if decision_is_open %}{{ decision.deadline }}{% endif %}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>

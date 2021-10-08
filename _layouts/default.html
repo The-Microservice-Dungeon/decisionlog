@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  {% seo %}
+  <link rel="stylesheet" href="{{ site.url }}{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="{{ site.url }}{{ '/assets/js/respond.js' | relative_url }}"></script>
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!--[if lt IE 8]>
+  <link rel="stylesheet" href="{{ site.url }}{{ '/assets/css/ie.css' | relative_url }}">
+  <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+</head>
+<body>
+
+<div id="header">
+  <h1 style="text-align:center;position: relative; top: 4px;line-height: 1em;margin-top: 0.2em;">
+    {{ site.title | default: site.github.repository_name }}
+  </h1>
+  <nav>
+    <li class="sig"><a href="{{ site.url }}{{ '' | relative_url }}">Home</a></li>
+    <li class="title">Aspects:</li>
+    {% for aspect in site.aspects %}
+      <li class="sig"><a href="{{ site.url }}{{ aspect.url | relative_url }}">{{ aspect.title }}</a></li>
+    {% endfor %}
+    <li class="title">Teams:</li>
+    {% for team in site.teams %}
+      <li class="team"><a href="{{ site.url }}{{ team.url | relative_url }}">{{ team.title }}</a></li>
+    {% endfor %}
+  </nav>
+</div><!-- end header -->
+
+<div class="wrapper">
+  <section>
+    {{ content }}
+  </section>
+</div>
+
+
+<footer>
+<a href="{{ site.url }}{{ '/documentation.html' | relative_url }}">Documentation</a> &nbsp;&nbsp;&nbsp;
+<a href="{{ site.url }}{{ '/people.html' | relative_url }}">People</a> &nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.th-koeln.de/hochschule/impressum_8159.php">Impressum</a> &nbsp;&nbsp;&nbsp;
+<a href="https://www.th-koeln.de/hochschule/haftungshinweis_8277.php">Haftungshinweis</a> &nbsp;&nbsp;&nbsp;
+<a href="https://www.th-koeln.de/hochschule/datenschutzhinweis_8279.php">Datenschutzhinweis</a>
+</footer>
+
+
+{% if site.google_analytics %}
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '{{ site.google_analytics }}', 'auto');
+  ga('send', 'pageview');
+</script>
+{% endif %}
+</body>
+</html>
