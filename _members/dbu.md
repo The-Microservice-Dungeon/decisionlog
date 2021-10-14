@@ -1,7 +1,7 @@
 ---
 type: author
 acronym: dbu
-nickname: 
+nickname: BrokenButler
 teams:
     - game
 roles: 
