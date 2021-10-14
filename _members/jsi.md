@@ -1,7 +1,7 @@
 ---
 type: author
 acronym: jsi
-nickname: 
+nickname: Jona Siebel
 teams:
     - trading
 roles: 
