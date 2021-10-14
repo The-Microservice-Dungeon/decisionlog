@@ -59,6 +59,8 @@ collections:
     output: true
   aspects:
     output: true
+  members:
+    output: true
 
 defaults:
   - scope:
@@ -76,3 +78,8 @@ defaults:
       type: "aspects"
     values:
       layout: "aspect"
+  - scope:
+      path: ""
+      type: "members"
+    values:
+      layout: "member"

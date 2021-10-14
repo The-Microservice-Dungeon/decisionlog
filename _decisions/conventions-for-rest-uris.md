@@ -11,6 +11,8 @@ history:
     v1:
         date: 2021-10-08
         comment: created initially
+todo: 
+    - please fill!
 ---
 
 ## Why is there need for such a decision?
@@ -34,7 +36,7 @@ tbd
 No evaluation needed.
 
  
-## Resolution Details
+## Resolution details
 
 tbd
 

@@ -1,0 +1,11 @@
+{% assign teamAcronym = include.myTeamAcronym %}
+
+
+{% assign team_list = site.teams | where_exp: "team", "team.acronym == teamAcronym" %}
+{% if team_list.size > 0 %}
+	{% assign team = team_list[0] %}
+	{% capture teamLink %}<a href="{{ site.url }}{{ team.url | relative_url }}">{{ team.title }}</a>{% endcapture %}
+{% else %}
+	{% capture teamLink %}<img src="{{ site.url }}{{ '/assets/error-4-24.png' | relative_url }}" width="12px"/> Unknown team: {{ teamAcronym }}{% endcapture %}
+{% endif %}
+

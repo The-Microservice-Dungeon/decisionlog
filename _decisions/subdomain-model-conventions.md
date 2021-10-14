@@ -4,7 +4,7 @@ acronym: subdomain-model-conventions
 title: >
     Conventions documenting subdomain models
 decision_type: should
-belongs_to: documentation
+belongs_to: model
 status: _1_open
 responsible: 
 deadline: 2021-10-22

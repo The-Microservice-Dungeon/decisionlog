@@ -4,7 +4,7 @@ acronym: service-doc-structure
 title: >
     Structure for team developer documentation
 decision_type: must
-belongs_to: documentation
+belongs_to: qualityAssurance
 status: _1_open
 responsible: 
 deadline: 2021-10-22
