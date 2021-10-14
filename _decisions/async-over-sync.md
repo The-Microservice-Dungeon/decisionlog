@@ -6,7 +6,7 @@ title: >
 decision_type: must
 belongs_to: api
 status: _2_draft
-responsible: SBE
+responsible: sbe
 deadline: 2021-10-22
 history:
     v1:

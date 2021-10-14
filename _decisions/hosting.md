@@ -6,7 +6,7 @@ title: >
 decision_type: must
 belongs_to: devOps
 status: _1_open
-responsible: PSC
+responsible: psc
 deadline: 
 history:
     v1:

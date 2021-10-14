@@ -7,7 +7,7 @@ decision_type: must
 belongs_to: eventing
 status: _2_draft
 todos:
-responsible: SBE
+responsible: sbe
 deadline: 2021-10-22
 history:
     v1:
