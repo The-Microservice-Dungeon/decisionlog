@@ -62,7 +62,7 @@ layout: default
                 {% for teamRef in person.teams %}
                     {% include /functions/find-team-link.html myTeamAcronym=teamRef %}
                     {% assign teamLinks = teamLinks | push: teamLink %}
-                {% endfor %}}
+                {% endfor %}
                 <td>{{ teamLinks | join: ", " }}</td>
             {% else %}
                 <td>???</td>

@@ -1,6 +1,6 @@
 ---
 type: aspect
-acronym: devops
+acronym: devOps
 title: DevOps
 label: DevOps
 ---

@@ -4,7 +4,7 @@ acronym: hosting
 title: >
     Choice of Hosting provider
 decision_type: must
-belongs_to: devops
+belongs_to: devOps
 status: _1_open
 responsible: PSC
 deadline: 
