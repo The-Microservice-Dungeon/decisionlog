@@ -1,7 +1,7 @@
 ---
 type: author
 acronym: tla
-nickname: 
+nickname: Thomas Lang
 teams:
     - trading
 roles: 
