@@ -2,27 +2,36 @@
 layout: default
 ---
 
-{% if page.reviewAndPlanning %}
-    {% assign reviewAndPlanning = page.reviewAndPlanning %}
-{% else %}
-    {% assign reviewAndPlanning = "undefined" %}
-{% endif %}
-<h1>Team {{ page.title }} (Review & Planning: {{ reviewAndPlanning }})</h1>
+
+<h1>Team »{{ page.title }}«</h1>
 
 {{ page.content }}
 
-Team members:
-<ol>
-{% for person in site.data.people %}
-    {% if person[1].team == page.acronym %}
-        {% assign sig = site.sigs | where: "acronym", person[1].sig | first %}
-        {% assign sig_url = "/sigs/" | append: sig.acronym | append: ".html" | relative_url %}
-        <li>
-            {{ person[1].nickname }} (also member of SIG <a href="{{ site.url }}{{ sig_url }}">{{ sig.title }}</a>)
-        </li>
+<dl>
+    <dt>Review & Planning</dt>
+    {% if page.reviewAndPlanning %}
+        {% assign reviewAndPlanning = page.reviewAndPlanning %}
+    {% else %}
+        {% assign reviewAndPlanning = "undefined" %}
     {% endif %}
-{% endfor %}
-</ol>
+    <dd>{{ reviewAndPlanning }}</dd>
+
+    {% assign teamMembers = site.members | where_exp: "member", "member.teams contains page.acronym"  %}
+
+    <dt>Coders</dt>
+    {% assign role = "coder" %}
+    {% assign membersInRole = teamMembers | where_exp: "member", "member.roles contains role"  %}
+    {% assign acronymList = membersInRole | map: "acronym" %}
+    <dd>{{ acronymList | join: ", " }}</dd>
+
+    <dt>Architects</dt>
+    {% assign role = "architect" %}
+    {% assign membersInRole = teamMembers | where_exp: "member", "member.roles contains role"  %}
+    {% assign acronymList = membersInRole | map: "acronym" %}
+    <dd>{{ acronymList | join: ", " }}</dd>
+
+</dl>
+
 
 {% assign filtered_decisions = site.decisions | where: "decision_type", "team" %}
 {% include /functions/print-sorted-decision-table.html mydecision_list=filtered_decisions typefilter="team" group_acronym=page.acronym %}
