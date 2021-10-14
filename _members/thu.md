@@ -1,7 +1,7 @@
 ---
 type: author
 acronym: thu
-nickname: 
+nickname: Tobi
 teams:
     - gameLog
 roles: 
