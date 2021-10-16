@@ -27,19 +27,19 @@ Knowledge about the 4 levels of maturity of a REST API ([Richardson Maturity Mod
 
 ## Viable Options
 
-# Postman
+### Postman
 one of the first API documentation tool  
 able to document the API lifecycle: design, testing, documentation, mocking
 
-# Swagger
+### Swagger
 offers an editor with syntax auto-completion and error feedback  
 APIs can be mocked and tested
 
-# OpenAPI
+### OpenAPI
 it's an advancement of Swagger (v 2.0 of both tools were exactly the same)  
 basically the same as Swagger with the newest updates
 
-# Spring REST Docs
+### Spring REST Docs
 Alternative to the other API documentation tools, very close to the other spring tools. Therefore useful if you also use spring for your actualy REST API.  
 test-driven approach, docu written either as Spring MVC tests, Spring Webflux's _WebTestClient_ or REST-Assured
 
