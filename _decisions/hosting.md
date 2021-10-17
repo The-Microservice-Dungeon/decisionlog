@@ -5,9 +5,9 @@ title: >
     Choice of Hosting provider
 decision_type: must
 belongs_to: devOps
-status: _1_open
+status: _2_draft
 responsible: psc
-deadline: 
+deadline: 2021-10-22
 history:
     v1:
         date: 2021-10-08

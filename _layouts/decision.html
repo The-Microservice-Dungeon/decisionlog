@@ -22,6 +22,11 @@ layout: default
         <dd>{{ page.deadline }}</dd>
     {% endif %}
 
+    {% if page.tags and page.tags.size > 0 %}
+        <dt>Tags</dt>
+        <dd>{{ page.tags | array_to_sentence_string }}</dd>
+    {% endif %}
+
     {% include /functions/find-decision-errors.html mydecision=page %}
     {% if error_string.size > 0 %}
         <dt><img src="{{ site.url }}{{ '/assets/error-4-24.png' | relative_url }}"/> &nbsp; Errors</dt>
@@ -47,5 +52,16 @@ layout: default
     {% endfor %}
 </dl>
 
-
 {{ page.content }}
+
+{% if page.tags and page.tags.size > 0 %}
+    <h2>See also ...</h2>
+    {% for tag in page.tags %}
+        The following decisions are also tagged by »{{ tag }}«:
+        {% assign myAcronym = page.acronym %}
+        {% assign filtered_decisions = site.decisions | where_exp: "decision", "decision.tags contains tag" %}
+        {% assign filtered_decisions = filtered_decisions | where_exp: "decision", "decision.acronym != myAcronym" %}
+        {% include /functions/print-sorted-decision-table.html mydecision_list=filtered_decisions %}
+    {% endfor %}
+{% endif %}
+

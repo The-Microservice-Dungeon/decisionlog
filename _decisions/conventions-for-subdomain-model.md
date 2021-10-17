@@ -1,12 +1,13 @@
 ---
 type: decision
-acronym: subdomain-model-conventions
-title: >
-    Conventions documenting subdomain models
+acronym: conventions-for-subdomain-model
+title: Conventions how to document (sub-)domain models in the teams
 decision_type: should
 belongs_to: model
 status: _1_open
 responsible: 
+tags: 
+    - subdomain-model
 deadline: 2021-10-22
 history:
     v1:
