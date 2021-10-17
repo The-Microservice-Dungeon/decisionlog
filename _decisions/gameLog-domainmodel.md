@@ -5,7 +5,7 @@ title: (Sub-)Domain Model for GameLog Service
 decision_type: team
 belongs_to: gameLog
 status: _1_open
-responsible: thu
+responsible: thu aha
 deadline: 2021-10-22
 tags: 
     - subdomain-model

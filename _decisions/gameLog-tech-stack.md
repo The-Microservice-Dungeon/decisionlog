@@ -5,7 +5,7 @@ title: Technology stack for GameLog service
 decision_type: team
 belongs_to: gameLog
 status: _1_open
-responsible: thu
+responsible: thu aha
 deadline: 2021-10-22
 tags: 
     - tech-stack

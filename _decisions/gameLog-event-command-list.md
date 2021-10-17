@@ -5,7 +5,7 @@ title: List of business events and commands from Event Storming, for GameLog ser
 decision_type: team
 belongs_to: gameLog
 status: _1_open
-responsible:
+responsible: aha
 deadline: 2021-10-22
 tags: 
     - business-event
