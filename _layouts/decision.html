@@ -24,7 +24,7 @@ layout: default
 
     {% if page.tags and page.tags.size > 0 %}
         <dt>Tags</dt>
-        <dd>{{ page.tags | array_to_sentence_string }}</dd>
+        <dd>{{ page.tags | join: ", " }}</dd>
     {% endif %}
 
     {% include /functions/find-decision-errors.html mydecision=page %}
