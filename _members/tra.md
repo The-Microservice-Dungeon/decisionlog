@@ -1,10 +1,10 @@
 ---
 type: author
 acronym: tra
-nickname:
+nickname: THMSR
 teams:
     - devOps
 roles: 
     - architect
 aboutMe:
----
+    - C rules

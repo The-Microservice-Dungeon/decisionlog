@@ -6,12 +6,15 @@ title: >
 decision_type: must
 belongs_to: qualityAssurance
 status: _1_open
-responsible: 
+responsible: tra
 deadline: 2021-10-22
 history:
     v1:
         date: 2021-10-08
-        comment: created initially      
+        comment: created initially 
+    v2: 
+        date: 2021-10-17
+        comment: took task    
 ---
 
 ## Why is there need for such a decision?
