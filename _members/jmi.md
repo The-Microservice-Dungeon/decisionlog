@@ -1,7 +1,7 @@
 ---
 type: author
 acronym: jmi
-nickname: 
+nickname: Baldhat
 teams:
     - robot
 roles: 
