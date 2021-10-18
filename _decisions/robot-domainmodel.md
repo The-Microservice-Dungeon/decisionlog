@@ -5,7 +5,7 @@ title: (Sub-)Domain Model for Robot Service
 decision_type: team
 belongs_to: robot
 status: _1_open
-responsible:
+responsible: ngi;cpo
 deadline: 2021-10-22
 tags: 
     - subdomain-model
