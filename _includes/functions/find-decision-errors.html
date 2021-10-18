@@ -30,7 +30,7 @@
 {% endif %}
 
 
-{% comment %} --- 1-3 responsible persons, all included in people.yml? --- {% endcomment %}
+{% comment %} --- 1-3 responsible persons, all included in members? --- {% endcomment %}
 
 {% assign raw_list = decision.responsible | split: ";" %}
 {% if raw_list.size == 0 %}
@@ -39,13 +39,13 @@
 	{% assign error_string = error_string | append: "More than 3 responsible persons defined;" %}
 {% else %}
 	{% for person_raw in raw_list %}
-		{% assign acronym = person_raw | strip | upcase %}
-		{% if site.data.people[acronym] %}
-		{% else %}
+		{% assign acronym = person_raw | strip | lowcase %}
+		{% assign foundMembers = site.members | where_exp: "member", "member.acronym == acronym" %}
+		{% if foundMembers.size != 1 %}
 			{% assign error_string = error_string
 					| append: "Responsible person "
 					| append: acronym
-					| append: " is not defined in _data/people.yml - please correct or add there;" %}
+					| append: " is not defined in _members - please correct or add there;" %}
 		{% endif %}
 	{% endfor %}
 {% endif %}

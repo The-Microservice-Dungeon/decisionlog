@@ -2,10 +2,12 @@
 {% assign responsible_list = "" | split: ";" %}
 
 {% for person_raw in raw_list %}
-	{% assign acronym = person_raw | strip | upcase %}
-	{% if site.data.people[acronym] %}
-		{% if site.data.people[acronym].nickname %}
-			{% assign responsible_list = responsible_list | push: site.data.people[acronym].nickname %}
+	{% assign acronym = person_raw | strip | lowcase %}
+	{% assign foundMembers = site.members | where_exp: "member", "member.acronym == acronym" %}
+	{% if foundMembers.size == 1 %}
+		{% assign foundMember = foundMembers.first %}
+		{% if foundMember.nickname %}
+			{% assign responsible_list = responsible_list | push: foundMember.nickname %}
 		{% else %}
 			{% assign responsible_list = responsible_list | push: acronym %}
 		{% endif %}

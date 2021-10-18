@@ -1,7 +1,7 @@
 ---
 type: author
 acronym: aha
-nickname: André Hahn
+nickname: ahahn94
 teams:
     - gameLog
 roles: 
