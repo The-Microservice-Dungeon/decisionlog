@@ -5,12 +5,15 @@ title: Conventions for REST return codes and error handling
 decision_type: must
 belongs_to: api
 status: _1_open
-responsible:
+responsible: mba
 deadline: 2021-10-29
 history:
     v1:
         date: 2021-10-08
         comment: created initially
+    v2:
+        date: 2021-10-18
+        comment: took decision
 ---
 
 ## Why is there need for such a decision?
