@@ -1,7 +1,7 @@
 ---
 type: author
 acronym: jal
-nickname: 
+nickname: Jannik
 teams:
     - devOps
 roles: 
