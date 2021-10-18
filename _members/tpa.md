@@ -1,7 +1,7 @@
 ---
 type: author
 acronym: tpa
-nickname: 
+nickname: TimP
 teams:
     - trading
 roles: 
