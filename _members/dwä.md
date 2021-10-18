@@ -1,7 +1,7 @@
 ---
 type: author
 acronym: dwä
-nickname: 
+nickname: Skullkiller
 teams:
     - robot
 roles: 
