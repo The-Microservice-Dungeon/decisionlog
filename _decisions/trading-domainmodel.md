@@ -5,7 +5,7 @@ title: (Sub-)Domain Model for Trading Service
 decision_type: team
 belongs_to: trading
 status: _1_open
-responsible:
+responsible: tla;tpa
 deadline: 2021-10-22
 tags: 
     - subdomain-model
