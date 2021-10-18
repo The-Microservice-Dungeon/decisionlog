@@ -6,7 +6,7 @@ decision_type: must
 belongs_to: api
 status: _1_open
 todos:
-responsible: thu;tla
+responsible: thu;tla;tpa;
 deadline: 2021-10-22
 history:
     v1:
