@@ -5,7 +5,7 @@ title: (Sub-)Domain Model for Map Service
 decision_type: team
 belongs_to: map
 status: _1_open
-responsible:
+responsible: sbe;psc
 deadline: 2021-10-22
 tags: 
     - subdomain-model

@@ -5,7 +5,7 @@ title: List of business events and commands from Event Storming, for Map service
 decision_type: team
 belongs_to: map
 status: _1_open
-responsible:
+responsible: sbe;psc
 deadline: 2021-10-22
 tags: 
     - business-event
