@@ -5,7 +5,7 @@ title: Technology stack for Trading service
 decision_type: team
 belongs_to: trading
 status: _1_open
-responsible:
+responsible: tla;tpa
 deadline: 2021-10-22
 tags: 
     - tech-stack
