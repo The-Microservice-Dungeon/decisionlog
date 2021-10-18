@@ -5,7 +5,7 @@ title: Technology stack for Robot service
 decision_type: team
 belongs_to: robot
 status: _1_open
-responsible:
+responsible: ngi;cpo
 deadline: 2021-10-22
 tags: 
     - tech-stack
