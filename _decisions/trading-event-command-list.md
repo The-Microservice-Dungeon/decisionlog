@@ -5,7 +5,7 @@ title: List of business events and commands from Event Storming, for Trading ser
 decision_type: team
 belongs_to: trading
 status: _1_open
-responsible:
+responsible: tla;tpa
 deadline: 2021-10-22
 tags: 
     - business-event
