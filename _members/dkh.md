@@ -1,7 +1,7 @@
 ---
 type: author
 acronym: dkh
-nickname: 
+nickname: Daniel Khaapamyaki
 teams:
     - map
 roles: 
