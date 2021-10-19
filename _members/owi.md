@@ -1,7 +1,7 @@
 ---
 type: author
 acronym: owi
-nickname: 
+nickname: Oliver
 teams:
     - devOps
 roles: 
