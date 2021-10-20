@@ -42,7 +42,8 @@ Curriculum of the bachelors degree
  
 ## Resolution Details
 
-We decide to use the Spring and let the decision free to choose between Java and Kotlin since the languages are interoparable.
+We decide to use Spring as application framework and let the decision open for the coders 
+to choose between Java and Kotlin since both languages are interoparable usable and compatible to Spring.
 
 ## Reasons for the resolution
 
