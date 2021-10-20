@@ -13,7 +13,10 @@ tags:
 history:
     v1:
         date: 2021-10-17
-        comment: created initially    
+        comment: created initially
+    v2:
+        date: 2021-10-20
+        comment: add event list
 ---
 
 ## Why is there need for such a decision?
@@ -27,11 +30,21 @@ Any conflicts, especially about who should receive which command?
 
 ## Additional sources for better understanding the background
 
-tbd.
+Miro Board of the Domains (from Event Storming).
 
 ## Viable Options
 
-n/a
+The business events are pretty clear from the miro board:
+- request game data from the services
+- ALTERNATIVE: let services log events to event queue (Apache Kafka)
+- aggregate end results of all rounds
+- evaluate end results
+- generate final rankings
+  - grant trophies
+- generate rankings for categorized achievements (not trophies but e.g. amount of money, resources, etc.) (leaderboards)
+- store trophies in cross-game personal log
+
+This domain has no commands.
 
 ## Alternatives not seriously considered
 
@@ -43,7 +56,7 @@ Evaluation of [Event Storming results](https://miro.com/app/board/o9J_lsQV7ZA=/)
  
 ## Resolution Details
 
-tbd.
+Should be discussed in FAE/DDD on October 22th.
 
 ## Reasons for the resolution
 

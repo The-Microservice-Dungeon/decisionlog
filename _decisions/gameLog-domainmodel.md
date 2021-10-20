@@ -12,7 +12,10 @@ tags:
 history:
     v1:
         date: 2021-10-17
-        comment: created initially    
+        comment: created initially
+    v2:
+        date: 2021-10-20
+        comment: add domain model
 ---
 
 ## Why is there need for such a decision?
@@ -25,11 +28,11 @@ Especially: Are there any conflicts with regard to entity ownership?
 
 ## Additional sources for better understanding the background
 
-tbd.
+Miro Board of the Domains (from Event Storming).
 
 ## Viable Options
 
-n/a
+The entities Gamelog, Leaderboard and Trophy are exclusive to the Gamelog service.
 
 ## Alternatives not seriously considered
 
@@ -41,8 +44,8 @@ Evaluation of [Event Storming results](https://miro.com/app/board/o9J_lsQV7ZA=/)
  
 ## Resolution Details
 
-tbd.
+No resolution required, as there are no conflicts with other services.
 
 ## Reasons for the resolution
 
-tbd.
+n/a
