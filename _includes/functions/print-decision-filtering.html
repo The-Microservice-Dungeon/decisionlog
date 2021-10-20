@@ -1,0 +1,46 @@
+{% assign filterType = include.myFilterType %}
+{% assign filterInstance = include.myFilterInstance %}
+
+<div class="localnav">
+    <ul>
+        {% if filterType == "all" %}
+            <li class="active">All</li>
+        {% else %}
+            <li><a href="{{ site.url }}{{ '' | relative_url }}">All</a></li>
+        {% endif %}
+        &nbsp;&nbsp; | &nbsp;&nbsp;
+
+        {% assign typeList = "M;S;T" | split: ";" %}
+        {% for type in typeList %}
+            {% if filterType == "type" and filterInstance == type %}
+                <li class="active">{{ type }}</li>
+            {% else %}
+                {% assign path = "/overview/only" | append: type | append: ".html" %}
+                <li><a href="{{ site.url }}{{ path }}">{{ type }}</a></li>
+            {% endif %}
+        {% endfor %}
+        &nbsp;&nbsp; | &nbsp;&nbsp;
+
+        {% for aspect in site.aspects %}
+            {% if filterType == "aspects" and filterInstance == aspect.label %}
+                <li class="active">{{ aspect.label }}</li>
+            {% else %}
+                <li><a href="{{ site.url }}{{ aspect.url }}">{{ aspect.label }}</a></li>
+            {% endif %}
+        {% endfor %}
+        &nbsp;&nbsp; | &nbsp;&nbsp;
+
+        {% include /functions/get-all-tags.html %}
+        {% assign tagList = allTagsAsString | split: ";" %}
+        {% for tag in tagList %}
+            {% if filterType == "tag" and filterInstance == tag %}
+                <li class="active">{{ tag }}</li>
+            {% else %}
+                {% assign path = "/tags/" | append: tag | append: ".html" %}
+                <li><a href="{{ site.url }}{{ path }}">{{ tag }}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+
+<p/>

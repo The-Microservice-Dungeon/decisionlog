@@ -1,0 +1,11 @@
+{% comment %} No Parameters {% endcomment %}
+
+{% assign allTags = "" | split: ";" %}
+{% for tag in site.tags | sort: "title" %}
+    {% assign tagName = tag.path | split: "/" | last %}
+    {% assign tagName = tagName | split: "." | first %}
+    {% assign allTags = allTags | push: tagName %}
+{% endfor %}
+
+{% assign allTagsAsString = allTags | join: ";" %}
+

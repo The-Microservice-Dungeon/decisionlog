@@ -51,6 +51,7 @@
 {% endif %}
 
 {% comment %} --- Deadline overdue? --- {% endcomment %}
+
 {% assign check_deadline = false %}
 {% if decision.status %}
 	{% if decision.decision_type == "team" %}
@@ -70,5 +71,19 @@
 		{% assign error_string = error_string | append: "Deadline has already passed - please fix;" %}
 	{% endif %}
 {% endif %}
+
+{% comment %} --- Tags all declared? --- {% endcomment %}
+
+{% if decision.tags %}
+	{% include /functions/get-all-tags.html %}
+	{% assign tagList = allTagsAsString | split: ";" %}
+	{% for tag in decision.tags %}
+		{% if tagList contains tag %}
+		{% else %}
+			{% assign error_string = error_string | append: "Tag '" | append: tag | append: "' is unknown - please create a *.md file with that name in _tags!;" %}
+		{% endif %}
+	{% endfor %}
+{% endif %}
+
 
 {% comment %} --- Responsible persons fit to "belongs_to" field? --- {% endcomment %}
