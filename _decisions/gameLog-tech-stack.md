@@ -13,6 +13,9 @@ history:
     v1:
         date: 2021-10-17
         comment: created initially    
+    v2:
+        date: 2021-10-20
+        comment: Add Tech-Stack Decision
 ---
 
 ## Why is there need for such a decision?
@@ -21,24 +24,26 @@ No development can start before the technology stack (esp. programming language)
 
 ## Additional sources for better understanding the background
 
-tbd.
+n/a
 
 ## Viable Options
 
-tbd.
+- Java / Kotlin as Language since it is taught in AP1/AP2, PP and ST1/2
+- Spring as Application framework since it is taught in (at least) ST2
 
 ## Alternatives not seriously considered
 
-tbd.
+Nearly every other language and framework since we can't assume any experiences with techonlogies 
+offside the standard curriculum of the computer science Bachelor's degree at the TH Köln. 
 
 ## How is this decision evaluated?
 
-tbd.
+Curriculum of the bachelors degree
  
 ## Resolution Details
 
-tbd.
+We decide to use the Spring and let the decision free to choose between Java and Kotlin since the languages are interoparable.
 
 ## Reasons for the resolution
 
-tbd.
+- No coder attended at meeting
