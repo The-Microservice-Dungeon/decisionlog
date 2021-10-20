@@ -25,10 +25,6 @@
   </h1>
   <nav>
     <li class="sig"><a href="{{ site.url }}{{ '' | relative_url }}">Home</a></li>
-    <li class="title">Aspects:</li>
-    {% for aspect in site.aspects %}
-      <li class="sig"><a href="{{ site.url }}{{ aspect.url | relative_url }}">{{ aspect.label }}</a></li>
-    {% endfor %}
     <li class="title">Teams:</li>
     {% for team in site.teams %}
       <li class="team"><a href="{{ site.url }}{{ team.url | relative_url }}">{{ team.title }}</a></li>
