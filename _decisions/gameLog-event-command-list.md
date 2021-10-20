@@ -13,7 +13,7 @@ tags:
 history:
     v1:
         date: 2021-10-17
-        comment: cr eated initially    
+        comment: created initially    
 ---
 
 ## Why is there need for such a decision?

@@ -1,6 +1,8 @@
 {% assign filterType = include.myFilterType %}
 {% assign filterInstance = include.myFilterInstance %}
 
+{{ filterType }} - {{ filterInstance }} <br>
+
 <div class="localnav">
     <ul>
         {% if filterType == "all" %}
@@ -22,7 +24,7 @@
         &nbsp;&nbsp; | &nbsp;&nbsp;
 
         {% for aspect in site.aspects %}
-            {% if filterType == "aspects" and filterInstance == aspect.label %}
+            {% if filterType == "aspect" and filterInstance == aspect.label %}
                 <li class="active">{{ aspect.label }}</li>
             {% else %}
                 <li><a href="{{ site.url }}{{ aspect.url }}">{{ aspect.label }}</a></li>

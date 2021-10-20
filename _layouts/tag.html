@@ -1,3 +1,13 @@
 ---
 layout: default
 ---
+
+{% include /functions/get-canonical-acronym.html myPath=page.path %}
+{% include /functions/print-decision-header-and-text.html myTaggedPostfix=canonicalAcronym %}
+
+{% assign filtered_decisions = site.decisions | where_exp: "decision", "decision.tags contains canonicalAcronym" %}
+{% include /functions/print-decision-filtering.html myFilterType="tag" myFilterInstance=canonicalAcronym %}
+
+<p>The following decisions have been tagged with »{{ canonicalAcronym }}«.</p>
+
+{% include /functions/print-sorted-decision-table.html mydecision_list=filtered_decisions %}

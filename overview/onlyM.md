@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% include /functions/print-decision-header-and-text.html  %}
+{% include /functions/print-decision-header-and-text.html myInfix="Must" %}
 
 {% assign filtered_decisions = site.decisions | where: "decision_type", "must" %}
 {% include /functions/print-decision-filtering.html myFilterType="type" myFilterInstance="M" %}

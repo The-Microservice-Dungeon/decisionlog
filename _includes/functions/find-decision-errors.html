@@ -85,5 +85,16 @@
 	{% endfor %}
 {% endif %}
 
+{% comment %} --- Acronym same as filename? --- {% endcomment %}
+
+{% if decision.tags %}
+	{% include /functions/get-canonical-acronym.html myPath=decision.path %}
+	{% if decision.acronym != canonicalAcronym %}
+		{% assign error_string = error_string | append: "Decision acronym '" |
+			append: decision.acronym |
+			append: "' differs from filename - please choose the same filename as the acronym." %}
+	{% endif %}
+{% endif %}
+
 
 {% comment %} --- Responsible persons fit to "belongs_to" field? --- {% endcomment %}

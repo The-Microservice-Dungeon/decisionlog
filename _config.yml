@@ -59,9 +59,9 @@ collections:
     output: true
   aspects:
     output: true
-  members:
-    output: true
   tags:
+    output: true
+  members:
     output: true
 
 defaults:
@@ -77,6 +77,11 @@ defaults:
       layout: "team"
   - scope:
       path: ""
+      type: "tags"
+    values:
+      layout: "tag"
+  - scope:
+      path: ""
       type: "aspects"
     values:
       layout: "aspect"
@@ -85,8 +90,3 @@ defaults:
       type: "members"
     values:
       layout: "member"
-  - scope:
-      path: ""
-      type: "tags"
-    values:
-      layout: "tag"

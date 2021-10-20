@@ -1,6 +1,16 @@
 {% comment %} No Parameters {% endcomment %}
+{% assign infix = include.myInfix %}
+{% assign taggedPostfix = include.myTaggedPostfix %}
 
+{% if infix %}
+<h1>Overview on all »{{ infix }}« Decisions</h1>
+{% elsif taggedPostfix %}
+<h1>Overview on all Decisions tagged »{{ taggedPostfix }}«</h1>
+{% else %}
 <h1>Overview on all Decisions</h1>
+{% endif %}
 
+<p>
 This is the architectural decision log for the Microservice Dungeon project. <a target="_blank" type="application/csv" charset="UTF-8
 " href="{{site.baseurl}}/all_decisions.csv">Download as CSV.</a>
+</p>

@@ -1,0 +1,4 @@
+{% assign path = include.myPath %}
+
+{% assign fileName = path | split: "/" | last %}
+{% assign canonicalAcronym = fileName | split: "." | first %}
