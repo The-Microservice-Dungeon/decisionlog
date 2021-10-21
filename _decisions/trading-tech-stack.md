@@ -1,4 +1,3 @@
-
 ---
 type: decision
 acronym: trading-tech-stack
