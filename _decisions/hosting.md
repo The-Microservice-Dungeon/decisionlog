@@ -12,7 +12,10 @@ priority: 2-medium
 history:
     v1:
         date: 2021-10-08
-        comment: created initially    
+        comment: created initially
+    v2:
+        date: 2021-10-21
+        comment: adapted justification
 ---
 
 ## Why is there need for such a decision?
@@ -36,7 +39,7 @@ There are many ways in which this can be done.
     * [Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/overview-hosting-plans)
 
     
-* To use server provided by [UID](https://www.uid.com) (one of the main Stakeholders)
+* To use server provided by [ADV-Lab](https://www.gm.th-koeln.de/advlabor/aufgaben.shtml)
     * Linux Server
 
 
@@ -46,26 +49,23 @@ There are many ways in which this can be done.
 
 ## How is this decision evaluated?
 
-* Price
 * Simplicity of setup
-* Vendor lock-in (proprietary solution)
-    * A proprietary solution is a hardware or software product or combination of products and services that is tied to a specific vendor, to the exclusion of all other vendors.
+* Price
 * Backup options
  
 ## Resolution Details
-
-It was decided to use the hosting option from one of the main stakeholders ([UID](https://www.uid.com)).
-A Linux server will be provided. The development team should be able to connect and to control the server using SSH.
+It was decided to use the TH internal solution.
+An Ubuntu server will be provided.
+The development team should be able to connect and to control the server using SSH.
 
 ## Reasons for the resolution
 
-The price is one of the most important aspects of the decision.
-In this regard, only one viable option has the strongest position.
-One of the main stakeholders (UID) is ready to provide a server for free.
+Availability and easy access are the main criteria. Availability is also indirectly dependent on the cost factor.
+High costs entail a procurement process.
+The VM provided by the ADV lab is free of charge, comes with a two-day three-generation backup and is provided with the latest version of Ubunutu.
 
-The setup of Strato's servers in comparison to UID should be very similar. (not checked in practice)\
+
+The setup of Strato's servers in comparison to TH should be very similar. (not checked in practice)\
 As can be seen from the sources, setting up an application on a cloud platform has its own complexity. (not checked in practice)
-
-In addition, the cloud platform solution would also be vendor lock-in (proprietary solution)
 
 Backups come with extra price by rented solutions.
