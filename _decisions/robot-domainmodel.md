@@ -35,15 +35,14 @@ tbd.
 
 [Domainmodel Robot v1](./images/Domainmodel_Robot_v1.jpg)
 
-- Movement: robot doesn't need the whole map, it just asks the map service if the received movement command is valid; robot also needs the feedback from the map which movement-difficulty the commanded move has
+- movement: robot doesn't need the whole map, it just asks the map service if the received movement command is valid; robot also needs the feedback from the map which movement-difficulty the commanded move has
 - upgrade status: robot receives the data from trading if upgrades are bought, stores this and tracks the multiplier (which is dependant on the total bought upgrades for each robot)
-- Inventar - resources: simple counter for each resource type which can be added/subtracted
-
+- inventory - resources: simple counter for each resource type which can be added/subtracted
 - robot: health, attack power, energy, position (+ tiletype(spawn, spacestation, normal)), ownership of player, upgrade status, inventory (capacity, contents), special item holding
 
 ### Questions which must be clarified
-1. Spawn: is spawning part of the robot?
-2.  Why is the connection between robot and trading missing in the overall concept? (should be there for upgrade / repair)
+1. spawn: is spawning part of the robot?
+2. why is the connection between robot and trading missing in the overall concept? (should be there for upgrade / repair)
 3. mining: is it part of robot or map? what can we expect from the map api? idea: map offers api which provides an answer if mining or movement ok is -> so that robot doesn't have to know the whole map 
 4. mining: is this really part of robot? map should already handle the resource status of all planets, a simple notification to the robot inventory would suffice (if robot has to handle this he would have to do some requests to map and also update the values which the map holds)
 5. who checks the authenticity? game service or everyone themselves?
