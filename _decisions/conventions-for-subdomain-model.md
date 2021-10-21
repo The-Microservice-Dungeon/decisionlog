@@ -4,7 +4,7 @@ acronym: conventions-for-subdomain-model
 title: Conventions how to document (sub-)domain models in the teams
 decision_type: should
 belongs_to: model
-status: _1_open
+status: _2_draft
 priority: 3-low
 responsible: cpo
 tags: 
@@ -12,8 +12,11 @@ tags:
 deadline: 2021-10-22
 history:
     v1:
-        date: 2021-10-22
-        comment: created initially      
+        date: 2021-10-21
+        comment: created initially
+    v2:
+        date: 2021-10-21
+        comment: created first draft          
 ---
 
 ## Why is there need for such a decision?
@@ -28,8 +31,22 @@ in order to compare the models.
 
 ## Viable Options
 
-* tbd
+### Current Model
+[Subdomain-Model-v1](./images/subdomain-model_v1.png "Subdomain-Model-v1")
 
+This is this the current model. Currently, there are five services (Game, Robot, Map, Trading, GameLog). The model will be
+iteratively updated as discussions clear up the responsibilities.
+
+#### Game
+//TODO: Explain responsibilities and ownership of aggregates
+#### Robot
+//TODO: Explain responsibilities and ownership of aggregates
+#### Map
+//TODO: Explain responsibilities and ownership of aggregates
+#### Trading
+//TODO: Explain responsibilities and ownership of aggregates
+#### GameLog
+//TODO: Explain responsibilities and ownership of aggregates
 
 ## Alternatives not seriously considered
 
