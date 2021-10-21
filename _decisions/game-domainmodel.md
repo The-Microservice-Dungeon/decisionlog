@@ -34,6 +34,7 @@ Addison-Wesley Professional.
 
 ## Viable Options
 
+[Fachliches_Datenmodell_Game](./images/Fachliches_Datenmodell_Game.jpg)
 
 ### Player
 The Player gets commands which are excuted in the game. Money is a composition of Player, 
