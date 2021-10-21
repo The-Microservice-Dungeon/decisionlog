@@ -37,7 +37,7 @@ Spring with Java or Kotlin
 
 ## How is this decision evaluated?
 
-The decision was based on the experience the team had regarding the possibilitys for programming languages.
+The decision was based on the experience the team had regarding the possibilities for programming languages.
  
 ## Resolution Details
 
