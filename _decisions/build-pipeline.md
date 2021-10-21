@@ -3,8 +3,7 @@ type: decision
 acronym: build-pipeline
 title: Tools for Build Pipeline
 decision_type: must
-belongs_to: devOps
-status: _2_draft
+status: _1_open
 todos:
 responsible: tra
 deadline: 2021-10-22

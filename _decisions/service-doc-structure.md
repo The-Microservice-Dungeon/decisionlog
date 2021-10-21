@@ -1,8 +1,7 @@
 ---
 type: decision
 acronym: service-doc-structure
-title: >
-    Structure for team developer documentation
+title: Structure for team developer documentation
 decision_type: must
 belongs_to: qualityAssurance
 status: _1_open
