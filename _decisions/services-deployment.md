@@ -3,8 +3,8 @@ type: decision
 acronym: services-deployment
 title: How should the services should be deployed?
 decision_type: must
-belongs_to: devOps
-status: _2_draft
+belongs_to: belongs_to: devOps
+status: _1_open
 todos:
 responsible: tra
 deadline: 2021-10-22
