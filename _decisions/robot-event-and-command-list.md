@@ -4,7 +4,7 @@ acronym: robot-event-and-command-list
 title: List of business events and commands from Event Storming, for Robot service
 decision_type: team
 belongs_to: robot
-status: _1_open
+status: _2_draft
 responsible: ngi;cpo
 deadline: 2021-10-22
 priority: 2-medium
@@ -14,7 +14,10 @@ tags:
 history:
     v1:
         date: 2021-10-17
-        comment: cr eated initially    
+        comment: created initially
+    v2:
+        date: 2021-10-21
+        comment: added business events    
 ---
 
 ## Why is there need for such a decision?
@@ -32,7 +35,20 @@ tbd.
 
 ## Viable Options
 
-n/a
+- robot used energy for action
+- robot regenerated energy
+- robot blocked planet
+- upgraded robot
+- robot moved to another planet
+    - movement failed due to a block
+- fought other robot
+    - robot used item
+    - robot was destroyed
+    - distributed resources of destroyed robot
+- mined resource
+    - added item to inventory
+- spawned robot
+
 
 ## Alternatives not seriously considered
 
