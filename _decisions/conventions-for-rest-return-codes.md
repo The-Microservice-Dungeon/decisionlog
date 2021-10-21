@@ -31,7 +31,7 @@ should be clear.
 
 ## Viable Options
 
-* HTTP status codes are defacto standard.
+* HTTP status codes are defacto standard for REST calls.
 
 ## Alternatives not seriously considered
 
