@@ -49,5 +49,5 @@ The game service will be programmed using spring and kotlin as the programming l
 
 ## Reasons for the resolution
 
-The resolution was based on the experience of the team with this technologys duo to the work in softwaretechnik and other modules of prvious semesters. Also they can 
+The resolution was based on the experience of the team with this technologies duo to the work in softwaretechnik and other modules of previous semesters. Also they can 
 get the best support for this via the internet and the supervisors
