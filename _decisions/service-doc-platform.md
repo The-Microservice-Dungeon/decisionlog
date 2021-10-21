@@ -29,7 +29,9 @@ look in five different places if you walk through services.
 
 ## Viable Options
 
-* tbd
+<ul>
+<li>GitBook</li>
+</ul>
 
 
 ## Alternatives not seriously considered
@@ -39,7 +41,7 @@ look in five different places if you walk through services.
 
 ## How is this decision evaluated?
 
-tbd
+We considered a wiki or gitBook as a viable solution. But sicne all microservices are useing GitHub, the only viable solution was to use GitBook.
  
 ## Resolution Details
 
@@ -47,5 +49,8 @@ tbd
 
 ## Reasons for the resolution
 
-tbd
+<ul>
+<li>Easy to understand</li>
+<li>No additional tools or frameworks needed</li>
+</ul>
 
