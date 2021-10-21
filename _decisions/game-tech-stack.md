@@ -5,7 +5,7 @@ title: Technology stack for Game service
 decision_type: team
 belongs_to: game
 status: _2_draft
-responsible: fgr
+responsible: fgr;mba
 deadline: 2021-10-22
 priority: 1-high
 tags: 
@@ -17,6 +17,9 @@ history:
     v2:
         date: 2021-10-21
         comment: documenting the decisions     
+    v3: 
+        date: 2021-10-22
+        comment: update decision 
 ---
 
 ## Why is there need for such a decision?
@@ -37,7 +40,8 @@ Spring with Java or Kotlin
 
 ## How is this decision evaluated?
 
-The decision was based on the experience the team had regarding the possibilities for programming languages.
+The decision was based on the experience the team had regarding the possibilities for programming languages. Further in 
+educational context its good to learn Kotlin because its in comparison especially to Java a new programming language.
  
 ## Resolution Details
 
