@@ -31,7 +31,7 @@ in order to compare the models.
 
 ## Viable Options
 
-###Current Model
+### Current Model
 [Subdomain-Model-v1](./images/subdomain-model_v1.png "Subdomain-Model-v1")
 
 This is this the current model. Currently, there are five services (Game, Robot, Map, Trading, GameLog). The model will be
