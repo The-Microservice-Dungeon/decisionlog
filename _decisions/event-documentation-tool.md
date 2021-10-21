@@ -4,7 +4,7 @@ acronym: event-documentation-tool
 title: Tool for specifying and documenting events
 decision_type: must
 belongs_to: api
-status: _1_open
+status: _2_draft
 todos:
 responsible: thu;tla;tpa;
 deadline: 2021-10-22
