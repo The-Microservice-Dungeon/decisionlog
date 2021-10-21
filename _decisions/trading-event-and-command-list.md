@@ -1,22 +1,20 @@
 ---
 type: decision
-acronym: gameLog-event-and-command-list
-title: List of business events and commands from Event Storming, for GameLog service
+acronym: trading-event-and-command-list
+title: List of business events and commands from Event Storming, for Trading service
 decision_type: team
-belongs_to: gameLog
+belongs_to: trading
 status: _1_open
-responsible: thu;aha
+responsible: tla;tpa
 deadline: 2021-10-22
+priority: 2-medium
 tags: 
     - business-event
     - command
 history:
     v1:
         date: 2021-10-17
-        comment: created initially
-    v2:
-        date: 2021-10-20
-        comment: add event list
+        comment: cr eated initially    
 ---
 
 ## Why is there need for such a decision?
@@ -30,21 +28,11 @@ Any conflicts, especially about who should receive which command?
 
 ## Additional sources for better understanding the background
 
-Miro Board of the Domains (from Event Storming).
+tbd.
 
 ## Viable Options
 
-The business events are pretty clear from the miro board:
-- request game data from the services
-- ALTERNATIVE: let services log events to event queue (Apache Kafka)
-- aggregate end results of all rounds
-- evaluate end results
-- generate final rankings
-  - grant trophies
-- generate rankings for categorized achievements (not trophies but e.g. amount of money, resources, etc.) (leaderboards)
-- store trophies in cross-game personal log
-
-This domain has no commands.
+n/a
 
 ## Alternatives not seriously considered
 
@@ -56,7 +44,7 @@ Evaluation of [Event Storming results](https://miro.com/app/board/o9J_lsQV7ZA=/)
  
 ## Resolution Details
 
-Should be discussed in FAE/DDD on October 22th.
+tbd.
 
 ## Reasons for the resolution
 

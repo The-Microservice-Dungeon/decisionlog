@@ -1,12 +1,13 @@
 ---
 type: decision
-acronym: robot-event-and-command-list
-title: List of business events and commands from Event Storming, for Robot service
+acronym: map-event-and-command-list
+title: List of business events and commands from Event Storming, for Map service
 decision_type: team
-belongs_to: robot
+belongs_to: map
 status: _1_open
-responsible: ngi;cpo
-deadline: 2021-10-22
+responsible: sbe;psc
+deadline: 2021-10-29
+priority: 2-medium
 tags: 
     - business-event
     - command
@@ -23,7 +24,7 @@ from the [Event Storming results](https://miro.com/app/board/o9J_lsQV7ZA=/). The
 designing the features and API(s) of the service.
 
 In addition, it needs to be checked if the event/command list is consistent with the other teams' lists.
-Any conflicts, especially about who should receive which command?
+Any conflicts, especially about who should receive which command? 
 
 ## Additional sources for better understanding the background
 

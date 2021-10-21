@@ -8,6 +8,7 @@ belongs_to: devOps
 status: _2_draft
 responsible: psc
 deadline: 2021-10-22
+priority: 2-medium
 history:
     v1:
         date: 2021-10-08

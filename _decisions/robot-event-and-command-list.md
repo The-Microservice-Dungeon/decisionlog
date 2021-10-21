@@ -1,12 +1,13 @@
 ---
 type: decision
-acronym: map-event-and-command-list
-title: List of business events and commands from Event Storming, for Map service
+acronym: robot-event-and-command-list
+title: List of business events and commands from Event Storming, for Robot service
 decision_type: team
-belongs_to: map
+belongs_to: robot
 status: _1_open
-responsible: sbe;psc
+responsible: ngi;cpo
 deadline: 2021-10-22
+priority: 2-medium
 tags: 
     - business-event
     - command

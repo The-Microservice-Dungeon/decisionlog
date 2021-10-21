@@ -6,7 +6,8 @@ decision_type: team
 belongs_to: map
 status: _1_open
 responsible: sbe;psc
-deadline: 2021-10-22
+deadline: 2021-10-29
+priority: 1-high
 tags: 
     - subdomain-model
 history:

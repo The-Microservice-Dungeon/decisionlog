@@ -70,13 +70,13 @@ layout: default
             <td>
                 {% for decision in site.decisions %}
                     {% assign acronym = person.acronym %}
-                    {% include /functions/is-responsible-for-decision.html mydecision=decision person_acronym=acronym %}
+                    {% include /functions/is-responsible-for-decision.html myDecision=decision person_acronym=acronym %}
                     {% if is_responsible_for_decision %}
-                        {% include /functions/find-decision-errors.html mydecision=decision %}
+                        {% include /functions/find-decision-errors.html myDecision=decision %}
                         {% if error_string.size > 0 %}
                             <img src="{{ site.url }}{{ '/assets/error-4-24.png' | relative_url }}" />
                         {% else %}
-                            {% include /functions/get-status-infos.html mydecision=decision %}
+                            {% include /functions/get-status-infos.html myDecision=decision %}
                             <img class={{ status_class }} src="{{ site.url }}{{ status_filename | relative_url }}" />
                         {% endif %} &nbsp;
                         <a href="{{ site.url }}{{ decision.url | relative_url }}">{{ decision.title }}</a>

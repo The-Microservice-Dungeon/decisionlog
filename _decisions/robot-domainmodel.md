@@ -7,6 +7,7 @@ belongs_to: robot
 status: _1_open
 responsible: ngi;cpo
 deadline: 2021-10-22
+priority: 1-high
 tags: 
     - subdomain-model
 history:

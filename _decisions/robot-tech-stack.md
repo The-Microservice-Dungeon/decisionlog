@@ -4,15 +4,19 @@ acronym: robot-tech-stack
 title: Technology stack for Robot service
 decision_type: team
 belongs_to: robot
-status: _1_open
+status: _2_draft
 responsible: ngi;cpo
 deadline: 2021-10-22
+priority: 1-high
 tags: 
     - tech-stack
 history:
     v1:
         date: 2021-10-17
-        comment: created initially    
+        comment: created initially 
+    v2:
+        date: 2021-10-21
+        comment: Add Tech-Stack Decision   
 ---
 
 ## Why is there need for such a decision?
@@ -25,20 +29,23 @@ tbd.
 
 ## Viable Options
 
-tbd.
+- Kotlin as the main programming language (choice of the team,)
+- Spring as the web application framework (choice of the team)
+- Maven or Gradle for Build-Management (team is leaning more towards Gradle, due to being newer and offering more options)
+- H2 or MariaDB for data storage
 
 ## Alternatives not seriously considered
 
-tbd.
+- Currently no other alternatives are seriously considered. Options have been chosen based on team preferences and experiences. 
 
 ## How is this decision evaluated?
 
-tbd.
+- Ideas have been discussed with the development team
  
 ## Resolution Details
 
-tbd.
+- The viable options have mostly been accepted
 
 ## Reasons for the resolution
 
-tbd.
+- Reasons for the decisions are mainly due to team experience with the chosen technologies (Kotlin, Spring) or wanting to try out new technologies (Gradle)

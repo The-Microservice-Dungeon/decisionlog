@@ -5,6 +5,7 @@ title: Conventions how to document (sub-)domain models in the teams
 decision_type: should
 belongs_to: model
 status: _1_open
+priority: 3-low
 responsible: 
 tags: 
     - subdomain-model

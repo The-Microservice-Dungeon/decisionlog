@@ -8,6 +8,7 @@ belongs_to: api
 status: _2_draft
 responsible: sbe
 deadline: 2021-10-22
+priority: 1-high
 history:
     v1:
         date: 2021-10-08

@@ -1,13 +1,13 @@
 ---
 type: decision
 acronym: service-doc-structure
-title: >
-    Structure for team developer documentation
+title: Structure for team developer documentation
 decision_type: must
 belongs_to: qualityAssurance
 status: _1_open
 responsible: tra
 deadline: 2021-10-22
+priority: 3-low
 history:
     v1:
         date: 2021-10-08
@@ -24,21 +24,24 @@ covered), so that you are sure to find the required aspects.
 
 ## Additional sources for better understanding the background
 
-* tbd
+We need a API documentation structure that's easy to use and (int the best case) will be autamaticly generated and updated.
 
 ## Viable Options
 
-* tbd
+<ul>
+<li>OpenAPI/li>
+</ul>
 
 
 ## Alternatives not seriously considered
 
-* tbd
+<ul>
+<li>GitBook only</li>
+</ul>
 
 
 ## How is this decision evaluated?
-
-tbd
+The decision was evaluated by checking whether the tool or structure is used in the industry. Furthermore, the simplicity of use was also taken into consideration. As well as whether the standard is supported by our infrastructure (gitBook).
  
 ## Resolution Details
 
@@ -46,5 +49,9 @@ tbd
 
 ## Reasons for the resolution
 
-tbd
+<ul>
+<li>Used by a viratey of companies</li>
+<li>GitBook integration</li>
+
+</ul>
 

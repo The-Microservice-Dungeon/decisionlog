@@ -1,4 +1,4 @@
-{% assign decision = include.mydecision %}
+{% assign decision = include.myDecision %}
 {% assign error_string = "" %}
 
 {% comment %} --- Consistent type? --- {% endcomment %}
@@ -94,6 +94,18 @@
 			append: decision.acronym |
 			append: "' differs from filename - please choose the same filename as the acronym." %}
 	{% endif %}
+{% endif %}
+
+{% comment %} --- Priority properly set? --- {% endcomment %}
+
+{% if decision.priority %}
+	{% if decision.priority != "1-high" and decision.priority != "2-medium" and decision.priority != "3-low" %}
+		{% assign error_string = error_string | append: "Priority is set to invalid value '" |
+				append: decision.priority | append: "'. Valid values are 1-high, 2-medium, and 3-low." %}
+	{% endif %}
+{% else %}
+	{% assign error_string = error_string | append: "Priority is not set. Please add line 'priority: ...' to " |
+			append: "front matter. Valid values are 1-high, 2-medium, and 3-low." %}
 {% endif %}
 
 
