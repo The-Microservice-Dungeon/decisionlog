@@ -1,0 +1,16 @@
+{% assign decision = include.myDecision %}
+
+{% if decision.priority %}
+    {% assign priority = decision.priority %}
+{% else %}
+    {% assign priority = "3-low" %}
+{% endif %}
+{% if priority == "1-high" %}
+    {% capture prioIconString %}<img src="{{ site.url }}{{ '/assets/arrow-up-138-24.png' | relative_url }}"/>{% endcapture %}
+{% elsif priority == "2-medium" %}
+    {% capture prioIconString %}<img src="{{ site.url }}{{ '/assets/arrow-level-249-24.png' | relative_url }}"/>{% endcapture %}
+{% elsif priority == "3-low" %}
+    {% capture prioIconString %}<img src="{{ site.url }}{{ '/assets/arrow-down-200-24.png' | relative_url }}"/>{% endcapture %}
+{% else %}
+    {% assign prioIconString = "???" %}
+{% endif %}

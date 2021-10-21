@@ -39,21 +39,21 @@ If a typefilter ("team" or "sig") is specified, then two additional filterings a
     <tbody>
     {% for decision in decision_list %}
     <tr>
-        {% include /functions/error-icon-string.html mydecision=decision %}
-        {% if error_icon_string.size == 0 %}
-            {% include /functions/todo-icon-string.html mydecision=decision %}
+        {% include /functions/error-icon-string.html myDecision=decision %}
+        {% if errorIconString.size == 0 %}
+            {% include /functions/todo-icon-string.html myDecision=decision %}
         {% else %}
             {% assign todo_icon_string = "" %}
         {% endif %}
 
-        {% include /functions/get-status-infos.html mydecision=decision %}
-        <td><img class={{ status_class }} src="{{ site.url }}{{ status_filename | relative_url }}"/> {{ error_icon_string }}{{ todo_icon_string }}</td>
+        {% include /functions/get-status-infos.html myDecision=decision %}
+        <td><img class={{ status_class }} src="{{ site.url }}{{ status_filename | relative_url }}"/> {{ errorIconString }}{{ todo_icon_string }}</td>
 
         {% assign decision_file_name = decision.url %}
         <td><a href="{{ site.url }}{{ decision_file_name | relative_url }}">{{ decision.title }}</a> </td>
-        {% include /functions/resolve-names.html mydecision=decision %}
+        {% include /functions/resolve-names.html myDecision=decision %}
         <td>{{ responsible_string }}</td>
-        {% include /functions/is-decision-open.html mydecision=decision %}
+        {% include /functions/is-decision-open.html myDecision=decision %}
         <td>{% if decision_is_open %}{{ decision.deadline }}{% endif %}</td>
     </tr>
     {% endfor %}

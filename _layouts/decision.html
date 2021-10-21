@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% include /functions/get-status-infos.html mydecision=page %}
+{% include /functions/get-status-infos.html myDecision=page %}
 <h1><img class={{ status_class }} src="{{ site.url }}{{ status_filename | relative_url }}"/> &nbsp;
     {{ page.title }}</h1>
 
@@ -11,12 +11,12 @@ layout: default
     <dd>{{ page.acronym }}</dd>
 
     <dt>Belongs to</dt>
-    <dd>{% include /functions/print-belongs-to-link.html mydecision=page %}</dd>
+    <dd>{% include /functions/print-belongs-to-link.html myDecision=page %}</dd>
 
     <dt>Responsible</dt>
-    <dd>{% include /functions/resolve-names.html mydecision=page %}{{ responsible_string }}</dd>
+    <dd>{% include /functions/resolve-names.html myDecision=page %}{{ responsible_string }}</dd>
 
-    {% include /functions/is-decision-open.html mydecision=page %}
+    {% include /functions/is-decision-open.html myDecision=page %}
     {% if decision_is_open %}
         <dt>Deadline</dt>
         <dd>{{ page.deadline }}</dd>
@@ -27,7 +27,7 @@ layout: default
         <dd>{{ page.tags | join: ", " }}</dd>
     {% endif %}
 
-    {% include /functions/find-decision-errors.html mydecision=page %}
+    {% include /functions/find-decision-errors.html myDecision=page %}
     {% if error_string.size > 0 %}
         <dt><img src="{{ site.url }}{{ '/assets/error-4-24.png' | relative_url }}"/> &nbsp; Errors</dt>
         {% assign error_list = error_string | split: ";" %}
