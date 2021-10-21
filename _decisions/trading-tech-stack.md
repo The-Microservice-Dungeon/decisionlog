@@ -1,3 +1,4 @@
+
 ---
 type: decision
 acronym: trading-tech-stack
@@ -13,7 +14,11 @@ tags:
 history:
     v1:
         date: 2021-10-17
-        comment: created initially    
+        comment: created initially
+    v2: 
+        date: 2021-10-21
+        comment: added first decisions
+    
 ---
 
 ## Why is there need for such a decision?
@@ -26,19 +31,26 @@ tbd.
 
 ## Viable Options
 
-tbd.
+ - C#
+ -- Good Documentation from Microsoft [Link1](https://docs.microsoft.com/de-de/dotnet/architecture/microservices/multi-container-microservice-net-applications/integration-event-based-microservice-communications) [Link2](https://docs.microsoft.com/de-de/azure/architecture/guide/architecture-styles/event-driven)
+ - Java (Spring)
+--Tought in various modules
+--Easy to set up project with spring
+ - Java [(Quarkus)](https://quarkus.io/guides/kafka)
+ - Node.js (with nestjs)
+ --Tought in various modules
+ --Nestjs wraps around express and has prebuild emplementation for kafka microservices
 
 ## Alternatives not seriously considered
-
-tbd.
+There are various alternatives though in this project scope it is best to focus on the tech that is known by most of the team. 
 
 ## How is this decision evaluated?
 
-tbd.
+Discussion in Discord and looking at similar projects done with other technologies.
  
 ## Resolution Details
 
-tbd.
+We are using Spring as application framework. 
 
 ## Reasons for the resolution
 
