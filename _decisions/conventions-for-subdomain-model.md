@@ -6,7 +6,7 @@ decision_type: should
 belongs_to: model
 status: _1_open
 priority: 3-low
-responsible: 
+responsible: cpo
 tags: 
     - subdomain-model
 deadline: 2021-10-22
