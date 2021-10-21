@@ -51,6 +51,6 @@ tbd
 <ul>
 <li>Used by a viratey of companies</li>
 <li>GitBook integration</li>
-<li>https://docs.gitbook.com/features/openapi</li>
+
 </ul>
 

@@ -1,7 +1,7 @@
 ---
 type: decision
 acronym: services-deployment
-title: How should the services should be deployed?
+title: Deployment of services?
 decision_type: must
 belongs_to: belongs_to: devOps
 status: _1_open
