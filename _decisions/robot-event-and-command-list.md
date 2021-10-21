@@ -38,16 +38,20 @@ tbd.
 - robot used energy for action
 - robot regenerated energy
 - robot blocked planet
-- upgraded robot
+- robot was upgraded
+- bought item was added to the robots inventory
 - robot moved to another planet
+    - robot used item for movement
     - movement failed due to a block
-- fought other robot
+    - movement failed due to not enough energy
+- robot fought other robot
     - robot used item
     - robot was destroyed
-    - distributed resources of destroyed robot
-- mined resource
-    - added item to inventory
-- spawned robot
+    - resources of destroyed robot were distributed
+- robot mined resource
+    - resources were added to the robots inventory
+- robot was spawned
+- scouting? :)
 
 
 ## Alternatives not seriously considered
