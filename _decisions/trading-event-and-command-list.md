@@ -7,6 +7,7 @@ belongs_to: trading
 status: _1_open
 responsible: tla;tpa
 deadline: 2021-10-22
+priority: 2-medium
 tags: 
     - business-event
     - command

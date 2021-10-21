@@ -8,6 +8,7 @@ status: _1_open
 todos:
 responsible: thu;tla;tpa;
 deadline: 2021-10-22
+priority: 2-medium
 history:
     v1:
         date: 2021-10-08

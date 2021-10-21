@@ -21,7 +21,7 @@ If a typefilter ("team" or "sig") is specified, then two additional filterings a
 {% assign deadline_groups = decision_list | group_by: "deadline" | sort: "name" %}
 {% assign decision_list = "" | split: ";" %}
 {% for group in deadline_groups %}
-    {% assign sublist = group.items | sort: "status" %}
+    {% assign sublist = group.items | sort: "priority" %}
     {% assign decision_list = decision_list | concat: sublist %}
 {% endfor %}
 
@@ -30,10 +30,11 @@ If a typefilter ("team" or "sig") is specified, then two additional filterings a
 <table>
     <thead>
     <tr>
-        <th width="12%">Status</th>
-        <th width="58%">Title</th>
-        <th width="15%">Responsible</th>
-        <th width="15%">Deadline</th>
+        <th width="9%">Status</th>
+        <th width="48%">Title</th>
+        <th width="25%">Responsible</th>
+        <th width="12%">Deadline</th>
+        <th width="6%">Prio</th>
     </tr>
     </thead>
     <tbody>
@@ -55,6 +56,8 @@ If a typefilter ("team" or "sig") is specified, then two additional filterings a
         <td>{{ responsible_string }}</td>
         {% include /functions/is-decision-open.html myDecision=decision %}
         <td>{% if decision_is_open %}{{ decision.deadline }}{% endif %}</td>
+        {% include /functions/priority-icon-string.html myDecision=decision %}
+        <td>{% if decision_is_open %}{{ prioIconString }}{% endif %}</td>
     </tr>
     {% endfor %}
     </tbody>

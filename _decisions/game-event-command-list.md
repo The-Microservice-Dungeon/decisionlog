@@ -7,6 +7,7 @@ belongs_to: game
 status: _2_draft
 responsible: fgr
 deadline: 2021-10-22
+priority: 2-medium
 tags: 
     - business-event
     - command

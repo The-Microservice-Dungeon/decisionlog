@@ -7,6 +7,7 @@ belongs_to: game
 status: _1_open
 responsible:
 deadline: 2021-10-22
+priority: 1-high
 tags: 
     - subdomain-model
 history:

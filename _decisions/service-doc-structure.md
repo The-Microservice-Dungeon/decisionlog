@@ -8,6 +8,7 @@ belongs_to: qualityAssurance
 status: _1_open
 responsible: tra
 deadline: 2021-10-22
+priority: 3-low
 history:
     v1:
         date: 2021-10-08

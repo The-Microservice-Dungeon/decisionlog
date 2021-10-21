@@ -7,6 +7,7 @@ belongs_to: api
 status: _1_open
 responsible: mba
 deadline: 2021-10-29
+priority: 3-low
 history:
     v1:
         date: 2021-10-08
