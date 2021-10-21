@@ -18,8 +18,9 @@ layout: default
 
     {% include /functions/is-decision-open.html myDecision=page %}
     {% if decision_is_open %}
-        <dt>Deadline</dt>
-        <dd>{{ page.deadline }}</dd>
+        {% include /functions/priority-icon-string.html myDecision=page %}
+        <dt>Deadline and Priority</dt>
+        <dd>{{ page.deadline }} &nbsp; {{ prioIconString }}</dd>
     {% endif %}
 
     {% if page.tags and page.tags.size > 0 %}

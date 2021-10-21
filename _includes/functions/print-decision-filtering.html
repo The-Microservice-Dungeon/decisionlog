@@ -16,7 +16,7 @@
                 <li class="active">{{ type }}</li>
             {% else %}
                 {% assign path = "/overview/only" | append: type | append: ".html" %}
-                <li><a href="{{ site.url }}{{ path }}">{{ type }}</a></li>
+                <li><a href="{{ site.url }}{{ path | relative_url }}">{{ type }}</a></li>
             {% endif %}
         {% endfor %}
         &nbsp;&nbsp; | &nbsp;&nbsp;
@@ -25,7 +25,7 @@
             {% if filterType == "aspect" and filterInstance == aspect.label %}
                 <li class="active">{{ aspect.label }}</li>
             {% else %}
-                <li><a href="{{ site.url }}{{ aspect.url }}">{{ aspect.label }}</a></li>
+                <li><a href="{{ site.url }}{{ aspect.url | relative_url }}">{{ aspect.label }}</a></li>
             {% endif %}
         {% endfor %}
         &nbsp;&nbsp; | &nbsp;&nbsp;
@@ -37,7 +37,7 @@
                 <li class="active">{{ tag }}</li>
             {% else %}
                 {% assign path = "/tags/" | append: tag | append: ".html" %}
-                <li><a href="{{ site.url }}{{ path }}">{{ tag }}</a></li>
+                <li><a href="{{ site.url }}{{ path | relative_url }}">{{ tag }}</a></li>
             {% endif %}
         {% endfor %}
     </ul>

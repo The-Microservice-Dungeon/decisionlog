@@ -24,7 +24,7 @@ from the [Event Storming results](https://miro.com/app/board/o9J_lsQV7ZA=/). The
 designing the features and API(s) of the service.
 
 In addition, it needs to be checked if the event/command list is consistent with the other teams' lists.
-Any conflicts, especially about who should receive which command?
+Any conflicts, especially about who should receive which command? 
 
 ## Additional sources for better understanding the background
 
