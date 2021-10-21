@@ -37,15 +37,15 @@ in order to compare the models.
 This is this the current model. Currently, there are five services (Game, Robot, Map, Trading, GameLog). The model will be
 iteratively updated as discussions clear up the responsibilities.
 
-####Game
+#### Game
 //TODO: Explain responsibilities and ownership of aggregates
-####Robot
+#### Robot
 //TODO: Explain responsibilities and ownership of aggregates
-####Map
+#### Map
 //TODO: Explain responsibilities and ownership of aggregates
-####Trading
+#### Trading
 //TODO: Explain responsibilities and ownership of aggregates
-####GameLog
+#### GameLog
 //TODO: Explain responsibilities and ownership of aggregates
 
 ## Alternatives not seriously considered
