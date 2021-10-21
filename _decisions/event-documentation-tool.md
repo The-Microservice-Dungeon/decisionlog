@@ -58,7 +58,7 @@ To evaluate, which of the two viable options to choose, both were examinated in 
     - There are [examples given](https://github.com/asyncapi/spec/tree/master/examples) in the corrisponding project repository.
       These examples are evaluated whether they may fit into the microservice dungeon project regarding their features, opportunities and complexity.
     - Available tooling and technical compatibility
-    - Using a hands-on example: [Specification documentation as HTML](https://tobi6112.github.io/AsyncAPI-Sample/) | [Repository](https://github.com/tobi6112/AsyncAPI-Sample)
+    - Using a hands-on example: [Specification documentation as HTML](https://tobi6112.github.io/AsyncAPI-Sample/) and the corresponding [Repository](https://github.com/tobi6112/AsyncAPI-Sample)
 - OpenAPI/Swagger 
     - Approach would only define the payload schemas as JSON Schema Objects. This approach can be evaluated using the examples above (AsyncAPI schemas are [compatible to OpenAPI](https://www.asyncapi.com/docs/getting-started/coming-from-openapi) schemas).
  
