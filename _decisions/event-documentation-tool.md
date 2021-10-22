@@ -1,7 +1,7 @@
 ---
 type: decision
 acronym: event-documentation-tool
-title: Tool for specifying and documenting events
+title: AsyncAPI is used for specifying and documenting events
 decision_type: must
 belongs_to: eventing
 status: _2_draft

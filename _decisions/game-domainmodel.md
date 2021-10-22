@@ -11,6 +11,9 @@ priority: 1-high
 tags: 
     - subdomain-model
     - command-entity
+todos:
+    - (sb) update when the open issues listed below have been resolved
+    - (sb) set status to _3_agreed, once it has been really finalized
 history:
     v1:
         date: 2021-10-17
