@@ -38,7 +38,17 @@ Discussion in workshop on 22.10.
 
 ## Resolution Details
 
-tbd.
+* Create new map (number of players, number of rounds)
+* Print out the complete map
+* Turn planet into space station / spawn
+* Get: is planet a space station / spawn?
+* Get resources (of a certain type) for a given planet
+* Put resources (of a certain type) on a given planet
+* Mine resources (of a certain type) from a given planet, for one or several robots (with given transaction IDs)
+  * actual mined amount is sent via event
+* Get list of resource categories for the complete map
+* Get all adjacent planets for a given planet
+
 
 ## Reasons for the resolution
 
