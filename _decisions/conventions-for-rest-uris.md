@@ -5,7 +5,7 @@ title: Conventions for REST URIs
 decision_type: must
 belongs_to: api
 status: _1_open
-responsible: 
+responsible: thu
 deadline: 2021-10-29
 priority: 2-medium
 tags:
