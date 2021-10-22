@@ -21,6 +21,10 @@ history:
         date: 2021-10-22
         comment: >
             Decision regarding the required Events
+    v4:
+        date: 2021-10-22
+        comment: >
+            Add events we require for our the API draft
 ---
 
 ## Why is there need for such a decision?
@@ -69,6 +73,8 @@ We need the following events from the services:
 - Robot spawn event
 - Movement event
 - Fight Event + Fight Result
+- Player registered
+- Game started + Game ended
 
 In addition we require the following REST APIs: 
 - Wealth / User Balance API 
