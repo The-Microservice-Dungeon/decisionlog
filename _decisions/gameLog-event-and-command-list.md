@@ -68,7 +68,7 @@ We need the following events from the services:
 - Health change event
 - Robot spawn event
 - Movement event
-- Fight Event
+- Fight Event + Fight Result
 
 In addition we require the following REST APIs: 
 - Wealth / User Balance API 
