@@ -47,7 +47,7 @@ Discussion in the DDD/FAE workshops, resolution of conflicts between services.
 This is this the current model. Currently, there are five services (Game, Robot, Map, Trading, GameLog). The model will be
 iteratively updated as discussions clear up the responsibilities. 
 
-[Subdomain-Model-v1](./images/subdomain-model_v1.png "Subdomain-Model-v1")
+![Subdomain-Model-v1](./images/subdomain-model_v1.png "Subdomain-Model-v1")
 
 ## Reasons for the resolution
 
