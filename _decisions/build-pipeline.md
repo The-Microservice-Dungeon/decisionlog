@@ -3,11 +3,14 @@ type: decision
 acronym: build-pipeline
 title: Tools for Build Pipeline
 decision_type: must
-status: _1_open
-todos:
+status: _2_draft
 responsible: tra
 deadline: 2021-10-22
 priority: 2-medium
+todos:
+    - (sb) Is Gitlab actions final? Then please state it this way.  
+    - (sb) Why is Jenkins not seriously considered?
+    - (sb) Please change title to express the decision made
 history:
     v1:
         date: 2021-19-08
@@ -24,17 +27,13 @@ tbd
 
 ## Viable Options
 
-<ul>
-<li>GitHub Actions</li>
-</ul>
-
+* GitHub Actions
 
 
 ## Alternatives not seriously considered
 
-<ul>
-<li>Jenkins</li>
-</ul>
+* Jenkins
+
 
 ## How is this decision evaluated?
 
@@ -45,6 +44,6 @@ During the evaluation, special attention was paid to compatibility with GitHub. 
 tbd
 
 ## Reasons for the resolution
-<ul>
-<li>Perfect integration with VCS</li>
-</ul>
+
+* Perfect integration with VCS
+

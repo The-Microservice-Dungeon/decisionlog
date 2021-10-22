@@ -10,6 +10,7 @@ deadline: 2021-10-22
 priority: 1-high
 tags: 
     - model-conflict
+    - command-entity
 todos:
     - fill open parts
 history:
