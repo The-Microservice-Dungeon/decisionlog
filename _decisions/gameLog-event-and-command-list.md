@@ -17,6 +17,10 @@ history:
     v2:
         date: 2021-10-20
         comment: add event list
+    v3:
+        date: 2021-10-22
+        comment: >
+            Decision regarding the required Events
 ---
 
 ## Why is there need for such a decision?
@@ -35,8 +39,8 @@ Miro Board of the Domains (from Event Storming).
 ## Viable Options
 
 The business events are pretty clear from the miro board:
-- request game data from the services
-- ALTERNATIVE: let services log events to event queue (Apache Kafka)
+- Let services log events to event queue (Apache Kafka)
+- *ALTERNATIVE*: request game data from the services
 - aggregate end results of all rounds
 - evaluate end results
 - generate final rankings
@@ -56,8 +60,23 @@ Evaluation of [Event Storming results](https://miro.com/app/board/o9J_lsQV7ZA=/)
  
 ## Resolution Details
 
-Should be discussed in FAE/DDD on October 22th.
+We're subscribing/consuming events from Kafka. 
+
+We need the following events from the services: 
+
+- Mining event + Resource given event
+- Health change event
+- Robot spawn event
+- Movement event
+- Fight Event
+
+In addition we require the following REST APIs: 
+- Wealth / User Balance API 
 
 ## Reasons for the resolution
 
-tbd.
+We're going to use asynchronous communication to make it possible using a live-dashboard and do not require synchronous polling.
+
+## Additional Information
+
+One possible idea to display the leaderboards is exposing metrics from the service which get scraped by prometheus and displayed within a Grafana Dashboard   
