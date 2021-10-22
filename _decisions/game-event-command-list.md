@@ -10,6 +10,8 @@ deadline: 2021-10-22
 priority: 2-medium
 tags: 
     - business-event
+todos:
+    - (sb) set status to _3_agreed, once it has been really finalized
 history:
     v1:
         date: 2021-10-17

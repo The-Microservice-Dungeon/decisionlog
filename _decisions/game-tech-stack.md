@@ -10,6 +10,9 @@ deadline: 2021-10-22
 priority: 1-high
 tags: 
     - tech-stack
+todos:
+    - (sb) Java or Kotlin - what is it now? (When we decide that mixed language is ok, then just remove this todo)
+    - (sb) set status to _3_agreed, once it has been really finalized
 history:
     v1:
         date: 2021-10-17
