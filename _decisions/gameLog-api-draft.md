@@ -4,8 +4,8 @@ acronym: gameLog-api-draft
 title: First draft of the REST API for GameLog service (not yet formally specified)
 decision_type: must
 belongs_to: api
-status: _1_open
-responsible: 
+status: _2_draft
+responsible: thu;aha
 deadline: 2021-10-22
 priority: 1-high
 tags: 
@@ -14,6 +14,10 @@ history:
     v1:
         date: 2021-10-22
         comment: created initially
+    v2:
+        date: 2021-10-22
+        comment: >
+            Add first API draft
 ---
 
 ## Why is there need for such a decision?
@@ -38,8 +42,21 @@ Discussion in workshop on 22.10.
 
 ## Resolution Details
 
-tbd.
+Since we're most likely going to consum we don't require many APIs. The main focus will be to provide a leaderboard and grant trophies based on fired events. In addition to that we will expose metrics about the events that can be consumed -- Maybe by other services (e.g. trading prices scale according to the current demand), but mainly to introduce a Live Dashboard during the Hackathon.
+
+Nevertheless we will provide REST APIs regardingt the Leaderboard and Trophies.
+
+**Leaderboard**
+
+- **GET** global leaderboard
+- **GET** leaderboard of one specific category
+
+**Trophies**
+
+- **GET** achieved global trophies
+- **GET** achieved trophies for a player
+
 
 ## Reasons for the resolution
 
-tbd.
+- see details
