@@ -5,10 +5,12 @@ title: Tool for specifying REST APIs
 decision_type: must
 belongs_to: api
 status: _2_draft
-todos:
 responsible: fgr;ngi
 deadline: 2021-10-22
 priority: 1-high
+tags:
+    - documentation
+todos:
 history:
     v1:
         date: 2021-10-08

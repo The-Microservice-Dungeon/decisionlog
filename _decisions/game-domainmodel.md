@@ -10,6 +10,7 @@ deadline: 2021-10-22
 priority: 1-high
 tags: 
     - subdomain-model
+    - command-entity
 history:
     v1:
         date: 2021-10-17
@@ -34,7 +35,7 @@ Addison-Wesley Professional.
 
 ## Viable Options
 
-[Fachliches_Datenmodell_Game](./images/Fachliches_Datenmodell_Game.jpg)
+![Fachliches_Datenmodell_Game](./images/Fachliches_Datenmodell_Game.jpg)
 
 ### Player
 The Player gets commands which are excuted in the game. Money is a composition of Player, 

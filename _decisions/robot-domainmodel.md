@@ -10,6 +10,7 @@ deadline: 2021-10-22
 priority: 1-high
 tags: 
     - subdomain-model
+    - command-entity
 history:
     v1:
         date: 2021-10-17
@@ -33,7 +34,7 @@ tbd.
 
 ## Viable Options
 
-[Domainmodel Robot v1](./images/Domainmodel_Robot_v1.jpg)
+![Domainmodel Robot v1](./images/Domainmodel_Robot_v1.jpg)
 
 - movement: robot doesn't need the whole map, it just asks the map service if the received movement command is valid; robot also needs the feedback from the map which movement-difficulty the commanded move has
 - upgrade status: robot receives the data from trading if upgrades are bought, stores this and tracks the multiplier (which is dependant on the total bought upgrades for each robot)

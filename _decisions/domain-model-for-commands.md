@@ -22,8 +22,8 @@ history:
 ## Why is there need for such a decision?
 
 Ownership for Command is claimed by more than one service: 
-* xxx
-* xxx
+* Game
+* Robot
 
 ## Additional sources for better understanding the background
 
@@ -31,8 +31,9 @@ n/a
 
 ## Viable Options
 
-* Assign ownershio
+* Assign ownership
 * Go for more than one command entity
+* Generic command entity owned by Game, "payload" owned by services to whom command is routed
 
 ## Alternatives not seriously considered
 
