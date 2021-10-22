@@ -17,6 +17,9 @@ history:
     v2:
         date: 2021-10-20
         comment: add domain model
+    v3:
+        date: 2021-10-22
+        comment: add missing player
 ---
 
 ## Why is there need for such a decision?
@@ -34,6 +37,7 @@ Miro Board of the Domains (from Event Storming).
 ## Viable Options
 
 The entities Gamelog, Leaderboard and Trophy are exclusive to the Gamelog service.
+We need to reference the player in order to create a leaderboard and assign trophies
 
 ## Alternatives not seriously considered
 
