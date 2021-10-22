@@ -3,7 +3,7 @@ type: decision
 acronym: hosting
 title: >
     Choice of Hosting provider
-decision_type: must
+    decision_type: must
 belongs_to: devOps
 status: _2_draft
 responsible: psc

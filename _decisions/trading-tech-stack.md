@@ -4,12 +4,15 @@ acronym: trading-tech-stack
 title: Technology stack for Trading service
 decision_type: team
 belongs_to: trading
-status: _1_open
+status: _2_draft
 responsible: tla;tpa
 deadline: 2021-10-22
 priority: 1-high
 tags: 
     - tech-stack
+todos:
+    - (sb) Spring is understood, but with which language?
+    - (sb) please fill the remaining parts of the decision
 history:
     v1:
         date: 2021-10-17

@@ -4,7 +4,7 @@ acronym: gameLog-tech-stack
 title: Technology stack for GameLog service
 decision_type: team
 belongs_to: gameLog
-status: _1_open
+status: _2_draft
 responsible: thu;aha
 deadline: 2021-10-22
 priority: 1-high

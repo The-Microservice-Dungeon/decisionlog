@@ -7,7 +7,7 @@ decision_type: must
 belongs_to: eventing
 status: _2_draft
 todos:
-responsible: sbe
+responsible: sbe;psc    
 deadline: 2021-10-22
 priority: 2-medium
 history:
