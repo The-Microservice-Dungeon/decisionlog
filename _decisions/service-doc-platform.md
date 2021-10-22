@@ -9,6 +9,9 @@ status: _1_open
 responsible: tra
 deadline: 2021-10-22
 priority: 2-medium
+tags:
+    - documentation
+todos:
 history:
     v1:
         date: 2021-10-08

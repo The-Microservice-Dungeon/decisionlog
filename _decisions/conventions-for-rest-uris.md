@@ -8,6 +8,9 @@ status: _1_open
 responsible: 
 deadline: 2021-10-29
 priority: 2-medium
+tags:
+    - basic-principle
+todos:
 history:
     v1:
         date: 2021-10-08

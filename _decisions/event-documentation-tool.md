@@ -3,12 +3,14 @@ type: decision
 acronym: event-documentation-tool
 title: Tool for specifying and documenting events
 decision_type: must
-belongs_to: api
+belongs_to: eventing
 status: _2_draft
-todos:
 responsible: thu;tla;tpa;
 deadline: 2021-10-22
 priority: 2-medium
+tags: 
+    - documentation
+todos:
 history:
     v1:
         date: 2021-10-08

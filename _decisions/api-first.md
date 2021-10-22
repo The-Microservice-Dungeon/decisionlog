@@ -5,10 +5,12 @@ title: APIs are specified in "API first" style
 decision_type: must
 belongs_to: api
 status: _2_draft
-todos:
 responsible: sbe
 deadline: 2021-10-22
 priority: 1-high
+tags:
+    - basic-principle
+todos:
 history:
     v1:
         date: 2021-10-08

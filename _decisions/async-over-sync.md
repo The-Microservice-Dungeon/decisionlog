@@ -9,6 +9,9 @@ status: _2_draft
 responsible: sbe
 deadline: 2021-10-22
 priority: 1-high
+tags:
+    - basic-principle
+todos:
 history:
     v1:
         date: 2021-10-08
