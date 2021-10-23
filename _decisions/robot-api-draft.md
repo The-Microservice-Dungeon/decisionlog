@@ -30,7 +30,7 @@ tbd.
 ## Viable Options
 
 ### /robot/
-- is used to create robots
+- is used to create (spawn) robots
 - if you post a robot, you need to include playerUUID in the payload
 
 ### /robot/{robotUUID}
