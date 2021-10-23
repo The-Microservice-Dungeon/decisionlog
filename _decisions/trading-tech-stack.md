@@ -4,7 +4,7 @@ acronym: trading-tech-stack
 title: Technology stack for Trading service
 decision_type: team
 belongs_to: trading
-status: _2_draft
+status: _3_agreed
 responsible: tla;tpa
 deadline: 2021-10-22
 priority: 1-high
@@ -29,7 +29,7 @@ No development can start before the technology stack (esp. programming language)
 
 ## Additional sources for better understanding the background
 
-tbd.
+n/a
 
 ## Viable Options
 
@@ -52,8 +52,10 @@ Discussion in Discord and looking at similar projects done with other technologi
  
 ## Resolution Details
 
-We are using Spring as application framework. 
+We are going to use Java as programming language.
+We are going to use Spring as application framework.
+We are going to use mySQL as database service.
+
 
 ## Reasons for the resolution
-
-tbd.
+Everyone agreed on using Java because thats the best known language for everyone in the team and we can get easy support from others.
