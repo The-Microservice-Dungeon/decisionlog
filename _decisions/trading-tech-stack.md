@@ -20,6 +20,10 @@ history:
     v2: 
         date: 2021-10-21
         comment: added first decisions
+    v3:
+        date: 2021-10-23
+        comment: added techstack decision
+        
     
 ---
 
