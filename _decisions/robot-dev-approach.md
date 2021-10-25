@@ -13,7 +13,7 @@ todo:
 history:
     v1:
         date: 2021-10-25
-        comment: created initially an added contents
+        comment: created initially and added contents
 ---
 
 ## Why is there need for such a decision?
