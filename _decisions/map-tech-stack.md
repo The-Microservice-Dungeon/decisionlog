@@ -4,7 +4,7 @@ acronym: map-tech-stack
 title: Technology stack for Map service
 decision_type: team
 belongs_to: map
-status: _2_draft
+status: _3_agreed
 responsible: sbe;psc
 deadline: 2021-10-29
 priority: 1-high
@@ -14,6 +14,9 @@ history:
     v1:
         date: 2021-10-17
         comment: created initially    
+    v2:
+        date: 2021-10-25
+        comment: decided on ruby and rails
 ---
 
 ## Why is there need for such a decision?
