@@ -4,7 +4,7 @@ acronym: hosting
 title: Hosting provider is ADV Lab
 decision_type: must
 belongs_to: devOps
-status: _2_draft
+status: _3_agreed
 responsible: psc
 deadline: 2021-10-22
 priority: 2-medium
@@ -15,6 +15,9 @@ history:
     v2:
         date: 2021-10-21
         comment: adapted justification
+    v3:
+        date: 2021-10-25
+        comment: update status
 ---
 
 ## Why is there need for such a decision?
