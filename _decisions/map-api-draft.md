@@ -48,6 +48,7 @@ Discussion in workshop on 22.10.
   * actual mined amount is sent via event
 * Get list of resource categories for the complete map
 * Get all adjacent planets for a given planet
+* Get: Is Planet X adjacent to planet y?
 
 
 ## Reasons for the resolution
