@@ -4,7 +4,7 @@ acronym: map-tech-stack
 title: Technology stack for Map service
 decision_type: team
 belongs_to: map
-status: _1_draft
+status: _2_draft
 responsible: sbe;psc
 deadline: 2021-10-29
 priority: 1-high
@@ -43,7 +43,6 @@ Fun should not be the only reason for choosing a technology, so we were also loo
 - Are there existing libraries/a framework for rest apis, kafka, tests & mockups?
 
 We decided against Elixir and Phoenix, because only one of our Team Members is very familiar with the stack.
-
  
 ## Resolution Details
 
