@@ -6,7 +6,6 @@ decision_type: must
 belongs_to: devOps
 status: _3_agreed
 responsible: psc
-deadline: 2021-10-22
 priority: 2-medium
 history:
     v1:
