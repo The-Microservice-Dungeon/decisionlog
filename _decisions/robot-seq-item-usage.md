@@ -17,10 +17,10 @@ history:
 ---
 
 ## Sequence diagram
-
-![Robot combat item usage sequence]()
-
-![Robot movement item usage sequence]()
+### Fighting items
+![Robot combat item usage sequence](./images/robot-item-fighting-seq.png)
+### Movement items
+![Robot movement item usage sequence](./images/robot-item-movent-seq.png)
 
 ## Contexts which interact with this sequence
 
@@ -30,11 +30,11 @@ map service: provides a random existing planet
 
 ## Additional information
 
-### Movement item (wormhole)
-The robot service needs the possibility to ask the map for a random valid planet uuid, get all planet data (analog to regular movement) and then throw the result as event with command uuid (to obfuscate) and planet info. This is very close to the movement but doesn't happen with the batch of regular movement commands. 
-
 ### Fighting item
 The received item type determines if a robot uuid or a planet uuid is expected.
+
+### Movement item (wormhole)
+The robot service needs the possibility to ask the map for a random valid planet uuid, get all planet data (analog to regular movement) and then throw the result as event with command uuid (to obfuscate) and planet info. This is very close to the movement but doesn't happen with the batch of regular movement commands. 
 
 ## Problem with movement item (wormhole)
 

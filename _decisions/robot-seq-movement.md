@@ -18,7 +18,7 @@ history:
 
 ## Sequence diagram
 
-![Robot movement sequence]()
+![Robot movement sequence](./images/robot-movent-seq.png)
 
 ## Contexts which interact with this sequence
 

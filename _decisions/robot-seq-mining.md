@@ -18,7 +18,7 @@ history:
 
 ## Sequence diagram
 
-![Robot mining sequence]()
+![Robot mining sequence](./images/robot-mining-seq.png)
 
 ## Contexts which interact with this sequence
 

@@ -18,7 +18,7 @@ history:
 
 ## Sequence diagram
 
-![Robot blocking sequence]()
+![Robot blocking sequence](./images/robot-block-seq.png)
 
 ## Contexts which interact with this sequence
 

@@ -18,7 +18,7 @@ history:
 
 ## Sequence diagram
 
-![Robot upgrade sequence]()
+![Robot upgrade sequence](./images/robot-upgrade-seq.png)
 
 ## Contexts which interact with this sequence
 

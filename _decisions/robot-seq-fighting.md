@@ -18,7 +18,7 @@ history:
 
 ## Sequence diagram
 
-![Robot fighting sequence]()  
+![Robot fighting sequence](./images/robot-fighting-seq.png)  
 
 ## Contexts which interact with this sequence
 

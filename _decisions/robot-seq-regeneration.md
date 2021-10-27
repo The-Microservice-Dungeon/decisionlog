@@ -18,7 +18,7 @@ history:
 
 ## Sequence diagram
 
-![Robot regeneration sequence]()
+![Robot regeneration sequence](./images/robot-regenerate-seq.png)
 
 ## Contexts which interact with this sequence
 
