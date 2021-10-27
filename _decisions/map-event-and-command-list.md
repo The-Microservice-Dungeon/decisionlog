@@ -4,7 +4,7 @@ acronym: map-event-and-command-list
 title: List of business events and commands from Event Storming, for Map service
 decision_type: team
 belongs_to: map
-status: _1_open
+status: _2_draft
 responsible: sbe;psc
 deadline: 2021-10-29
 priority: 2-medium
@@ -43,7 +43,30 @@ Evaluation of [Event Storming results](https://miro.com/app/board/o9J_lsQV7ZA=/)
  
 ## Resolution Details
 
-tbd.
+### Events we want to publish
+
+```json
+{
+    "event": "resource_mined",
+    "amount_mined": 1000,
+    "resource_type": "iron"
+}
+```
+
+```json
+{
+    "event": "spawn_created",
+    "planet_id": "90b0fe76-f886-4f08-9cbd-5d52b75c7ae8"
+}
+```
+
+```json
+{
+    "event": "resource_replenished",
+    "planet_id": "90b0fe76-f886-4f08-9cbd-5d52b75c7ae8",
+    "resource_type": "iron"
+}
+```
 
 ## Reasons for the resolution
 
