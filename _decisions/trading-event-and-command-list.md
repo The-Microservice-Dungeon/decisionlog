@@ -114,10 +114,6 @@ Questions:
 - Does trading has to have a connecting to the robot service (see “need robot info” above)
 - Initialisieren?
 
-![Buy Command Sequence Diagram](./images/trading-service-sequence-buy-command "Buy Command")
-
-![Sell Command Sequence Diagram](./images/trading-service-sequence-sell-command "Buy Command")
-
 ## Alternatives not seriously considered
 
 n/a
