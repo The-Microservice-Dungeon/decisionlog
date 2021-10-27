@@ -6,7 +6,7 @@ decision_type: team
 belongs_to: map
 status: _3_agreed
 responsible: sbe;psc
-deadline: 2021-10-29
+deadline: 
 priority: 1-high
 tags: 
     - tech-stack
