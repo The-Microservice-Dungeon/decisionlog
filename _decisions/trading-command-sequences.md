@@ -6,7 +6,7 @@ decision_type: team
 belongs_to: trading
 status: _2_draft
 responsible: tla;tpa
-deadline: -
+deadline: 2021-10-28
 priority: 2-medium
 tags:
   - commands
