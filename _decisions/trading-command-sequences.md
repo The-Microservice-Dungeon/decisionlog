@@ -9,11 +9,9 @@ responsible: tla;tpa
 deadline: 2021-10-28
 priority: 2-medium
 tags:
-  - commands
-  - sequences
 history:
   v1:
-    date: 2021-10-17
+    date: 2021-10-28
     comment: added sequences for buy and sell
 ---
 
@@ -29,25 +27,24 @@ tbd.
 
 ### Buy Command
 
-![Buy Command Sequence Diagram](./images/trading-service-sequence-buy-command)
+![Buy Command Sequence Diagram](./images/trading-service-sequence-buy-command.png)
 
 ### Sell Command
 
-![Sell Command Sequence Diagram](./images/trading-service-sequence-sell-command)
+![Sell Command Sequence Diagram](./images/trading-service-sequence-sell-command.png)
 
 ### Initialize
 
 tbd
 
-## All Trading Commands/Actions
-
 ## Alternatives not seriously considered
 
-n/a
+Treating trading as a sub-service from robot.
+Have trading be the owner of items.
 
 ## How is this decision evaluated?
 
-n/a
+Discussion with team. Discussion with robot service and project lead.
 
 ## Resolution Details
 
