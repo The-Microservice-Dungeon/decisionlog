@@ -114,9 +114,44 @@ Questions:
 - Does trading has to have a connecting to the robot service (see “need robot info” above)
 - Initialisieren?
 
-## Alternatives not seriously considered
+### Inital API Draft
 
-n/a
+    GET /trading/item
+      Get item list with prices
+    POST /trading/item
+      Buy item
+    GET /trading/resource
+      Get resources list with prices
+    POST /trading/resource
+      Sell all resources of robot
+    GET /trading/upgrade
+      Get upgrade list with prices
+    POST /trading/upgrade
+      Buy specific upgrade (unsure wether it is an item now)
+    GET /trading/health
+      Get health price (to be discussed)
+    POST /trading/health
+      Buy health for robot
+    GET /trading/energy
+      Get energy price (to be discussed)
+    POST /trading/energy
+      Buy energy for robot
+    GET /trading/robot
+      Get robot prices
+    POST /trading/robot
+      Buy new robot
+    GET /trading/balance
+      Get players current balance (security?)
+    GET /trading/balances
+      Get all players current balances (security?)
+    
+
+## Ongoing Discussions
+
+- It is not sure if upgrade are items now and if we still need a seperate route
+- It is not sure if health/energy are items and if we need a seperate route
+- Do we need security on balances routes? Which security?
+- How do we get the inital resources? From planet service?
 
 ## How is this decision evaluated?
 
