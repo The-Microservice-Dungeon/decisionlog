@@ -6,13 +6,16 @@ decision_type: team
 belongs_to: trading
 status: _2_draft
 responsible: tla;tpa
-deadline: 2021-10-28
+deadline:
 priority: 2-medium
 tags:
 history:
   v1:
     date: 2021-10-28
     comment: added sequences for buy and sell
+  v1:
+    date: 2021-10-28
+    comment: added sequence for initialization
 ---
 
 ## Why is there need for such a decision?
@@ -35,7 +38,7 @@ tbd.
 
 ### Initialize
 
-tbd
+![Initialization Sequence Diagram](./images/trading-service-sequence-initialization.png)
 
 ## Alternatives not seriously considered
 
@@ -48,8 +51,8 @@ Discussion with team. Discussion with robot service and project lead.
 
 ## Resolution Details
 
-n/a
+Trading just checks position and money. Then requests the action from robot service. If robot responds with success, reduce money and confirm command. If robot responds with error, cancle command and emit error.
 
 ## Reasons for the resolution
 
-n/a
+Main discussed reason was to reduce the amount of communication between robot and trading service.
