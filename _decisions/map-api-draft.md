@@ -48,13 +48,14 @@ Discussion in meeting on 26.10.
 * Get a single `Planet` including `planet_type`
 * Get a planet's `neighbours`
 * Get a planet's specific `neighbour` (404 when not found)
+* Turn planet into space station / spawn
 * Get all `ResourceTypes`
 * Get `Resources` for a given planet including it's `resource_type`
-* Mine resources (of a certain type) from a given planet, for one or several robots (with given transaction IDs)
-* Actual mined amount is sent via event
-* Resource replenishment is sent via event
+* Mine resources (of a certain `resource_type`) from a given planet, for one or several robots (with given transaction IDs)
+  * Actual mined amount is sent via event
+* Replenish resources (of a certain `resource_type`) on a given planet
+  * Resource replenishment is sent via event
 * Spawn creation is sent via event
-
 
 We assume `created_at` and `updated_at` timestamps to exist
 

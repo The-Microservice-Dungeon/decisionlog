@@ -10,6 +10,8 @@ deadline: 2021-10-29
 priority: 2-medium
 tags: 
     - business-event
+todo:
+    - (sb) Do we need an event for "Resources on a given planet are empty (have been fully mined)"
 history:
     v1:
         date: 2021-10-17
