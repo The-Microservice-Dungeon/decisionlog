@@ -4,7 +4,7 @@ acronym: rest-api-specification-tool
 title: Tool for specifying REST APIs
 decision_type: must
 belongs_to: api
-status: _2_draft
+status: _3_agreed
 responsible: fgr;ngi
 deadline: 2021-10-22
 priority: 1-high
@@ -18,6 +18,9 @@ history:
     v2:
         date: 2021-10-16
         comment: added reasoning and conclusion for this decision
+    v3:
+        date: 2021-10-24
+        comment: Closed decision
 ---
 
 ## Why is there need for such a decision?

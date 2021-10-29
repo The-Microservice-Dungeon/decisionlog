@@ -4,7 +4,7 @@ acronym: game-tech-stack
 title: Technology stack for Game service
 decision_type: team
 belongs_to: game
-status: _2_draft
+status: _3_agreed
 responsible: fgr;mba
 deadline: 2021-10-22
 priority: 1-high
@@ -23,6 +23,9 @@ history:
     v3: 
         date: 2021-10-22
         comment: update decision 
+    v4:
+        date: 2021-10-24
+        comment: Closed decision    
 ---
 
 ## Why is there need for such a decision?
