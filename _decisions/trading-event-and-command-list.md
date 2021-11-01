@@ -4,7 +4,7 @@ acronym: trading-event-and-command-list
 title: List of business events and commands from Event Storming, for Trading service
 decision_type: team
 belongs_to: trading
-status: _1_open
+status: _2_draft
 responsible: tla;tpa
 deadline: 2021-10-22
 priority: 2-medium
