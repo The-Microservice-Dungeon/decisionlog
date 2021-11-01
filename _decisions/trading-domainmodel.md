@@ -54,7 +54,7 @@ Resources can be sold via the trading service. A `Resource` has `ID`, `Price`, `
 
 ### Econonomy
 
- `Economy` has an trades history which tracks the trades done by the players/robots and the round numbers to later calculate the prices from.
+`Economy` has an trades history which tracks the trades done by the players/robots and the round numbers to later calculate the prices from.
 
 ## Reasons for the resolution
 
