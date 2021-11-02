@@ -4,8 +4,8 @@ acronym: trading-api-draft
 title: First draft of the REST API for Trading service (not yet formally specified)
 decision_type: must
 belongs_to: api
-status: _1_open
-responsible: 
+status: _3_agreed
+responsible: tla;tpa
 deadline: 2021-10-22
 priority: 1-high
 tags: 
