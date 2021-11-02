@@ -60,4 +60,4 @@ Evaluation of [Event Storming results](https://miro.com/app/board/o9J_lsQV7ZA=/)
 
 ## Reasons for the resolution
 
-tbd.
+To make the trading service as independent as possible it has to get all avaiable resources/items and upgrades at the start of the game. Thereupon, the service can calculate the prices based on the specified price factor and share them with the players. In this way, the purchasable items can be added dynamically at the start of each game without having to adjust the trading service. Another possibility would be to also offer an event to update these buyable items. This would also allow new items to be added during a game. But this is only the second priority of the service.
