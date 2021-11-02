@@ -25,6 +25,10 @@ history:
         date: 2021-10-22
         comment: >
             Add events we require for our the API draft
+    v5:
+        date: 2021-11-02
+        comment: >
+            Clarify event list
 ---
 
 ## Why is there need for such a decision?
@@ -66,18 +70,32 @@ Evaluation of [Event Storming results](https://miro.com/app/board/o9J_lsQV7ZA=/)
 
 We're subscribing/consuming events from Kafka. 
 
-We need the following events from the services: 
+To know hook into the game lifecycle we need to consume various structural events:
 
-- Mining event + Resource given event
+- Player registered
+- Game started 
+- Game ended
+- Round started
+- Round ended
+
+In addition to calculate the score and providing metrics we need the following game events from the services: 
+
+- Mining event
+    - Resource given event 
 - Health change event
+- Robot kill(?) event
 - Robot spawn event
 - Movement event
-- Fight Event + Fight Result
-- Player registered
-- Game started + Game ended
+- Fight Event 
+    - Fight Started
+    - Fight Result
+- Upgrade event
+
+We strongly encourage the services to include the participating player IDs in the event payload unless theres a good reason to obscure it. Reduce complexity instead of adding more.
 
 In addition we require the following REST APIs: 
 - Wealth / User Balance API 
+- Because of the command obfuscation we need an API that we can poll to resolve all commands of the last round to a Player
 
 ## Reasons for the resolution
 
