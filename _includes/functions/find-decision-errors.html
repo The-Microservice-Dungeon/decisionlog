@@ -54,14 +54,8 @@
 
 {% assign check_deadline = false %}
 {% if decision.status %}
-	{% if decision.decision_type == "team" %}
-		{% if decision.status != "_3_team_agreed"  %}
-			{% assign check_deadline = true %}
-		{% endif %}
-	{% else %}
-		{% if decision.status != "_5_presented"  %}
-			{% assign check_deadline = true %}
-		{% endif %}
+	{% if decision.status != "_3_agreed"  %}
+		{% assign check_deadline = true %}
 	{% endif %}
 {% endif %}
 {% if check_deadline %}
