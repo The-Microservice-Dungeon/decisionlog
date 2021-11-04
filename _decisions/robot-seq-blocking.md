@@ -3,7 +3,7 @@ type: decision
 acronym: robot-seq-blocking
 title: Blocking sequence of the robot context
 decision_type: team
-belongs_to: robot
+service: robot
 status: _2_draft
 responsible: ngi;cpo
 deadline: 

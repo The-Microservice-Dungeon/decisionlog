@@ -6,17 +6,29 @@ decision_type: must
 aspects: 
     - eventing
     - devOps
-status: _2_draft
+    - techStack
+status: _3_agreed
 responsible: sbe;psc    
 deadline: 2021-10-22
 priority: 2-medium
 todos:
-    - finalize
 history:
     v1:
         date: 2021-10-08
         comment: created initially  
+    v2: 
+        date: 2021-11-04
+        comment: finalized
 ---
+
+## Resolution Details
+
+See title.
+
+## Reasons for the resolution
+
+Kafka is market leader, so this is an appropriate decision for a teaching project (that is supposed to be realistic.
+And we have already experience with it. 
 
 ## Why is there need for such a decision?
 
@@ -55,12 +67,5 @@ Additionally, all of these are specialized for use in their respective cloud env
 
 ## How is this decision evaluated?
 
-tbd
+n/a
  
-## Resolution Details
-
-tbd
-
-## Reasons for the resolution
-
-tbd

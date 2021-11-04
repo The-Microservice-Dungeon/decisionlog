@@ -3,7 +3,7 @@ type: decision
 acronym: game-event-command-list
 title: List of business events and commands from Event Storming, for Game service
 decision_type: team
-belongs_to: game
+service: game
 status: _2_draft
 responsible: fgr
 deadline: 2021-10-22

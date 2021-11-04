@@ -3,7 +3,7 @@ type: decision
 acronym: robot-dev-approach
 title: Development approach of team robot
 decision_type: team
-belongs_to: robot
+service: robot
 status: _3_agreed
 responsible: ngi;cpo
 deadline: 2021-10-25

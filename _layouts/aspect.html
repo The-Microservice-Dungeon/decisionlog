@@ -22,7 +22,7 @@ layout: default
     {% endif %}
 </dl>
 
-{% assign filtered_decisions = site.decisions | where_exp: "decision", "decision.decision_type != 'team'" %}
-{% include /functions/print-sorted-decision-table.html mydecision_list=filtered_decisions typefilter="sig" group_acronym=page.acronym %}
+{% assign filtered_decisions = site.decisions %}
+{% include /functions/print-sorted-decision-table.html mydecision_list=filtered_decisions typefilter="aspect" group_acronym=page.acronym %}
 
 

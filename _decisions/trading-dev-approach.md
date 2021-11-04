@@ -3,7 +3,7 @@ type: decision
 acronym: trading-dev-approach
 title: Development approach of trading service team
 decision_type: team
-belongs_to: trading
+service: trading
 status: _3_agreed
 responsible: tla;tpa
 deadline:

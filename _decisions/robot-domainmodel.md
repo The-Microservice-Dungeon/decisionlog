@@ -3,7 +3,7 @@ type: decision
 acronym: robot-domainmodel
 title: (Sub-)Domain Model for Robot Service
 decision_type: team
-belongs_to: robot
+service: robot
 status: _2_draft
 responsible: ngi;cpo
 deadline: 2021-10-22

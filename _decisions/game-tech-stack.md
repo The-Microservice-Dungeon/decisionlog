@@ -3,7 +3,7 @@ type: decision
 acronym: game-tech-stack
 title: Technology stack for Game service
 decision_type: team
-belongs_to: game
+service: game
 status: _3_agreed
 responsible: fgr;mba
 deadline: 2021-10-22

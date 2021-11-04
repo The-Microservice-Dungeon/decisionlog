@@ -3,7 +3,7 @@ type: decision
 acronym: map-tech-stack
 title: Technology stack for Map service
 decision_type: team
-belongs_to: map
+service: map
 status: _3_agreed
 responsible: sbe;psc
 deadline: 

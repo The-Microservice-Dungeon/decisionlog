@@ -3,7 +3,7 @@ type: decision
 acronym: game-domainmodel
 title: (Sub-)Domain Model for Game Service
 decision_type: team
-belongs_to: game
+service: game
 status: _2_draft
 responsible: mba
 deadline: 2021-10-22

@@ -3,7 +3,7 @@ type: decision
 acronym: map-domainmodel
 title: (Sub-)Domain Model for Map Service
 decision_type: team
-belongs_to: map
+service: map
 status: _2_draft
 responsible: sbe;psc
 deadline: 2021-10-29

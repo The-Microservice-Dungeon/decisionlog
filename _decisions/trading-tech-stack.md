@@ -3,7 +3,7 @@ type: decision
 acronym: trading-tech-stack
 title: Technology stack for Trading service
 decision_type: team
-belongs_to: trading
+service: trading
 status: _3_agreed
 responsible: tla;tpa
 deadline: 2021-10-22

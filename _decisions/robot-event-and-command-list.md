@@ -3,7 +3,7 @@ type: decision
 acronym: robot-event-and-command-list
 title: List of business events and commands from Event Storming, for Robot service
 decision_type: team
-belongs_to: robot
+service: robot
 status: _2_draft
 responsible: ngi;cpo
 deadline: 2021-10-22

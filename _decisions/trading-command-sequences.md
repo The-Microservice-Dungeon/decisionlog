@@ -3,7 +3,7 @@ type: decision
 acronym: trading-command-sequences
 title: List of commands and their sequences with other services
 decision_type: team
-belongs_to: trading
+service: trading
 status: _2_draft
 responsible: tla;tpa
 deadline:
