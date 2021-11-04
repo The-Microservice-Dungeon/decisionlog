@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: tla
 nickname: Thomas Lang
-teams:
-    - trading
 roles: 
     - architect
 aboutMe:

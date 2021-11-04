@@ -1,10 +1,7 @@
 ---
-type: author
+type: member
 acronym: psc
 nickname: Philipp Schmeier
-teams:
-    - map
-    - devOps
 roles:
     - architect
     - supervisor

@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: cle
 nickname: 
-teams:
-    - robot
 roles: 
     - coder
 aboutMe:

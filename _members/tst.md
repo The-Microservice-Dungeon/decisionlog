@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: tst
 nickname: 
-teams:
-    - map
 roles: 
     - coder
     - dungeonMaster

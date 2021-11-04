@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: thu
 nickname: Tobi
-teams:
-    - gameLog
 roles: 
     - architect
 aboutMe:

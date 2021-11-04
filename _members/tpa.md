@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: tpa
 nickname: TimP
-teams:
-    - trading
 roles: 
     - architect
 aboutMe:

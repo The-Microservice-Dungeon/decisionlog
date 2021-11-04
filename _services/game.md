@@ -1,8 +1,14 @@
 ---
-type: team
+type: service
 acronym: game
 title: Game
-reviewAndPlanning: Monday, 14.30
+members:
+    - dkö
+    - dce
+    - dbu
+    - job
+    - fgr
+    - mba
 ---
 
 This team focuses on the Game service. This service receive Player commands, calls the other services

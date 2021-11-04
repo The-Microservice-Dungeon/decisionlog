@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: lne
 nickname: 
-teams:
-    - map
 roles: 
     - coder
     - dungeonMaster

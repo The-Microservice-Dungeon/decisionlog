@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: lba
 nickname: 
-teams:
-    - gameLog
 roles: 
     - coder
 aboutMe:

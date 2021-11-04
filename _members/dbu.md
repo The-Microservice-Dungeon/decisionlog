@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: dbu
 nickname: BrokenButler
-teams:
-    - game
 roles: 
     - coder
 aboutMe:

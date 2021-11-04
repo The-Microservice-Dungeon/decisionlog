@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: owi
 nickname: Oliver
-teams:
-    - devOps
 roles: 
     - coder
 aboutMe:
