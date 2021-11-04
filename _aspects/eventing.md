@@ -1,7 +1,6 @@
 ---
 type: aspect
 acronym: eventing
-title: Eventing
 label: Eventing
 ---
 
