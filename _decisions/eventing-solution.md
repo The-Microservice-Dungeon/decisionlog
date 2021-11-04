@@ -3,7 +3,9 @@ type: decision
 acronym: eventing-solution
 title: Apache Kafka is used as Eventing Solution
 decision_type: must
-belongs_to: eventing
+aspects: 
+    - eventing
+    - devOps
 status: _2_draft
 responsible: sbe;psc    
 deadline: 2021-10-22

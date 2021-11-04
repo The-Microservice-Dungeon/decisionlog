@@ -3,13 +3,13 @@ type: decision
 acronym: api-first
 title: APIs are specified in "API first" style
 decision_type: must
-belongs_to: api
 status: _1_open
 responsible: sbe
 deadline: 2021-10-22
 priority: 1-high
-tags:
-    - basic-principle
+aspects:
+    - principle
+    - api
 todos:
     - ausformulieren
 history:

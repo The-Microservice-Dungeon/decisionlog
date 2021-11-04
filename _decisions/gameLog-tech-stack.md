@@ -10,9 +10,6 @@ deadline: 2021-10-22
 priority: 1-high
 tags: 
     - tech-stack
-todos:
-    - (sb) Java or Kotlin - what is it now? (When we decide that mixed language is ok, then just remove this todo)
-    - (sb) set status to _3_agreed, once it has been really finalized
 history:
     v1:
         date: 2021-10-17
@@ -25,6 +22,10 @@ history:
         comment: >
             Restructure the tech stack decisions
             Add Grafana and Prometheus to the tech stack
+    v4:
+        date: 2021-11-02
+        comment: >
+            Update tech stack according to the "real" team decision
 ---
 
 ## Why is there need for such a decision?
@@ -39,10 +40,12 @@ n/a
 
 **Programming Language:**
 
-- Java / Kotlin as Language since it is taught in AP1/AP2, PP and ST1/2
+- Java or Kotlin as Language since it is taught in AP1/AP2, PP and ST1/2
+- PHP 
 
 **Frameworks:**
 - Spring as Application framework since it is taught in (at least) ST2
+- Symfony
 
 **Dashboard:**
 
@@ -85,11 +88,11 @@ offside the standard curriculum of the computer science Bachelor's degree at the
 
 **Programming Language:**
 
-Curriculum of the bachelors degree
+Discussion with the team after initial difficulties
  
 **Framework:**
 
-Curriculum of the bachelors degree
+Discussion with the team after initial difficulties
 
 **Dashboard:**
 
@@ -107,7 +110,7 @@ Curriculum of the bachelors degree
 
 **Programming Language:**
 
-- Java or Kotlin
+- Java 
 
 **Framework:**
 
@@ -126,13 +129,13 @@ Curriculum of the bachelors degree
 
 **Programming Language:**
 
-- No coder attended at meeting
-- Taught in the Bachelor's degree
+- Ecosystem
+- Available Kafka Tooling
 
 **Framework:**
 
-- No coder attended at meeting
-- Taught in the Bachelor's degree
+- During the team discussion the coders mentioned possible difficulties with the planned architecture and approach using their initially preferred tech-stack PHP and Symfony. Therefore they decided to stick with Java and Spring
+- Ecosystem & Available Tooling
 
 **Dashboard:**
 

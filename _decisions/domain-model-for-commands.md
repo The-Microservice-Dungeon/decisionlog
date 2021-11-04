@@ -3,14 +3,13 @@ type: decision
 acronym: domain-model-for-commands
 title: What is the proper domain model for commands - who is owner?
 decision_type: must
-belongs_to: api
+aspects: 
+    - api
+    - model
 status: _2_draft
 responsible: cpo;fgr
 deadline: 2021-10-22
 priority: 1-high
-tags: 
-    - model-conflict
-    - command-entity
 todos:
     - fill open parts
 history:

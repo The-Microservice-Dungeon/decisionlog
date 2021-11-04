@@ -3,13 +3,13 @@ type: decision
 acronym: conventions-for-rest-uris
 title: Conventions for REST URIs
 decision_type: must
-belongs_to: api
 status: _2_draft
 responsible: thu
 deadline: 2021-10-29
 priority: 2-medium
-tags:
-    - basic-principle
+aspects:
+    - api
+    - convention
 todos:
 history:
     v1:
