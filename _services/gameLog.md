@@ -9,5 +9,5 @@ members:
     - aha
 ---
 
-This team focuses on the Game Log service. It listens to all available events, extracts required information, 
+The Game Log service listens to all available events, extracts required information, 
 and builds leaderboards.

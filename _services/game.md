@@ -11,5 +11,5 @@ members:
     - mba
 ---
 
-This team focuses on the Game service. This service receive Player commands, calls the other services
+The Game service receives Player commands, calls the other services
 in the appropriate order, and manages game rounds. 

@@ -11,5 +11,5 @@ members:
     - cpo
 ---
 
-This team focuses on the Robot service. It manages spawning and fighting for the robots, and allows for robot
-upgrades. 
+The Robot service manages spawning and fighting for the robots, and allows for robot
+upgrades. It also executes robot commands.

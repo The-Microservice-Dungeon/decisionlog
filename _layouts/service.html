@@ -8,24 +8,17 @@ layout: default
 {{ page.content }}
 
 <dl>
-    {% assign memberAcronyms = page.members %}
-    {% assign teamMembers = site.members | where_exp: "member", "memberAcronyms contains member.acronym" %}
-    {% for member in teamMembers %}
-        <a href="{{ site.url }}{{ member.url | relative_url }}">{{ member.acronym }}</a>
-    {% endfor %}
+    {% include /functions/get-members-with-role.html myAcronymList=page.members myRole="coder" %}
+    {% if memberLinkString.size > 0 %}
+        <dt>Coders</dt>
+        <dd>{{ memberLinkString }}</dd>
+    {% endif %}
 
-    <dt>Coders</dt>
-    {% assign role = "coder" %}
-    {% assign membersInRole = teamMembers | where_exp: "member", "member.roles contains role"  %}
-    {% assign acronymList = membersInRole | map: "acronym" %}
-    <dd>{{ acronymList | join: ", " }}</dd>
-
-    <dt>Architects</dt>
-    {% assign role = "architect" %}
-    {% assign membersInRole = teamMembers | where_exp: "member", "member.roles contains role"  %}
-    {% assign acronymList = membersInRole | map: "acronym" %}
-    <dd>{{ acronymList | join: ", " }}</dd>
-
+    {% include /functions/get-members-with-role.html myAcronymList=page.members myRole="architect" %}
+    {% if memberLinkString.size > 0 %}
+        <dt>Architects</dt>
+        <dd>{{ memberLinkString }}</dd>
+    {% endif %}
 </dl>
 
 

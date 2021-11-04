@@ -12,4 +12,4 @@ members:
     - sbe
 ---
 
-This team focuses on the Map service. It provides the planet map with resources to the rest of the game.
+The Map service provides the planet map with resources to the rest of the game.

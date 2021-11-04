@@ -12,7 +12,7 @@
 {% endfor %}
 
 {% if responsible_list.size > 0 %}
-	{% assign responsible_string = responsible_list | array_to_sentence_string: "and" }} %}
+	{% assign responsible_string = responsible_list | array_to_sentence_string: "and" %}
 {% else %}
 	{% assign responsible_string = "???" %}
 {% endif %}

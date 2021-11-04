@@ -16,7 +16,13 @@ layout: default
     {% include /functions/get-member-roles.html myMember=page %}
     <dt>Role(s)</dt>
     <dd>{{ roleString }}</dd>
+
+    <dt>Member of ...</dt>
+    {% include /functions/get-service-and-aspect-links-for-member.html myAcronym=page.acronym %}
+    <dd>{{ serviceAndAspectLinkString }}</dd>
 </dl>
+
+<h2>Involved in decisions ...</h2>
 
 {% assign filtered_decisions = "" | split: ";" %}
 {% for decision in site.decisions %}

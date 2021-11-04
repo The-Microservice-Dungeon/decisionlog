@@ -10,4 +10,5 @@ members:
     - tki
 ---
 
-This team focuses on the Trading service. If offers the functionality to trade resources that have been mined.
+The Trading service offers the functionality to trade resources that have been mined, and to purchase 
+items.

@@ -1,0 +1,17 @@
+{% assign acronymList = include.myAcronymList %}
+{% assign myRole = include.myRole %}
+
+{% if acronymList == nil %}
+    {% assign memberLinkString = "" %}
+{% else %}
+    {% assign teamMembers = site.members | where_exp: "member", "acronymList contains member.acronym" %}
+    {% assign memberLinkList = "" | split: ";" %}
+    {% assign membersInRole = teamMembers | where_exp: "member", "member.roles contains myRole"  %}
+    {% for member in membersInRole %}
+        {% include /functions/get-member-name.html myMember=member %}
+        {% capture someLink %}<a href="{{ site.url }}{{ member.url | relative_url }}">{{ memberName }}</a>{% endcapture %}
+        {% assign memberLinkList = memberLinkList | push: someLink %}
+    {% endfor %}
+    {% assign memberLinkString = memberLinkList | array_to_sentence_string: "and" %}
+{% endif %}
+

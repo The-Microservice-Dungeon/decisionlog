@@ -8,6 +8,20 @@ layout: default
 
 <p>{{ page.content }}</p>
 
+<dl>
+    {% include /functions/get-members-with-role.html myAcronymList=page.members myRole="coder" %}
+    {% if memberLinkString.size > 0 %}
+    <dt>Coders</dt>
+    <dd>{{ memberLinkString }}</dd>
+    {% endif %}
+
+    {% include /functions/get-members-with-role.html myAcronymList=page.members myRole="architect" %}
+    {% if memberLinkString.size > 0 %}
+    <dt>Architects</dt>
+    <dd>{{ memberLinkString }}</dd>
+    {% endif %}
+</dl>
+
 {% assign filtered_decisions = site.decisions | where_exp: "decision", "decision.decision_type != 'team'" %}
 {% include /functions/print-sorted-decision-table.html mydecision_list=filtered_decisions typefilter="sig" group_acronym=page.acronym %}
 
