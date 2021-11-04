@@ -5,8 +5,8 @@ title: Service cut
 decision_type: must
 belongs_to: principle
 status: _2_draft
-responsible: sbe, psc
-deadline: 2021-10-22
+responsible: sbe;psc
+deadline:
 priority: 1-high
 tags: 
 todo:
