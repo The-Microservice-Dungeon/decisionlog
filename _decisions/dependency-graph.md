@@ -3,12 +3,11 @@ type: decision
 acronym: dependency-graph
 title: Dependency graph for the overall service landscape
 decision_type: should
-belongs_to: model
 status: _2_draft
 priority: 3-low
 responsible: sbe;cpo
-tags: 
-    - subdomain-model
+aspects: 
+    - model
 todos:
     - (sb) finalize description
 deadline: 2021-10-22

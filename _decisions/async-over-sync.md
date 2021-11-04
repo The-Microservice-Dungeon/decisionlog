@@ -1,16 +1,15 @@
 ---
 type: decision
 acronym: async-over-sync
-title: >
-    Asynchronous communication takes precedence over synchronous communication
+title: Asynchronous communication takes precedence over synchronous communication
 decision_type: must
-belongs_to: api
 status: _1_open
 responsible: sbe
 deadline: 2021-10-22
 priority: 1-high
-tags:
-    - basic-principle
+aspects:
+    - api
+    - principle
 todos:
     - ausformulieren
 history:

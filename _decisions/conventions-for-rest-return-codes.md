@@ -3,13 +3,13 @@ type: decision
 acronym: conventions-for-rest-return-codes
 title: Conventions for REST return codes and error handling
 decision_type: must
-belongs_to: api
 status: _1_open
 responsible: mba
 deadline: 2021-10-29
 priority: 3-low
-tags:
-    - basic-principle
+aspects:
+    - api
+    - convention
 todos:
 history:
     v1:
