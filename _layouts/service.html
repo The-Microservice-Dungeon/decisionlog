@@ -3,20 +3,16 @@ layout: default
 ---
 
 
-<h1>Team »{{ page.title }}«</h1>
+<h1>Service »{{ page.title }}«</h1>
 
 {{ page.content }}
 
 <dl>
-    <dt>Review & Planning</dt>
-    {% if page.reviewAndPlanning %}
-        {% assign reviewAndPlanning = page.reviewAndPlanning %}
-    {% else %}
-        {% assign reviewAndPlanning = "undefined" %}
-    {% endif %}
-    <dd>{{ reviewAndPlanning }}</dd>
-
-    {% assign teamMembers = site.members | where_exp: "member", "member.teams contains page.acronym"  %}
+    {% assign memberAcronyms = page.members %}
+    {% assign teamMembers = site.members | where_exp: "member", "memberAcronyms contains member.acronym" %}
+    {% for member in teamMembers %}
+        <a href="{{ site.url }}{{ member.url | relative_url }}">{{ member.acronym }}</a>
+    {% endfor %}
 
     <dt>Coders</dt>
     {% assign role = "coder" %}

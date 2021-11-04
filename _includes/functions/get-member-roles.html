@@ -1,0 +1,23 @@
+{% assign myMember = include.myMember %}
+
+{% if myMember.roles %}
+    {% assign roleList = "" | split: ";" %}
+    {% for role in myMember.roles %}
+        {% if role == "architect" %}
+            {% assign roleList = roleList | push: "Architect" %}
+        {% elsif role == "coder" %}
+            {% assign roleList = roleList | push: "Coder" %}
+        {% elsif role == "dungeonMaster" %}
+            {% assign roleList = roleList | push: "Dungeon Master" %}
+        {% elsif role == "supervisor" %}
+            {% assign roleList = roleList | push: "Supervisor" %}
+        {% else %}
+            {% assign roleList = roleList | push: "???" %}
+        {% endif %}
+    {% endfor %}
+    {% assign roleString = roleList | join: ", " %}
+{% else %}
+    {% assign roleString = "???" %}
+{% endif %}
+
+

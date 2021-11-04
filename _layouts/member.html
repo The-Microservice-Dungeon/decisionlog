@@ -2,12 +2,21 @@
 layout: default
 ---
 
-<h1>Project Member »{{ page.nickname }}«</h1>
+{% include /functions/get-member-name.html myMember=page %}
+<h1>Project Member »{{ memberName }}«</h1>
 
 {% if page.aboutMe %}
 <p>"{{ page.aboutMe }}"</p>
 {% endif %}
 
-<h2>All Decisions</h2>
+<dl>
+    <dt>Acronym</dt>
+    <dd>{{ page.acronym }}</dd>
 
-tbd.
+    {% include /functions/get-member-roles.html myMember=page %}
+    <dt>Role(s)</dt>
+    <dd>{{ roleString }}</dd>
+</dl>
+
+{% assign filtered_decisions = site.decisions | where: "decision_type", "team" %}
+{% include /functions/print-sorted-decision-table.html mydecision_list=filtered_decisions typefilter="team" group_acronym=page.acronym %}

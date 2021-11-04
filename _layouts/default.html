@@ -25,10 +25,12 @@
   </h1>
   <nav>
     <li class="sig"><a href="{{ site.url }}{{ '' | relative_url }}">Home</a></li>
-    <li class="title">Teams:</li>
-    {% for team in site.teams %}
-      <li class="team"><a href="{{ site.url }}{{ team.url | relative_url }}">{{ team.title }}</a></li>
+    <li class="title">Services:</li>
+    {% for service in site.services %}
+      <li class="sig"><a href="{{ site.url }}{{ service.url | relative_url }}">{{ service.title }}</a></li>
     {% endfor %}
+    <li class="title">&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+    <li class="sig"><a href="{{ site.url }}{{ '/overview/members.html' | relative_url }}">People</a></li>
   </nav>
 </div><!-- end header -->
 
@@ -41,8 +43,7 @@
 
 <footer>
 <a href="{{ site.url }}{{ '/overview/documentation.html' | relative_url }}">Documentation</a> &nbsp;&nbsp;&nbsp;
-<a href="{{ site.url }}{{ '/overview/members.html' | relative_url }}">People</a> &nbsp;&nbsp;&nbsp;
-<a href="https://github.com/The-Microservice-Dungeon/decisionlog">Repository</a> 
+<a href="https://github.com/The-Microservice-Dungeon/decisionlog">Repository</a>
 <a href="https://the-microservice-dungeon.github.io/docs/">Dungeon Wiki</a> 
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://www.th-koeln.de/hochschule/impressum_8159.php">Impressum</a> &nbsp;&nbsp;&nbsp;
