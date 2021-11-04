@@ -8,18 +8,16 @@ layout: default
     Here is a list of everyone in the project. As this needs to be a public repo (otherwise Github Pages are
     not allowed), we won't use real names here. Instead, everyone is identified by a 3-letter acronym (one letter
     first name, two letters last name). If a member has picked a nickname, it is displayed instead.
-</p>
-<p>
     In addition, the table lists team memberships, and decision(s) the person is responsible for.
 </p>
 
 <table>
     <thead>
     <tr>
-        <th width="10%">Name</th>
+        <th width="15%">Name</th>
         <th width="10%">Role(s)</th>
-        <th width="10%">Team(s)</th>
-        <th width="70%">Decisions</th>
+        <th width="15%">Team(s)</th>
+        <th width="60%">Decisions</th>
     </tr>
     </thead>
     <tbody>
@@ -27,20 +25,29 @@ layout: default
         {% for person in allMembers %}
         <tr>
             {% include /functions/get-member-name.html myMember=person %}
-            <td>{{ memberName }}</td>
+            <td><a href="{{ site.url }}{{ person.url | relative_url }}">{{ memberName }}</a></td>
 
             {% include /functions/get-member-roles.html myMember=person %}
             <td>{{ roleString }}</td>
 
-            {% if person.teams %}
-                {% assign teamLinks = "" | split: ";" %}
-                {% for teamRef in person.teams %}
-                    {% include /functions/find-team-link.html myTeamAcronym=teamRef %}
-                    {% assign teamLinks = teamLinks | push: teamLink %}
-                {% endfor %}
-                <td>{{ teamLinks | join: ", " }}</td>
+            {% assign serviceAndAspectLinks = "" | split: ";" %}
+            {% for service in site.services %}
+                {% if service.members contains person.acronym %}
+                    {% capture someLink %}<a href="{{ site.url }}{{ service.url | relative_url }}">{{ service.title }}</a>{% endcapture %}
+                    {% assign serviceAndAspectLinks = serviceAndAspectLinks | push: someLink %}
+                {% endif %}
+            {% endfor %}
+            {% for aspect in site.aspects %}
+                {% if aspect.members != nil and aspect.members contains person.acronym %}
+                    {% capture someLink %}<a href="{{ site.url }}{{ aspect.url | relative_url }}">{{ aspect.label }}</a>{% endcapture %}
+                    {% assign serviceAndAspectLinks = serviceAndAspectLinks | push: someLink %}
+                {% endif %}
+            {% endfor %}
+
+            {% if serviceAndAspectLinks.size > 0 %}
+                <td>{{ serviceAndAspectLinks | join: ", " }}</td>
             {% else %}
-                <td>???</td>
+                <td>none</td>
             {% endif %}
 
             <td>
