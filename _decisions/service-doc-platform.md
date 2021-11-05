@@ -5,8 +5,8 @@ title: >
     Platform for team developer documentation
 decision_type: must
 belongs_to: qualityAssurance
-status: _1_open
-responsible: tra
+status: _3_aggreed
+responsible: tra;thu
 deadline: 2021-10-22
 priority: 2-medium
 tags:
@@ -19,6 +19,9 @@ history:
     v2: 
         date: 2021-10-17
         comment: took task      
+    v3:
+        date: 2021-11-05
+        comment: Adapt GitHub Wiki 
 ---
 
 ## Why is there need for such a decision?
@@ -28,32 +31,33 @@ look in five different places if you walk through services.
 
 ## Additional sources for better understanding the background
 
-* tbd
+* n/a
 
 ## Viable Options
 
-<ul>
-<li>GitBook</li>
-</ul>
+- GitBook
+- GitHub Pages
+- GitHub Wiki
 
 
 ## Alternatives not seriously considered
 
-* tbd
-
+- Word
+- Paper & Pen
 
 ## How is this decision evaluated?
 
-We considered a wiki or gitBook as a viable solution. But sicne all microservices are useing GitHub, the only viable solution was to use GitBook.
+- Time to deployment (or in this case time to writing)
+- User-friendliness
  
 ## Resolution Details
 
-tbd
+- We use GitHub Wiki
+    - Allows different formats
 
 ## Reasons for the resolution
 
-<ul>
-<li>Easy to understand</li>
-<li>No additional tools or frameworks needed</li>
-</ul>
+- GitBook is now more commercialized and does not provide an easy collectively-usable documentation
+- GitHub Pages needs a longer training period and more effort than GitHub Wiki
+- GitHub Pages is more flexible but adds complexity as a tradeoff
 
