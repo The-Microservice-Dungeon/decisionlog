@@ -3,12 +3,13 @@ type: decision
 acronym: trading-api-draft
 title: First draft of the REST API for Trading service (not yet formally specified)
 decision_type: must
-belongs_to: api
+service: trading
 status: _3_agreed
 responsible: tla;tpa
 deadline: 2021-10-22
 priority: 1-high
-tags: 
+aspects:
+    - api
 todo:
 history:
     v1:
@@ -24,6 +25,9 @@ history:
 This decision will serve as a kickoff for formally specifying the REST APIs.
 
 ## Additional sources for better understanding the background
+
+https://netflixtechblog.com/optimizing-the-netflix-api-5c9ac715cf19
+https://docs.microsoft.com/en-us/azure/architecture/antipatterns/chatty-io/
 
 ## Resolution Details
 ![API Draft Screenshot](./images/trading-service-api-draft.png)
@@ -208,3 +212,8 @@ components:
           format: uuid
 
 ```
+
+## Reasons for the resolution
+
+From the set of all domain events modeled for the trading service that should be made accessible to the
+the API, we selected the subset that could be directly traced to other services use cases. This subset was then used as the starting point for designing the API operations of the trading service. The goal was to expose more wide-grained or aggregated operations to the API, rather than publishing all of the fine-grained events.

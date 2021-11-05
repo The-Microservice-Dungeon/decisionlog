@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: aha
 nickname: ahahn94
-teams:
-    - gameLog
 roles: 
     - architect
 aboutMe:

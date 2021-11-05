@@ -1,0 +1,42 @@
+{% assign service = include.myService %}
+{% assign error_string = "" %}
+
+
+
+{% comment %} --- Has some members? --- {% endcomment %}
+
+{% if service.members == nil or service.members.size == 0 %}
+	{% assign error_string = error_string | append: "Service has no team!;" %}
+{% endif %}
+
+{% comment %} --- Acronym same as filename? --- {% endcomment %}
+
+{% include /functions/get-canonical-acronym.html myPath=service.path %}
+{% if service.acronym != canonicalAcronym %}
+	{% assign error_string = error_string | append: "Service acronym '" |
+		append: service.acronym |
+		append: "' differs from filename - please choose the same filename as the acronym.;" %}
+{% endif %}
+
+
+{% comment %} --- Repo? --- {% endcomment %}
+
+{% if service.repo == nil %}
+	{% assign error_string = error_string | append: "No repo defined for service!;" %}
+{% endif %}
+
+{% comment %} --- Documentation? --- {% endcomment %}
+
+{% if service.documentation == nil %}
+	{% assign error_string = error_string | append: "No link to service documentation provided!;" %}
+{% endif %}
+
+
+{% comment %} --- API and Event Spec? --- {% endcomment %}
+
+{% if service.apiSpec == nil %}
+	{% assign error_string = error_string | append: "No API specification provided!;" %}
+{% endif %}
+{% if service.eventSpec == nil %}
+	{% assign error_string = error_string | append: "No event specification provided!;" %}
+{% endif %}

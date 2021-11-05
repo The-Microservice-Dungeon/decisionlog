@@ -3,13 +3,13 @@ type: decision
 acronym: map-tech-stack
 title: Technology stack for Map service
 decision_type: team
-belongs_to: map
+service: map
 status: _3_agreed
 responsible: sbe;psc
 deadline: 
 priority: 1-high
-tags: 
-    - tech-stack
+aspects: 
+    - techStack
 history:
     v1:
         date: 2021-10-17

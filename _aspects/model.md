@@ -1,8 +1,7 @@
 ---
-type: sig
+type: aspect
 acronym: model
-title: Model
 label: Model
 ---
 
-This aspect deals with Big Picture models, or subdomain models. 
+This aspect deals with Big Picture or subdomain models, and modelling conventions and tools. 

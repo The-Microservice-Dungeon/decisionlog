@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: feg
 nickname: 
-teams:
-    - robot
 roles: 
     - coder
 aboutMe:

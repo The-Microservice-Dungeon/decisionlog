@@ -3,13 +3,13 @@ type: decision
 acronym: map-event-and-command-list
 title: List of business events and commands from Event Storming, for Map service
 decision_type: team
-belongs_to: map
-status: _2_draft
+service: map
+status: _3_agreed
 responsible: sbe;psc
 deadline: 2021-10-29
 priority: 2-medium
-tags: 
-    - business-event
+aspects: 
+    - eventing
 todo:
     - (sb) Do we need an event for "Resources on a given planet are empty (have been fully mined)"
 history:
@@ -18,31 +18,6 @@ history:
         comment: cr eated initially    
 ---
 
-## Why is there need for such a decision?
-
-Each team needs to be clear about the business events (deep yellow stickers) and commands (blue stickers)
-from the [Event Storming results](https://miro.com/app/board/o9J_lsQV7ZA=/). They are the blueprint for 
-designing the features and API(s) of the service.
-
-In addition, it needs to be checked if the event/command list is consistent with the other teams' lists.
-Any conflicts, especially about who should receive which command? 
-
-## Additional sources for better understanding the background
-
-tbd.
-
-## Viable Options
-
-n/a
-
-## Alternatives not seriously considered
-
-n/a
-
-## How is this decision evaluated?
-
-Evaluation of [Event Storming results](https://miro.com/app/board/o9J_lsQV7ZA=/), and the discussion within the team.
- 
 ## Resolution Details
 
 ### Events we want to publish
@@ -70,6 +45,31 @@ Evaluation of [Event Storming results](https://miro.com/app/board/o9J_lsQV7ZA=/)
 }
 ```
 
+## Why is there need for such a decision?
+
+Each team needs to be clear about the business events (deep yellow stickers) and commands (blue stickers)
+from the [Event Storming results](https://miro.com/app/board/o9J_lsQV7ZA=/). They are the blueprint for 
+designing the features and API(s) of the service.
+
+In addition, it needs to be checked if the event/command list is consistent with the other teams' lists.
+Any conflicts, especially about who should receive which command? 
+
+## Additional sources for better understanding the background
+
+n/a
+
+## Viable Options
+
+n/a
+
+## Alternatives not seriously considered
+
+n/a
+
+## How is this decision evaluated?
+
+Evaluation of [Event Storming results](https://miro.com/app/board/o9J_lsQV7ZA=/), and the discussion within the team.
+ 
 ## Reasons for the resolution
 
-tbd.
+n/a

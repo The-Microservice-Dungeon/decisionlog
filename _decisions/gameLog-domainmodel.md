@@ -3,13 +3,13 @@ type: decision
 acronym: gameLog-domainmodel
 title: (Sub-)Domain Model for GameLog Service
 decision_type: team
-belongs_to: gameLog
+service: gameLog
 status: _3_agreed
 responsible: thu;aha
 deadline: 2021-10-22
 priority: 1-high
-tags: 
-    - subdomain-model
+aspects: 
+    - model
 history:
     v1:
         date: 2021-10-17

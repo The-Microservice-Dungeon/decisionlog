@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: job
 nickname: 
-teams:
-    - game
 roles: 
     - coder
 aboutMe:

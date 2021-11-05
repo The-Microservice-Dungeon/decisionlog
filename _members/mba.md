@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: mba
 nickname: Mert Barutcu
-teams:
-    - game
 roles:
     - architect
 aboutMe:

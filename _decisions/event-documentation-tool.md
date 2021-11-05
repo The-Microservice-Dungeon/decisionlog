@@ -3,13 +3,14 @@ type: decision
 acronym: event-documentation-tool
 title: AsyncAPI is used for specifying and documenting events
 decision_type: must
-belongs_to: eventing
+aspects: 
+    - eventing
+    - api
+    - documentation
 status: _2_draft
 responsible: thu;tla;tpa;
 deadline: 2021-10-22
 priority: 2-medium
-tags: 
-    - documentation
 todos:
 history:
     v1:

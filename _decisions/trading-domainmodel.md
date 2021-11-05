@@ -3,13 +3,13 @@ type: decision
 acronym: trading-domainmodel
 title: (Sub-)Domain Model for Trading Service
 decision_type: team
-belongs_to: trading
+service: trading
 status: _2_draft
 responsible: tla;tpa
 deadline: 2021-10-22
 priority: 1-high
-tags: 
-    - subdomain-model
+aspects: 
+    - model
 history:
     v1:
         date: 2021-10-17

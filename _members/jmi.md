@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: jmi
 nickname: Baldhat
-teams:
-    - robot
 roles: 
     - coder
 aboutMe:

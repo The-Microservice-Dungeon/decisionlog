@@ -2,12 +2,35 @@
 layout: default
 ---
 
-<h1>Project Member »{{ page.nickname }}«</h1>
+{% include /functions/get-member-name.html myMember=page %}
+<h1>Project Member »{{ memberName }}«</h1>
 
 {% if page.aboutMe %}
 <p>"{{ page.aboutMe }}"</p>
 {% endif %}
 
-<h2>All Decisions</h2>
+<dl>
+    <dt>Acronym</dt>
+    <dd>{{ page.acronym }}</dd>
 
-tbd.
+    {% include /functions/get-member-roles.html myMember=page %}
+    <dt>Role(s)</dt>
+    <dd>{{ roleString }}</dd>
+
+    <dt>Member of ...</dt>
+    {% include /functions/get-service-and-aspect-links-for-member.html myAcronym=page.acronym %}
+    <dd>{{ serviceAndAspectLinkString }}</dd>
+</dl>
+
+<h2>Involved in decisions ...</h2>
+
+{% assign filtered_decisions = "" | split: ";" %}
+{% for decision in site.decisions %}
+    {% assign acronym = page.acronym %}
+    {% include /functions/is-responsible-for-decision.html myDecision=decision person_acronym=acronym %}
+    {% if is_responsible_for_decision %}
+        {% assign filtered_decisions = filtered_decisions | push: decision %}
+    {% endif %}
+{% endfor %}
+
+{% include /functions/print-sorted-decision-table.html mydecision_list=filtered_decisions %}

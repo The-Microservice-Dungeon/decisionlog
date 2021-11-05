@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: fgr
 nickname: Fabian Grüterich
-teams:
-    - game
 roles:
     - architect
 aboutMe:

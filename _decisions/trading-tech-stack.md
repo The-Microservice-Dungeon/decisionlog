@@ -3,13 +3,13 @@ type: decision
 acronym: trading-tech-stack
 title: Technology stack for Trading service
 decision_type: team
-belongs_to: trading
+service: trading
 status: _3_agreed
 responsible: tla;tpa
 deadline: 2021-10-22
 priority: 1-high
-tags: 
-    - tech-stack
+aspects: 
+    - techStack
 todos:
     - (sb) Spring is understood, but with which language?
     - (sb) please fill the remaining parts of the decision

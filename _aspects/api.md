@@ -1,7 +1,6 @@
 ---
 type: aspect
 acronym: api
-title: API
 label: API
 ---
 

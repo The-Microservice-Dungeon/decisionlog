@@ -3,14 +3,13 @@ type: decision
 acronym: game-domainmodel
 title: (Sub-)Domain Model for Game Service
 decision_type: team
-belongs_to: game
+service: game
 status: _2_draft
 responsible: mba
 deadline: 2021-10-22
 priority: 1-high
-tags: 
-    - subdomain-model
-    - command-entity
+aspects: 
+    - model
 todos:
     - (sb) update when the open issues listed below have been resolved
     - (sb) set status to _3_agreed, once it has been really finalized

@@ -1,15 +1,14 @@
 ---
 type: decision
 acronym: service-doc-platform
-title: >
-    Platform for team developer documentation
+title: Platform for team developer documentation
 decision_type: must
 belongs_to: qualityAssurance
 status: _3_aggreed
 responsible: tra;thu
 deadline: 2021-10-22
 priority: 2-medium
-tags:
+aspects:
     - documentation
 todos:
 history:

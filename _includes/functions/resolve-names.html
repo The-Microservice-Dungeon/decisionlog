@@ -6,16 +6,14 @@
 	{% assign foundMembers = site.members | where_exp: "member", "member.acronym == acronym" %}
 	{% if foundMembers.size == 1 %}
 		{% assign foundMember = foundMembers.first %}
-		{% if foundMember.nickname %}
-			{% assign responsible_list = responsible_list | push: foundMember.nickname %}
-		{% else %}
-			{% assign responsible_list = responsible_list | push: acronym %}
-		{% endif %}
+		{% include /functions/get-member-name.html myMember=foundMember %}
+		{% capture someLink %}<a href="{{ site.url }}{{ foundMember.url | relative_url }}">{{ memberName }}</a>{% endcapture %}
+		{% assign responsible_list = responsible_list | push: someLink %}
 	{% endif %}
 {% endfor %}
 
 {% if responsible_list.size > 0 %}
-	{% assign responsible_string = responsible_list | array_to_sentence_string: "und" }} %}
+	{% assign responsible_string = responsible_list | array_to_sentence_string: "and" %}
 {% else %}
 	{% assign responsible_string = "???" %}
 {% endif %}

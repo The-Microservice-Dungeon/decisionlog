@@ -28,18 +28,6 @@
                 <li><a href="{{ site.url }}{{ aspect.url | relative_url }}">{{ aspect.label }}</a></li>
             {% endif %}
         {% endfor %}
-        &nbsp;&nbsp; | &nbsp;&nbsp;
-
-        {% include /functions/get-all-tags.html %}
-        {% assign tagList = allTagsAsString | split: ";" %}
-        {% for tag in tagList %}
-            {% if filterType == "tag" and filterInstance == tag %}
-                <li class="active">{{ tag }}</li>
-            {% else %}
-                {% assign path = "/tags/" | append: tag | append: ".html" %}
-                <li><a href="{{ site.url }}{{ path | relative_url }}">{{ tag }}</a></li>
-            {% endif %}
-        {% endfor %}
     </ul>
 </div>
 

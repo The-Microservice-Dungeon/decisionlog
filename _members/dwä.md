@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: dwä
 nickname: Skullkiller
-teams:
-    - robot
 roles: 
     - coder
 aboutMe:

@@ -1,8 +1,7 @@
 ---
-type: sig
+type: aspect
 acronym: qualityAssurance
-title: Quality Assurance
-label: QA
+label: Quality Assurance
 ---
 
 This aspect deals with all architectural decisions regarding quality assurance - unit testing, integration

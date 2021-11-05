@@ -3,12 +3,13 @@ type: decision
 acronym: robot-seq-mining
 title: Mining sequence of the robot context
 decision_type: team
-belongs_to: robot
+service: robot
 status: _2_draft
 responsible: ngi;cpo
-deadline: 
+deadline: 2021-11-08
 priority: 2-medium
-tags: 
+aspects: 
+    - serviceInteraction
 todo: 
 history:
     v1:
@@ -22,9 +23,9 @@ history:
 
 ## Contexts which interact with this sequence
 
-game service: issues the command which was received by the player  
-robot service: processes the command, issues requests to map, processes the results and throws event according to the result  
-map service: handles the amount of resources available to all players
+* game service: issues the command which was received by the player  
+* robot service: processes the command, issues requests to map, processes the results and throws event according to the result  
+* map service: handles the amount of resources available to all players
 
 ## Additional information
 

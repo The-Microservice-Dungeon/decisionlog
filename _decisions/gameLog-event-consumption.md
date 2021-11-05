@@ -3,11 +3,13 @@ type: decision
 acronym: gameLog-event-consumption
 title: Event Consumption within the GameLog service
 decision_type: team
-belongs_to: gameLog
+service: gameLog
 status: _2_draft
 responsible: thu;aha
 priority: 1-high
-tags: 
+deadline: 2021-11-05
+aspects:
+    - eventing
 history:
     v1:
         date: 2021-11-02

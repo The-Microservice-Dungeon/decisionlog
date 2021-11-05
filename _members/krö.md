@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: krö
 nickname: 
-teams:
-    - trading
 roles: 
     - coder
 aboutMe:

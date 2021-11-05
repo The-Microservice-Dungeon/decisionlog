@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: dkh
 nickname: Daniel Khaapamyaki
-teams:
-    - map
 roles: 
     - coder
     - dungeonMaster

@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: dce
 nickname: 
-teams:
-    - game
 roles: 
     - coder
 aboutMe:

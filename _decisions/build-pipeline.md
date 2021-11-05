@@ -7,6 +7,9 @@ status: _2_draft
 responsible: tra
 deadline: 2021-10-22
 priority: 2-medium
+aspects:
+    - devOps
+    - techStack
 todos:
     - (sb) Is Gitlab actions final? Then please state it this way.  
     - (sb) Why is Jenkins not seriously considered?

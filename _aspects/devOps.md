@@ -1,8 +1,12 @@
 ---
 type: aspect
 acronym: devOps
-title: DevOps
 label: DevOps
+members:
+    - jal
+    - tra
+    - psc
+    - owi
 ---
 
 The aspect comprises all architectural decisions regarding hosting, build pipeline, and other infrastructure

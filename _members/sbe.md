@@ -1,11 +1,9 @@
 ---
-type: author
+type: member
 acronym: sbe
 nickname: Stefan Bente
 roles:
     - architect
     - supervisor
-teams:
-    - map
 aboutMe: 
 ---

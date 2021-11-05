@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: jsi
 nickname: Jona Siebel
-teams:
-    - trading
 roles: 
     - coder
 aboutMe:

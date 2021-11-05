@@ -3,13 +3,13 @@ type: decision
 acronym: gameLog-event-and-command-list
 title: List of business events and commands from Event Storming, for GameLog service
 decision_type: team
-belongs_to: gameLog
+service: gameLog
 status: _3_agreed
 responsible: thu;aha
 deadline: 2021-10-22
 priority: 2-medium
-tags: 
-    - business-event
+aspects: 
+    - eventing
 history:
     v1:
         date: 2021-10-17

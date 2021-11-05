@@ -1,9 +1,7 @@
 ---
-type: author
-acronym: lba
+type: member
+acronym: nmü
 nickname: 
-teams:
-    - gameLog
 roles: 
     - coder
 aboutMe:

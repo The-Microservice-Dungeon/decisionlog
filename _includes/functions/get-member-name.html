@@ -1,0 +1,9 @@
+{% assign myMember = include.myMember %}
+
+{% if myMember.nickname %}
+    {% assign memberName = myMember.nickname %}
+{% else %}
+    {% assign memberName = myMember.acronym %}
+{% endif %}
+
+

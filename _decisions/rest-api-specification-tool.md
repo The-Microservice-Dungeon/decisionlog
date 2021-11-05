@@ -3,12 +3,12 @@ type: decision
 acronym: rest-api-specification-tool
 title: Tool for specifying REST APIs
 decision_type: must
-belongs_to: api
 status: _3_agreed
 responsible: fgr;ngi
 deadline: 2021-10-22
 priority: 1-high
-tags:
+aspects:
+    - api
     - documentation
 todos:
 history:

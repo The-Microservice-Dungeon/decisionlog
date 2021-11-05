@@ -1,31 +1,16 @@
 {% assign decision_list = include.mydecision_list %}
-{% assign typefilter = include.typefilter %}
-{% assign group_acronym = include.group_acronym %}
 
-{% comment %}
-If a typefilter ("team" or "sig") is specified, then two additional filterings are done:
-1) only the corresponding decision types are filtered.
-2) the decision is only listed, if it fits to the group_acronym
-{% endcomment %}
-{% if typefilter %}
-    {% assign decision_list = decision_list | where_exp: "dec", "dec.belongs_to == group_acronym" %}
-{% endif %}
+{% assign doneDecisions = decision_list |  where: "status", "_3_agreed" %}
+{% assign openDecisions = decision_list | where_exp: "dec", "dec.status != '_3_agreed'" %}
 
-
-{% assign done_group_decisions = decision_list |  where:"status","_5_presented" %}
-{% assign decision_list = decision_list | where_exp: "dec", "dec.status != '_5_presented'" %}
-
-{% assign done_team_decisions = decision_list |  where:"status","_3_team_agreed" %}
-{% assign decision_list = decision_list | where_exp: "dec", "dec.status != '_3_team_agreed'" %}
-
-{% assign deadline_groups = decision_list | group_by: "deadline" | sort: "name" %}
-{% assign decision_list = "" | split: ";" %}
+{% assign deadline_groups = openDecisions | group_by: "deadline" | sort: "name" %}
+{% assign sortedOpenDecisions = "" | split: ";" %}
 {% for group in deadline_groups %}
     {% assign sublist = group.items | sort: "priority" %}
-    {% assign decision_list = decision_list | concat: sublist %}
+    {% assign sortedOpenDecisions = sortedOpenDecisions | concat: sublist %}
 {% endfor %}
 
-{% assign decision_list = decision_list | concat: done_group_decisions | concat: done_team_decisions %}
+{% assign completeDecisionList = sortedOpenDecisions | concat: doneDecisions %}
 
 <table>
     <thead>
@@ -38,7 +23,7 @@ If a typefilter ("team" or "sig") is specified, then two additional filterings a
     </tr>
     </thead>
     <tbody>
-    {% for decision in decision_list %}
+    {% for decision in completeDecisionList %}
     <tr>
         {% include /functions/error-icon-string.html myDecision=decision %}
         {% if errorIconString.size == 0 %}
@@ -55,9 +40,10 @@ If a typefilter ("team" or "sig") is specified, then two additional filterings a
         {% include /functions/resolve-names.html myDecision=decision %}
         <td>{{ responsible_string }}</td>
         {% include /functions/is-decision-open.html myDecision=decision %}
-        <td>{% if decision_is_open %}{{ decision.deadline }}{% endif %}</td>
+        {% include /functions/is-decision-overdue.html myDecision=decision %}
+        <td {% if decisionIsOverdue %}class="overdue"{% endif %}>{% if decisionIsOpen %}{{ decision.deadline }}{% endif %}</td>
         {% include /functions/priority-icon-string.html myDecision=decision %}
-        <td>{% if decision_is_open %}{{ prioIconString }}{% endif %}</td>
+        <td>{% if decisionIsOpen %}{{ prioIconString }}{% endif %}</td>
     </tr>
     {% endfor %}
     </tbody>

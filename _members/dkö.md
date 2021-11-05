@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: dkö
 nickname: 
-teams:
-    - game
 roles: 
     - coder
 aboutMe:

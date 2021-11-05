@@ -55,11 +55,9 @@ plugins:
 collections:
   decisions:
     output: true
-  teams:
+  services:
     output: true
   aspects:
-    output: true
-  tags:
     output: true
   members:
     output: true
@@ -72,14 +70,9 @@ defaults:
       layout: "decision"
   - scope:
       path: ""
-      type: "teams"
+      type: "services"
     values:
-      layout: "team"
-  - scope:
-      path: ""
-      type: "tags"
-    values:
-      layout: "tag"
+      layout: "service"
   - scope:
       path: ""
       type: "aspects"

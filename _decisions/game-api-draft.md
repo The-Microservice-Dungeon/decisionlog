@@ -3,12 +3,13 @@ type: decision
 acronym: game-api-draft
 title: First draft of the REST API for Game service (not yet formally specified)
 decision_type: must
-belongs_to: api
+service: game
 status: _2_draft
 responsible: fgr;mba
 deadline: 2021-10-22
 priority: 1-high
-tags: 
+aspects: 
+    - api
 todo:
 history:
     v1:

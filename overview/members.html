@@ -7,65 +7,31 @@ layout: default
 <p>
     Here is a list of everyone in the project. As this needs to be a public repo (otherwise Github Pages are
     not allowed), we won't use real names here. Instead, everyone is identified by a 3-letter acronym (one letter
-    first name, two letters last name). This means that "Stefan Bente" goes as "SBE". If a member has picked a
-    nickname, it is displayed instead.
-</p>
-<p>
+    first name, two letters last name). If a member has picked a nickname, it is displayed instead.
     In addition, the table lists team memberships, and decision(s) the person is responsible for.
 </p>
 
 <table>
     <thead>
     <tr>
-        <th width="10%">Akronym</th>
-        <th width="15%">Nickname</th>
+        <th width="15%">Name</th>
         <th width="10%">Role(s)</th>
-        <th width="10%">Team(s)</th>
-        <th width="50%">Decisions</th>
+        <th width="15%">Team(s)</th>
+        <th width="60%">Decisions</th>
     </tr>
     </thead>
     <tbody>
         {% assign allMembers = site.members | sort: nickname %}
         {% for person in allMembers %}
         <tr>
-            <td>{{ person.acronym }}</td>
+            {% include /functions/get-member-name.html myMember=person %}
+            <td><a href="{{ site.url }}{{ person.url | relative_url }}">{{ memberName }}</a></td>
 
-            {% if person.nickname %}
-                <td>{{ person.nickname }}</td>
-            {% else %}
-                <td>???</td>
-            {% endif %}
+            {% include /functions/get-member-roles.html myMember=person %}
+            <td>{{ roleString }}</td>
 
-            {% if person.roles %}
-                {% assign roleList = "" | split: ";" %}
-                {% for role in person.roles %}
-                    {% if role == "architect" %}
-                        {% assign roleList = roleList | push: "Architect" %}
-                    {% elsif role == "coder" %}
-                        {% assign roleList = roleList | push: "Coder" %}
-                    {% elsif role == "dungeonMaster" %}
-                        {% assign roleList = roleList | push: "Dungeon Master" %}
-                    {% elsif role == "supervisor" %}
-                        {% assign roleList = roleList | push: "Supervisor" %}
-                    {% else %}
-                        {% assign roleList = roleList | push: "???" %}
-                    {% endif %}
-                {% endfor %}
-                <td>{{ roleList | join: ", " }}</td>
-            {% else %}
-                <td>???</td>
-            {% endif %}
-
-            {% if person.teams %}
-                {% assign teamLinks = "" | split: ";" %}
-                {% for teamRef in person.teams %}
-                    {% include /functions/find-team-link.html myTeamAcronym=teamRef %}
-                    {% assign teamLinks = teamLinks | push: teamLink %}
-                {% endfor %}
-                <td>{{ teamLinks | join: ", " }}</td>
-            {% else %}
-                <td>???</td>
-            {% endif %}
+            {% include /functions/get-service-and-aspect-links-for-member.html myAcronym=person.acronym %}
+            <td>{{ serviceAndAspectLinkString }}</td>
 
             <td>
                 {% for decision in site.decisions %}

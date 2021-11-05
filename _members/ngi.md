@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: ngi
-nickname: Nathalie Giessler
-teams:
-    - robot
+nickname: nattyflo
 roles:
     - architect
 aboutMe:

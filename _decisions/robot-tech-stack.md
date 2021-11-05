@@ -3,13 +3,13 @@ type: decision
 acronym: robot-tech-stack
 title: Technology stack for Robot service
 decision_type: team
-belongs_to: robot
+service: robot
 status: _3_agreed
 responsible: ngi;cpo
 deadline: 2021-10-22
 priority: 1-high
-tags: 
-    - tech-stack
+aspects: 
+    - techStack
 todos:
 history:
     v1:

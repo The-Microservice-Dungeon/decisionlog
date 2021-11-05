@@ -3,13 +3,13 @@ type: decision
 acronym: conventions-for-subdomain-model
 title: Conventions how to document (sub-)domain models in the teams
 decision_type: should
-belongs_to: model
 status: _2_draft
 priority: 3-low
 responsible: cpo
-tags: 
-    - subdomain-model
+aspects: 
+    - model
     - documentation
+    - convention
 todos:
     - (sb) Misunderstanding - this decision is about _conventions_ how to document domain models.
     - (sb) Text could be kept and re-labelled "Dependency Graph for all Dungeon services"

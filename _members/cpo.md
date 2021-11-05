@@ -1,9 +1,7 @@
 ---
-type: author
+type: member
 acronym: cpo
 nickname: Christopher Poloczek
-teams:
-    - robot
 roles:
     - architect
 aboutMe:
