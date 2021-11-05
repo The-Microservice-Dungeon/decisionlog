@@ -4,7 +4,7 @@ acronym: service-doc-platform
 title: Platform for team developer documentation
 decision_type: must
 belongs_to: qualityAssurance
-status: _3_aggreed
+status: _3_agreed
 responsible: tra;thu
 deadline: 2021-10-22
 priority: 2-medium
