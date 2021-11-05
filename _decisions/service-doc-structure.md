@@ -3,8 +3,8 @@ type: decision
 acronym: service-doc-structure
 title: Structure for team developer documentation
 decision_type: must
-status: _1_open
-responsible: tra
+status: _2_draft
+responsible: tra;thu
 deadline: 2021-10-22
 priority: 3-low
 aspects: 
@@ -16,6 +16,9 @@ history:
     v2:
         date: 2021-10-19
         comment: took task
+    v3:
+        date: 2021-11-05
+        comment: Add best-pracitices and structure recommendations
 ---
 
 ## Why is there need for such a decision?
@@ -25,34 +28,37 @@ covered), so that you are sure to find the required aspects.
 
 ## Additional sources for better understanding the background
 
-We need a API documentation structure that's easy to use and (int the best case) will be autamaticly generated and updated.
+- n/a
 
 ## Viable Options
 
-<ul>
-<li>OpenAPI/li>
-</ul>
+- see resolution
 
 
 ## Alternatives not seriously considered
 
-<ul>
-<li>GitBook only</li>
-</ul>
+- n/a
 
 
 ## How is this decision evaluated?
-The decision was evaluated by checking whether the tool or structure is used in the industry. Furthermore, the simplicity of use was also taken into consideration. As well as whether the standard is supported by our infrastructure (gitBook).
+
+The decision was evaluated by thinking about the aspects required by each developer team 
+to gather informations about the other services.
  
 ## Resolution Details
 
-tbd
+In the following sections are some best practices and recommendations
+
+You **MUST** define the following sections:
+- **Service:** Describe what your services tasks are and what the boundaries are. 
+- **Links:** Provide useful links to external ressources, these may include service-specific documents, ressources, but at least
+    - Permalink to the Swagger Editor with your API specification: `https://editor.swagger.io/?url=https://raw.githubusercontent.com/The-Microservice-Dungeon/gamelog/main/docs/api-spec.yaml`
+    - Permalink to AsyncAPI Studio with your event specification: `https://studio.asyncapi.com/?url=https://raw.githubusercontent.com/The-Microservice-Dungeon/gamelog/main/docs/event-spec.yaml`
+
+You **Must** follow the following practices:
+- Whenever you are referring to another documentation, section or resource provide a valid link to it
+
 
 ## Reasons for the resolution
 
-<ul>
-<li>Used by a viratey of companies</li>
-<li>GitBook integration</li>
-
-</ul>
-
+- n/a
