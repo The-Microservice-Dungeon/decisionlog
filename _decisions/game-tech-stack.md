@@ -11,8 +11,7 @@ priority: 1-high
 tags: 
     - tech-stack
 todos:
-    - (sb) Java or Kotlin - what is it now? (When we decide that mixed language is ok, then just remove this todo)
-    - (sb) set status to _3_agreed, once it has been really finalized
+
 history:
     v1:
         date: 2021-10-17
@@ -26,6 +25,9 @@ history:
     v4:
         date: 2021-10-24
         comment: Closed decision    
+    v5:
+        date: 2021-11-04
+        comment: todos done
 ---
 
 ## Why is there need for such a decision?
@@ -38,11 +40,11 @@ No development can start before the technology stack (esp. programming language)
 
 ## Viable Options
 
-Spring with Java or Kotlin 
+Spring with Kotlin
 
 ## Alternatives not seriously considered
 
--
+Spring with Java 
 
 ## How is this decision evaluated?
 
