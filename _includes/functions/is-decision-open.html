@@ -1,4 +1,6 @@
-{% assign decision_is_open = true %}
-{% if include.myDecision.status == "_5_presented" or include.myDecision.status == "_3_team_agreed" %}
-	{% assign decision_is_open = false %}
+{% assign myDecision = include.myDecision %}
+
+{% assign decisionIsOpen = true %}
+{% if myDecision.status == "_3_agreed" %}
+	{% assign decisionIsOpen = false %}
 {% endif %}

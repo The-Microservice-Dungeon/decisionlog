@@ -17,7 +17,7 @@ layout: default
     <dd>{% include /functions/resolve-names.html myDecision=page %}{{ responsible_string }}</dd>
 
     {% include /functions/is-decision-open.html myDecision=page %}
-    {% if decision_is_open %}
+    {% if decisionIsOpen %}
         {% include /functions/priority-icon-string.html myDecision=page %}
         <dt>Deadline and Priority</dt>
         <dd>{{ page.deadline }} &nbsp; {{ prioIconString }}</dd>

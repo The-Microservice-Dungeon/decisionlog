@@ -1,0 +1,12 @@
+{% assign thisDecision = include.myDecision %}
+
+{% assign decisionIsOverdue = false %}
+
+{% include /functions/is-decision-open.html myDecision=thisDecision %}
+{% if decisionIsOpen %}
+	{% assign today = site.time | date: "%Y-%m-%d" %}
+	{% assign deadline = thisDecision.deadline | date: "%Y-%m-%d" %}
+	{% if deadline < today %}
+		{% assign decisionIsOverdue = true %}
+	{% endif %}
+{% endif %}

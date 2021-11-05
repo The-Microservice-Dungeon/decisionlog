@@ -1,19 +1,19 @@
 {% assign decision_list = include.mydecision_list %}
 
-{% assign done_group_decisions = decision_list |  where: "status", "_3_agreed" %}
-{% assign decision_list = decision_list | where_exp: "dec", "dec.status != '_3_agreed'" %}
+{% assign doneDecisions = decision_list |  where: "status", "_3_agreed" %}
+{% assign openDecisions = decision_list | where_exp: "dec", "dec.status != '_3_agreed'" %}
 
-{% assign done_team_decisions = decision_list |  where: "status", "_3_agreed" %}
-{% assign decision_list = decision_list | where_exp: "dec", "dec.status != '_3_agreed'" %}
+doneDecisions: {{ doneDecisions.size }} <br>
+openDecisions: {{ openDecisions.size }} <br>
 
-{% assign deadline_groups = decision_list | group_by: "deadline" | sort: "name" %}
-{% assign decision_list = "" | split: ";" %}
+{% assign deadline_groups = openDecisions | group_by: "deadline" | sort: "name" %}
+{% assign sortedOpenDecisions = "" | split: ";" %}
 {% for group in deadline_groups %}
     {% assign sublist = group.items | sort: "priority" %}
-    {% assign decision_list = decision_list | concat: sublist %}
+    {% assign sortedOpenDecisions = sortedOpenDecisions | concat: sublist %}
 {% endfor %}
 
-{% assign decision_list = decision_list | concat: done_group_decisions | concat: done_team_decisions %}
+{% assign completeDecisionList = sortedOpenDecisions | concat: doneDecisions %}
 
 <table>
     <thead>
@@ -26,7 +26,7 @@
     </tr>
     </thead>
     <tbody>
-    {% for decision in decision_list %}
+    {% for decision in completeDecisionList %}
     <tr>
         {% include /functions/error-icon-string.html myDecision=decision %}
         {% if errorIconString.size == 0 %}
@@ -43,9 +43,9 @@
         {% include /functions/resolve-names.html myDecision=decision %}
         <td>{{ responsible_string }}</td>
         {% include /functions/is-decision-open.html myDecision=decision %}
-        <td>{% if decision_is_open %}{{ decision.deadline }}{% endif %}</td>
+        <td>{% if decisionIsOpen %}{{ decision.deadline }}{% endif %}</td>
         {% include /functions/priority-icon-string.html myDecision=decision %}
-        <td>{% if decision_is_open %}{{ prioIconString }}{% endif %}</td>
+        <td>{% if decisionIsOpen %}{{ prioIconString }}{% endif %}</td>
     </tr>
     {% endfor %}
     </tbody>
