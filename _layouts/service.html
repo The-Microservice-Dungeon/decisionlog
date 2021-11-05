@@ -22,6 +22,7 @@ layout: default
 </dl>
 
 
-{% assign filtered_decisions = site.decisions | where: "decision_type", "team" %}
-{% include /functions/print-sorted-decision-table.html mydecision_list=filtered_decisions typefilter="team" group_acronym=page.acronym %}
+{% assign thisAcronym = page.acronym %}
+{% assign decisionList = site.decisions | where_exp: "dec", "dec.service == thisAcronym" %}
+{% include /functions/print-sorted-decision-table.html mydecision_list=decisionList %}
 

@@ -22,7 +22,8 @@ layout: default
     {% endif %}
 </dl>
 
-{% assign filtered_decisions = site.decisions %}
-{% include /functions/print-sorted-decision-table.html mydecision_list=filtered_decisions typefilter="aspect" group_acronym=page.acronym %}
+{% assign thisAcronym = page.acronym %}
+{% assign decisionList = site.decisions | where_exp: "dec", "dec.aspects contains thisAcronym" %}
+{% include /functions/print-sorted-decision-table.html mydecision_list=decisionList %}
 
 

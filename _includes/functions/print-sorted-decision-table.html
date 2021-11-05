@@ -1,20 +1,4 @@
 {% assign decision_list = include.mydecision_list %}
-{% assign typefilter = include.typefilter %}
-{% assign group_acronym = include.group_acronym %}
-
-{% comment %}
-If a typefilter ("service" or "aspect") is specified, then two additional filterings are done:
-1) only the corresponding decision types are filtered.
-2) the decision is only listed, if it fits to the group_acronym
-{% endcomment %}
-
-{% if typefilter == "service" %}
-    {% assign decision_list = decision_list | where_exp: "dec", "dec.service == group_acronym" %}
-{% endif %}
-{% if typefilter == "aspect" %}
-    {% assign decision_list = decision_list | where_exp: "dec", "dec.aspects contains group_acronym" %}
-{% endif %}
-
 
 {% assign done_group_decisions = decision_list |  where: "status", "_3_agreed" %}
 {% assign decision_list = decision_list | where_exp: "dec", "dec.status != '_3_agreed'" %}
