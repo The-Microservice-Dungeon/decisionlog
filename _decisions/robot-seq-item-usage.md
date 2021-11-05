@@ -6,9 +6,10 @@ decision_type: team
 service: robot
 status: _2_draft
 responsible: ngi;cpo
-deadline: 
+deadline: 2021-11-08
 priority: 2-medium
-tags: 
+aspects:
+    - serviceInteraction
 todo: define the contents of the thrown event with results for the movement item (see "Problem" below)
 history:
     v1:
@@ -17,6 +18,7 @@ history:
 ---
 
 ## Sequence diagram
+
 ### Fighting items
 ![Robot combat item usage sequence](./images/robot-item-fighting-seq.png)
 ### Movement items
@@ -24,9 +26,9 @@ history:
 
 ## Contexts which interact with this sequence
 
-game service: issues the command which was received by the player  
-robot service: processes the command, requests random planet from map and throws event according to the result
-map service: provides a random existing planet
+* game service: issues the command which was received by the player  
+* robot service: processes the command, requests random planet from map and throws event according to the result
+* map service: provides a random existing planet
 
 ## Additional information
 

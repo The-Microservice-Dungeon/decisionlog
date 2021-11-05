@@ -7,7 +7,8 @@
 	{% if foundMembers.size == 1 %}
 		{% assign foundMember = foundMembers.first %}
 		{% include /functions/get-member-name.html myMember=foundMember %}
-		{% assign responsible_list = responsible_list | push: memberName %}
+		{% capture someLink %}<a href="{{ site.url }}{{ foundMember.url | relative_url }}">{{ memberName }}</a>{% endcapture %}
+		{% assign responsible_list = responsible_list | push: someLink %}
 	{% endif %}
 {% endfor %}
 

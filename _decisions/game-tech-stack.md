@@ -8,8 +8,8 @@ status: _3_agreed
 responsible: fgr;mba
 deadline: 2021-10-22
 priority: 1-high
-tags: 
-    - tech-stack
+aspects: 
+    - techStack
 todos:
 
 history:

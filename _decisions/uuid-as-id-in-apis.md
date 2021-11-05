@@ -1,15 +1,14 @@
 ---
 type: decision
 acronym: uuid-as-id-in-apis
-title: >
-    UUIDs are to be used for IDs in APIs
+title: UUIDs are to be used for IDs in APIs
 decision_type: must
-belongs_to: api
 status: _2_draft
 responsible: sbe
 deadline: 2021-10-22
 priority: 2-medium
-tags:
+aspects:
+    - api
 history:
     v1:
         date: 2021-10-08

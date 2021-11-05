@@ -8,8 +8,8 @@ status: _3_agreed
 responsible: ngi;cpo
 deadline: 2021-10-22
 priority: 1-high
-tags: 
-    - tech-stack
+aspects: 
+    - techStack
 todos:
 history:
     v1:

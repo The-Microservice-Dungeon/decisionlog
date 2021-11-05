@@ -8,7 +8,7 @@ status: _3_agreed
 responsible: ngi;cpo
 deadline: 2021-10-25
 priority: 2-medium
-tags: 
+aspects: 
 todo:
 history:
     v1:

@@ -6,9 +6,10 @@ decision_type: team
 service: robot
 status: _2_draft
 responsible: ngi;cpo
-deadline: 
+deadline: 2021-11-08
 priority: 2-medium
-tags: 
+aspects:
+    - serviceInteraction
 todo: 
 history:
     v1:
@@ -22,8 +23,8 @@ history:
 
 ## Contexts which interact with this sequence
 
-game service: issues the command which was received by the player  
-robot service: processes the command and throws event according to the result
+* game service: issues the command which was received by the player  
+* robot service: processes the command and throws event according to the result
 
 ## Additional information
 

@@ -8,9 +8,8 @@ status: _2_draft
 responsible: ngi;cpo
 deadline: 2021-10-22
 priority: 1-high
-tags: 
-    - subdomain-model
-    - command-entity
+aspects: 
+    - model
 history:
     v1:
         date: 2021-10-17

@@ -6,10 +6,12 @@ decision_type: team
 service: robot
 status: _2_draft
 responsible: ngi;cpo
-deadline: 
+deadline: 2021-11-08
 priority: 2-medium
-tags: 
-todo: discuss special cases with Game Masters
+aspects:
+    - serviceInteraction
+todo: 
+    - discuss special cases with Game Masters
 history:
     v1:
         date: 2021-10-27

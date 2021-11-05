@@ -17,10 +17,11 @@ layout: default
     <dd>{% include /functions/resolve-names.html myDecision=page %}{{ responsible_string }}</dd>
 
     {% include /functions/is-decision-open.html myDecision=page %}
+    {% include /functions/is-decision-overdue.html myDecision=page %}
     {% if decisionIsOpen %}
         {% include /functions/priority-icon-string.html myDecision=page %}
         <dt>Deadline and Priority</dt>
-        <dd>{{ page.deadline }} &nbsp; {{ prioIconString }}</dd>
+        <dd {% if decisionIsOverdue %}class="overdue"{% endif %}>{{ page.deadline }} &nbsp; {{ prioIconString }}</dd>
     {% endif %}
 
     {% if page.tags and page.tags.size > 0 %}

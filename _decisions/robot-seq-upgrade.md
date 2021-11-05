@@ -6,9 +6,10 @@ decision_type: team
 service: robot
 status: _2_draft
 responsible: ngi;cpo
-deadline: 
+deadline: 2021-11-08
 priority: 2-medium
-tags: 
+aspects:
+- serviceInteraction
 todo: 
 history:
     v1:
@@ -22,9 +23,9 @@ history:
 
 ## Contexts which interact with this sequence
 
-game service: issues the command which was received by the player to the trading service  
-trading service: processes the command, checks if position is a spacestation, checks if player has enough money, sends request to robot, receives answer from robot, adjusts wallet of player and throws success or failure event  
-robot service: validate robot position and do the upgrade (answer is success or failure)
+* game service: issues the command which was received by the player to the trading service  
+* trading service: processes the command, checks if position is a spacestation, checks if player has enough money, sends request to robot, receives answer from robot, adjusts wallet of player and throws success or failure event  
+* robot service: validate robot position and do the upgrade (answer is success or failure)
 
 ## Additional information
 

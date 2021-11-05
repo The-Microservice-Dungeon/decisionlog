@@ -3,9 +3,6 @@
 {% assign doneDecisions = decision_list |  where: "status", "_3_agreed" %}
 {% assign openDecisions = decision_list | where_exp: "dec", "dec.status != '_3_agreed'" %}
 
-doneDecisions: {{ doneDecisions.size }} <br>
-openDecisions: {{ openDecisions.size }} <br>
-
 {% assign deadline_groups = openDecisions | group_by: "deadline" | sort: "name" %}
 {% assign sortedOpenDecisions = "" | split: ";" %}
 {% for group in deadline_groups %}
@@ -43,7 +40,8 @@ openDecisions: {{ openDecisions.size }} <br>
         {% include /functions/resolve-names.html myDecision=decision %}
         <td>{{ responsible_string }}</td>
         {% include /functions/is-decision-open.html myDecision=decision %}
-        <td>{% if decisionIsOpen %}{{ decision.deadline }}{% endif %}</td>
+        {% include /functions/is-decision-overdue.html myDecision=decision %}
+        <td {% if decisionIsOverdue %}class="overdue"{% endif %}>{% if decisionIsOpen %}{{ decision.deadline }}{% endif %}</td>
         {% include /functions/priority-icon-string.html myDecision=decision %}
         <td>{% if decisionIsOpen %}{{ prioIconString }}{% endif %}</td>
     </tr>

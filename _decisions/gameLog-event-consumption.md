@@ -7,7 +7,9 @@ service: gameLog
 status: _2_draft
 responsible: thu;aha
 priority: 1-high
-tags: 
+deadline: 2021-11-05
+aspects:
+    - eventing
 history:
     v1:
         date: 2021-11-02

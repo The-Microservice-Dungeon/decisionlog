@@ -1,14 +1,15 @@
 ---
 type: decision
 acronym: trading-command-sequences
-title: List of commands and their sequences with other services
+title: List of Trading commands and their sequences with other services
 decision_type: team
 service: trading
 status: _2_draft
 responsible: tla;tpa
-deadline:
+deadline: 2021-11-05
 priority: 2-medium
-tags:
+aspects:
+    - serviceInteraction
 history:
   v1:
     date: 2021-10-28

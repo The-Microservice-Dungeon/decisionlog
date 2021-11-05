@@ -11,8 +11,6 @@ status: _2_draft
 responsible: thu;tla;tpa;
 deadline: 2021-10-22
 priority: 2-medium
-tags: 
-    - documentation
 todos:
 history:
     v1:

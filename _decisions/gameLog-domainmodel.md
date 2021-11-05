@@ -8,8 +8,8 @@ status: _3_agreed
 responsible: thu;aha
 deadline: 2021-10-22
 priority: 1-high
-tags: 
-    - subdomain-model
+aspects: 
+    - model
 history:
     v1:
         date: 2021-10-17

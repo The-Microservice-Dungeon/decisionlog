@@ -8,8 +8,8 @@ status: _3_agreed
 responsible: sbe;psc
 deadline: 
 priority: 1-high
-tags: 
-    - tech-stack
+aspects: 
+    - techStack
 history:
     v1:
         date: 2021-10-17

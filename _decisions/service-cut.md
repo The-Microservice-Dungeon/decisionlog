@@ -3,12 +3,12 @@ type: decision
 acronym: service-cut
 title: Service cut
 decision_type: must
-belongs_to: principle
 status: _2_draft
 responsible: sbe;psc
-deadline:
+deadline: 2021-11-05
 priority: 1-high
-tags: 
+aspects:
+    - model
 todo:
 history:
     v1:

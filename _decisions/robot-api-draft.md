@@ -3,12 +3,12 @@ type: decision
 acronym: robot-api-draft
 title: First draft of the REST API for Robot service (not yet formally specified)
 decision_type: must
-belongs_to: api
+service: api
 status: _2_draft
 responsible: ngi;cpo
 deadline: 2021-10-22
 priority: 1-high
-tags: 
+aspects: 
 todo:
 history:
     v1:

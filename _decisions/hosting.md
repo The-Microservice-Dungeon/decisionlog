@@ -3,7 +3,8 @@ type: decision
 acronym: hosting
 title: Hosting provider is ADV Lab
 decision_type: must
-belongs_to: devOps
+aspects: 
+    - devOps
 status: _3_agreed
 responsible: psc
 priority: 2-medium

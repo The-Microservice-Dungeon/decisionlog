@@ -1,15 +1,15 @@
 ---
 type: decision
 acronym: trading-event-and-command-list
-title: List of business events and commands from Event Storming, for Trading service
+title: List of Trading business events and commands
 decision_type: team
 service: trading
 status: _2_draft
 responsible: tla;tpa
 deadline: 2021-10-22
 priority: 2-medium
-tags:
-  - business-event
+aspects:
+  - eventing
 history:
   v1:
     date: 2021-10-17

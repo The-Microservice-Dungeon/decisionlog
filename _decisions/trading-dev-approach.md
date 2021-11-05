@@ -8,7 +8,8 @@ status: _3_agreed
 responsible: tla;tpa
 deadline:
 priority: 2-medium
-tags: 
+aspects:
+    - techStack
 todo:
 history:
     v1:

@@ -31,7 +31,7 @@
 
 
 {% comment %} --- Deadline set for open decision? --- {% endcomment %}
-{% if decision.status != "_3_agreed and decision.deadline == nil %}
+{% if decision.status != "_3_agreed" and decision.deadline == nil %}
 	{% assign error_string = error_string | append: "Deadline must be set for open decisions!" %}
 {% endif %}
 

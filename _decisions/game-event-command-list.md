@@ -8,8 +8,8 @@ status: _2_draft
 responsible: fgr
 deadline: 2021-10-22
 priority: 2-medium
-tags: 
-    - business-event
+aspects: 
+    - eventing
 todos:
     - (sb) set status to _3_agreed, once it has been really finalized
 history:

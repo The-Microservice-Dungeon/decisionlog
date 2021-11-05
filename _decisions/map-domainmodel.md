@@ -8,8 +8,8 @@ status: _2_draft
 responsible: sbe;psc
 deadline: 2021-10-29
 priority: 1-high
-tags: 
-    - subdomain-model
+aspects: 
+    - model
 history:
     v1:
         date: 2021-10-17

@@ -8,8 +8,8 @@ status: _2_draft
 responsible: sbe;psc
 deadline: 2021-10-29
 priority: 2-medium
-tags: 
-    - business-event
+aspects: 
+    - eventing
 todo:
     - (sb) Do we need an event for "Resources on a given planet are empty (have been fully mined)"
 history:
