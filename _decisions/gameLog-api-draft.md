@@ -4,7 +4,7 @@ acronym: gameLog-api-draft
 title: First draft of the REST API for GameLog service (not yet formally specified)
 decision_type: must
 service: gameLog
-status: _2_draft
+status: _3_agreed
 responsible: thu;aha
 deadline: 2021-10-22
 priority: 1-high
@@ -19,6 +19,10 @@ history:
         date: 2021-10-22
         comment: >
             Add first API draft
+    v3:
+        date: 2021-11-05
+        comment: >
+            Close decision, since there is a first formally specified API draft
 ---
 
 ## Why is there need for such a decision?
