@@ -2,6 +2,10 @@
 type: service
 acronym: game
 title: Game
+repo: github.com/The-Microservice-Dungeon/game
+documentation:
+apiSpec:
+eventSpec:
 members:
     - dkö
     - dce

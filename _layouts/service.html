@@ -8,6 +8,26 @@ layout: default
 {{ page.content }}
 
 <dl>
+    {% if page.repo %}
+        <dt>Repo</dt>
+        <dd><a href="https://{{ page.repo }}">https://{{ page.repo }}</a></dd>
+    {% endif %}
+
+    {% if page.documentation %}
+        <dt>Documentation</dt>
+        <dd><a href="https://{{ page.documentation }}">https://{{ page.documentation }}</a></dd>
+    {% endif %}
+
+    {% if page.apiSpec %}
+        <dt>API Specification</dt>
+        <dd><a href="https://{{ page.apiSpec }}">https://{{ page.apiSpec }}</a></dd>
+    {% endif %}
+
+    {% if page.eventSpec %}
+        <dt>Event Specification</dt>
+        <dd><a href="https://{{ page.eventSpec }}">https://{{ page.eventSpec }}</a></dd>
+    {% endif %}
+
     {% include /functions/get-members-with-role.html myAcronymList=page.members myRole="coder" %}
     {% if memberLinkString.size > 0 %}
         <dt>Coders</dt>
@@ -18,6 +38,15 @@ layout: default
     {% if memberLinkString.size > 0 %}
         <dt>Architects</dt>
         <dd>{{ memberLinkString }}</dd>
+    {% endif %}
+
+    {% include /functions/find-service-errors.html myService=page %}
+    {% if error_string.size > 0 %}
+        <dt><img src="{{ site.url }}{{ '/assets/error-4-24.png' | relative_url }}"/> &nbsp; Errors</dt>
+        {% assign error_list = error_string | split: ";" %}
+        {% for error in error_list %}
+            <dd>{{ error }}</dd>
+        {% endfor %}
     {% endif %}
 </dl>
 

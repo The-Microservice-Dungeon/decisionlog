@@ -2,6 +2,10 @@
 type: service
 acronym: trading
 title: Trading
+repo: github.com/The-Microservice-Dungeon/trading
+documentation:
+apiSpec:
+eventSpec:
 members:
     - jsi
     - krö

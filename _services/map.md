@@ -2,6 +2,10 @@
 type: service
 acronym: map
 title: Map
+repo: github.com/The-Microservice-Dungeon/map
+documentation:
+apiSpec:
+eventSpec:
 members:
     - dkh
     - jma
