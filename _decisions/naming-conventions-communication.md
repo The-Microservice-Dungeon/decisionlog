@@ -3,7 +3,7 @@ type: decision
 acronym: naming-conventions-communication
 title: What naming conventions should the services follow when communicating?
 decision_type: must
-status: _2_draft_
+status: _2_draft
 responsible: tpa;
 priority: 2-medium
 todo:
@@ -22,10 +22,10 @@ It has already been decided that the API routes use kebab case. In order to furt
 
 ## Additional sources for better understanding the background
 
-[ECMA-404](https://www.ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf)
-[Google JSONC Styleguide](https://google.github.io/styleguide/jsoncstyleguide.xml)
-[Facebook JavaScript API](https://developers.facebook.com/docs/javascript/examples)
-[Amazon Web Services ](http://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html#aws-ip-syntax)
+    - [ECMA-404](https://www.ecma-international.org/wp-content/uploads/ECMA-404_2nd_edition_december_2017.pdf)
+    - [Google JSONC Styleguide](https://google.github.io/styleguide/jsoncstyleguide.xml)
+    - [Facebook JavaScript API](https://developers.facebook.com/docs/javascript/examples)
+    - [Amazon Web Services ](http://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html#aws-ip-syntax)
 
 ## Viable Options
 
