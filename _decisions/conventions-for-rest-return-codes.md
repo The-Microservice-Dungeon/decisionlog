@@ -3,7 +3,7 @@ type: decision
 acronym: conventions-for-rest-return-codes
 title: Conventions for REST return codes and error handling
 decision_type: must
-status: _1_open
+status: _2_draft
 responsible: mba
 deadline: 2021-10-29
 priority: 3-low
@@ -21,6 +21,9 @@ history:
     v3:
         date: 2021-10-21
         comment: decision explained
+    v4:
+        date: 06-11-06
+        comment: set status to draft
 ---
 
 ## Why is there need for such a decision?
