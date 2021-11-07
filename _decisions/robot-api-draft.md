@@ -9,6 +9,7 @@ responsible: ngi;cpo
 deadline: 2021-10-22
 priority: 1-high
 aspects: 
+    - api
 todo:
 history:
     v1:
