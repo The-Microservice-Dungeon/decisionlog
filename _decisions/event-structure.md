@@ -42,7 +42,7 @@ All events that are published must follow the following scheme.
     "id": "Generated UUID of the event",
     "key": "TransactionID if available or UUID of the entity concerned",
     "version": "Consecutive number for the comparability of the actuality of the event",
-    "timestamp": "Unix-Timestamp",
+    "timestamp": "timestamp as specified in time-format-decision",
     "type":"The type of event",
     "payload": {
         "id": "The UUID of the entity",
