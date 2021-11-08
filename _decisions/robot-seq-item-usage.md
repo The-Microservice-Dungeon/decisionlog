@@ -1,7 +1,7 @@
 ---
 type: decision
 acronym: robot-seq-item-usage
-title: Blocking sequence of the robot context
+title: Item usage sequence of the robot context
 decision_type: team
 service: robot
 status: _2_draft
