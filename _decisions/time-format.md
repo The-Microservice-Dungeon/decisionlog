@@ -1,6 +1,6 @@
 ---
 type: decision
-acronym: time-specifications
+acronym: time-format
 title: Time format for communication
 decision_type: must
 status: _2_draft
