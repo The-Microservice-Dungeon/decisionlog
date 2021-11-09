@@ -3,7 +3,7 @@ type: decision
 acronym: conventions-for-rest-uris
 title: Conventions for REST URIs
 decision_type: must
-status: _2_draft
+status: _3_agreed
 responsible: thu
 deadline: 2021-10-29
 priority: 2-medium
@@ -19,6 +19,10 @@ history:
         date: 2021-10-22
         comment: >
             Add convention draft
+    v3:
+        date: 2021-11-09
+        comment: >
+            No further comments -> agreed
 ---
 
 ## Why is there need for such a decision?

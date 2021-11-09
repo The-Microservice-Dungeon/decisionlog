@@ -7,7 +7,7 @@ aspects:
     - eventing
     - api
     - documentation
-status: _2_draft
+status: _3_agreed
 responsible: thu;tla;tpa;
 deadline: 2021-10-22
 priority: 2-medium
@@ -24,6 +24,10 @@ history:
         date: 2021-10-21
         comment: >
             make decision to use AsyncAPI as the preferred way to document events
+    v4:
+        date: 2021-11-09
+        comment: >
+            No further comments -> agreed
 ---
 
 ## Why is there need for such a decision?
