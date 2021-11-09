@@ -3,7 +3,7 @@ type: decision
 acronym: service-doc-structure
 title: Structure for team developer documentation
 decision_type: must
-status: _2_draft
+status: _3_agreed
 responsible: tra;thu
 deadline: 2021-10-22
 priority: 3-low
