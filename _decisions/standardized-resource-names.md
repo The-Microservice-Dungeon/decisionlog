@@ -39,6 +39,7 @@ In a Group discussion with part of the DDD/FAE team.
 ## Resolution Details
 
 ### Standardized Item Names
+
 | **Name**               | **Item**                     |
 |------------------------|------------------------------|
 | ROBOT                  | Robot                        |
@@ -60,7 +61,8 @@ In a Group discussion with part of the DDD/FAE team.
 
 This Naming-Convention goes on for all [avaliable Upgrades](https://the-microservice-dungeon.github.io/docs/rules/gameplay#robot-upgrades).
 
-#### Standardized Ressource Names
+### Standardized Ressource Names
+
 | **Name** | **Ressource** |
 |----------|---------------|
 | COAL     | Coal          |
