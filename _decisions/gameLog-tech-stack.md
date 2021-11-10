@@ -125,6 +125,8 @@ Discussion with the team after initial difficulties
 - Prometheus
 - JSON
 
+![Illustration of the Tech Stack as a service landscape](https://raw.githubusercontent.com/The-Microservice-Dungeon/gamelog/main/docs/diagrams/1_service_landscape.png)
+
 ## Reasons for the resolution
 
 **Programming Language:**
