@@ -75,4 +75,7 @@ Payload
 ```
 
 ## Reasons for the resolution
-The various solutions from Rewe Digital or Cloud Event are already close to each other. Cloud Event, especially the extended specifics for Kafka or Json require a lot of information not needed for the Microservice Dungeon system landscape. To reduce to the relevant information, the event schema inspired by Rewe-Digital (FAE presentation from WS2019) was used and only extended by the TranactionsID.
+The various solutions from Rewe Digital or Cloud Event are already close. Cloud Event, especially the extended specifics for Kafka or Json require a lot of information that is not needed for the Microservice Dungeon system landscape. Therefore, in terms of the data to be transmitted, the Rewe-Digital schema was followed.
+
+However, the schema was adapted to the project. All metadata was moved to the event header. This makes it easy for the player services to search all events for their own `TransactionsId`s later on.
+
