@@ -3,7 +3,7 @@ type: decision
 acronym: time-format
 title: Time format for communication
 decision_type: must
-status: _2_draft
+status: _3_agreed
 responsible: psc
 deadline: 2021-11-10
 priority: 2-medium
@@ -35,7 +35,7 @@ Time formats and information can appear in many places in the system (e.g. via e
 \-
 
 ## Resolution Details
-All dates exposed via APIs or events are recorded in the following format:
+All dates exposed via APIs or events are recorded in UTC in the following format:
 
 `yyyy-MM-dd'T'HH:mm:ss'Z'` --> `2007-12-24T18:21:03Z`
 
