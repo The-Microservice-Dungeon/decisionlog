@@ -4,7 +4,7 @@ acronym: gameLog-event-consumption
 title: Event Consumption within the GameLog service
 decision_type: team
 service: gameLog
-status: _2_draft
+status: _3_agreed
 responsible: thu;aha
 priority: 1-high
 deadline: 2021-11-05
@@ -14,6 +14,9 @@ history:
     v1:
         date: 2021-11-02
         comment: created initially    
+    v2:
+        date: 2021-11-12
+        comment: Add resolution of the PoC
 ---
 
 ## Why is there need for such a decision?
@@ -48,9 +51,9 @@ to have a well-defined strategy for event consumption.
 ## Resolution Details
 
 - We decide to use event sourcing as our backbone of score calculation
-- Technically it would be possible to use Kafka as our event store, but since we all don't have much experience using Kafka and don't have the time tou gather experience, we try to stick to the custom event store and use kafka as a simple message queue 
+- Technically it would be possible to use Kafka as our event store, but since we all don't have much experience using Kafka and don't have the time to gather experience, we try to stick to the custom event store and use kafka as a simple message queue 
     - This way we also have more control
-- tbd.
+- The Proof-of-Concept that was presented by the coders made a good impression and confirmed the technical feasibility
 
 ## Reasons for the resolution
 
