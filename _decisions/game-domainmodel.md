@@ -20,6 +20,9 @@ history:
     v2:
         date: 2021-10-21
         comment: documenting the decisions
+    v3:
+        date: 2021-11-12
+        comment: updated documentation after changes on decisions
 ---
 
 ## Why is there need for such a decision?
@@ -37,11 +40,10 @@ Addison-Wesley Professional.
 
 ## Viable Options
 
-![Fachliches_Datenmodell_Game](./images/Fachliches_Datenmodell_Game.jpg)
+![Fachliches_Datenmodell_Game](./images/Fachliches_Datenmodell_Game_Updated.png)
 
 ### Player
-The Player gets commands which are excuted in the game. Money is a composition of Player, 
-and Player is part of the Game.
+The Player gets commands which are excuted in the game.
 
 ### Round
 A Round follows certain conditions which are part of the Game. The conditions are initiated in the Round Phase...?
@@ -54,10 +56,7 @@ A Game follows certain conditions. The timer is a composition of the round.
 - potential sub-domain: Game end
 - potential sub-domain: Game Creation  
     + Are the Game conditions set her?
-    + Dungeon master approves map?
-    + Costs defined?
-    + Where is the map created and modified?
-    + Is there a max Player count?
+
     
 ### Command
 Commands are excuted through th ePlayer in a Round. The command need the information about a certain Robot and which
@@ -66,7 +65,10 @@ phase or type is be choosen.
 - potential sub-domain: Command processing
 
 ### Admin 
-tbd.
+Admins can create new Admins,Player and start or end the game.
+
+### Robot
+The game manages a list of the robots from the players, to verify, that all the commands for the robots are from the right players.
 
 ### Further potential (sub) domains:
 - Authentication
