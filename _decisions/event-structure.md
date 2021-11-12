@@ -3,8 +3,8 @@ type: decision
 acronym: event-structure
 title: Event Structure
 decision_type: must
-status: _2_draft
-responsible: psc
+status: _3_agreed
+responsible: psc;thu
 deadline: 2021-11-10
 priority: 2-medium
 todo:
@@ -37,33 +37,40 @@ Complexity of implementation and benefits for the overall project.
 
 ## Resolution Details
 All events that are published must follow the following scheme.
+
+Header
+```properties
+eventId = "Generated UUID of the event"
+transactionId = "TransactionID if available or UUID of the entity concerned"
+version = "Consecutive number for the comparability of the actuality of the event"
+timestamp = "timestamp as specified in time-format-decision"
+type = "The type of event"
+```
+
+Payload
 ```json
 {
-    "id": "Generated UUID of the event",
-    "key": "TransactionID if available or UUID of the entity concerned",
-    "version": "Consecutive number for the comparability of the actuality of the event",
-    "timestamp": "timestamp as specified in time-format-decision",
-    "type":"The type of event",
-    "payload": {
-        "id": "The UUID of the entity",
-        "field": "A field of the entity"
-    }
+    "id": "The UUID of the entity",
+    "field": "A field of the entity"
 }
 ```
 
-Example:
+**Example**:
 
+Header
+```properties
+eventId = "5bc9f935-32f1-4d7b-a90c-ff0e6e34125a"
+transactionId = "0cfc04f1-6df5-42c6-a19a-146128b8a3b4"
+version = 42
+timestamp = "2020-01-10T12:00:00Z"
+type = "event-example-uploaded"
+```
+
+Payload
 ```json
 {
-    "id": "5bc9f935-32f1-4d7b-a90c-ff0e6e34125a",
-    "key": "0cfc04f1-6df5-42c6-a19a-146128b8a3b4",
-    "version": 42,
-    "timestamp": "2020-01-10T12:00:00Z",
-    "type":"event-example-uploaded",
-    "payload": {
-        "id": "0cfc04f1-6df5-42c6-a19a-146128b8a3b4",
-        "field": "This is a field and it contains a string"
-    }
+    "id": "0cfc04f1-6df5-42c6-a19a-146128b8a3b4",
+    "field": "This is a field and it contains a string"
 }
 ```
 
