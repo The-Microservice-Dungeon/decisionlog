@@ -65,9 +65,9 @@ For the command-management:
     *  Response: CommandUUID for the player
     *  (Creates a new Command, that will get delievered to the fitting service)
 
-API's needed from the game service, that must be provided by the trading- ,robot- and mapservice:
+API's needed from the game service, that must be provided by the trading- and robotservice:
 *   PUT Command/
-    *   Payload: {List of (CommandUUID,PlayerUUID,RobotUUid,command)} 
+    *   Payload: {List of (CommandUUID,Commandtype,RobotUUid,command)} 
     *   Response: Flag, that commands are recieved
 
 ## Reasons for the resolution
