@@ -6,7 +6,7 @@ decision_type: must
 aspects: 
     - api
     - model
-status: _2_draft
+status: _3_agreed
 responsible: cpo;fgr
 deadline: 2021-10-22
 priority: 1-high
