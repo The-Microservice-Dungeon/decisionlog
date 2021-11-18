@@ -1,7 +1,7 @@
 ---
 type: decision
 acronym: command_management
-title: decision how commands are managed during our services
+title: command_management
 decision_type: must
 service: game
 status: _2_draft
