@@ -4,7 +4,7 @@ acronym: game-api-draft
 title: First draft of the REST API for Game service (not yet formally specified)
 decision_type: must
 service: game
-status: _2_draft
+status: _3_agreed
 responsible: fgr;mba
 deadline: 2021-10-22
 priority: 1-high
