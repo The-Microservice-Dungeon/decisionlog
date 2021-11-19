@@ -4,7 +4,7 @@ acronym: trading-event-and-command-list
 title: List of Trading business events and commands
 decision_type: team
 service: trading
-status: _2_draft
+status: _3_agreed
 responsible: tla;tpa
 deadline: 2021-10-22
 priority: 2-medium

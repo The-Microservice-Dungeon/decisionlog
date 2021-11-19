@@ -4,7 +4,7 @@ acronym: trading-command-sequences
 title: List of Trading commands and their sequences with other services
 decision_type: team
 service: trading
-status: _2_draft
+status: _3_agreed
 responsible: tla;tpa
 deadline: 2021-11-05
 priority: 2-medium

@@ -3,7 +3,7 @@ type: decision
 acronym: naming-conventions-communication
 title: What naming conventions should the services follow when communicating?
 decision_type: must
-status: _2_draft
+status: _3_agreed
 responsible: tpa;
 priority: 2-medium
 todo:

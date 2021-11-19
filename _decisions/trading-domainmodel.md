@@ -4,7 +4,7 @@ acronym: trading-domainmodel
 title: (Sub-)Domain Model for Trading Service
 decision_type: team
 service: trading
-status: _2_draft
+status: _3_agreed
 responsible: tla;tpa
 deadline: 2021-10-22
 priority: 1-high
