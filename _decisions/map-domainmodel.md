@@ -4,7 +4,7 @@ acronym: map-domainmodel
 title: (Sub-)Domain Model for Map Service
 decision_type: team
 service: map
-status: _2_draft
+status: _3_agreed
 responsible: sbe;psc
 deadline: 2021-10-29
 priority: 1-high
