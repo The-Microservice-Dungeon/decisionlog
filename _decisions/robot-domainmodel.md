@@ -4,7 +4,7 @@ acronym: robot-domainmodel
 title: (Sub-)Domain Model for Robot Service
 decision_type: team
 service: robot
-status: _2_draft
+status: _3_agreed
 responsible: ngi;cpo
 deadline: 2021-10-22
 priority: 1-high
