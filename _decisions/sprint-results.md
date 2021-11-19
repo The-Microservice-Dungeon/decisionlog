@@ -3,7 +3,7 @@ type: decision
 acronym: sprint-results
 title: Sprint results
 decision_type: must
-status: _2_draft
+status: _3_agreed
 responsible: psc
 deadline: 2021-11-20
 priority: 2-medium
