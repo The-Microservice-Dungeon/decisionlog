@@ -4,7 +4,7 @@ acronym: unit-testing
 title: Unit Testing of Business Logic
 decision_type: must
 status: _3_agreed
-responsible: aha;thu;tra;psc
+responsible: aha;thu;tra
 deadline: 2021-11-19
 priority: 1-high
 todo:

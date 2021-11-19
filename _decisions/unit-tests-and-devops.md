@@ -4,7 +4,7 @@ acronym: unit-tests-and-devops
 title: Unit Tests and DevOps
 decision_type: must
 status: _3_agreed
-responsible: aha, tra, sbe
+responsible: aha;tra;sbe
 deadline: 2021-11-19
 priority: 1-high
 todo:
