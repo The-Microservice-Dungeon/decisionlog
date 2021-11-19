@@ -4,7 +4,7 @@ acronym: robot-seq-fighting
 title: Fighting sequence of the robot context
 decision_type: team
 service: robot
-status: _2_draft
+status: _3_agreed
 responsible: ngi;cpo
 deadline: 2021-11-08
 priority: 2-medium
