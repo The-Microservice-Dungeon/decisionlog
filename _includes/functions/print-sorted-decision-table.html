@@ -15,23 +15,27 @@
 <table>
     <thead>
     <tr>
+        <th width="2%">&nbsp;</th>
         <th width="9%">Status</th>
-        <th width="48%">Title</th>
+        <th width="46%">Title</th>
         <th width="25%">Responsible</th>
         <th width="12%">Deadline</th>
         <th width="6%">Prio</th>
     </tr>
     </thead>
     <tbody>
+    {% assign lineCounter = 0 %}
     {% for decision in completeDecisionList %}
     <tr>
+        {% assign lineCounter = lineCounter | plus: 1 %}
+        <td>{{ lineCounter }}</td>
+
         {% include /functions/error-icon-string.html myDecision=decision %}
         {% if errorIconString.size == 0 %}
             {% include /functions/todo-icon-string.html myDecision=decision %}
         {% else %}
             {% assign todo_icon_string = "" %}
         {% endif %}
-
         {% include /functions/get-status-infos.html myDecision=decision %}
         <td><img class={{ status_class }} src="{{ site.url }}{{ status_filename | relative_url }}"/> {{ errorIconString }}{{ todo_icon_string }}</td>
 
