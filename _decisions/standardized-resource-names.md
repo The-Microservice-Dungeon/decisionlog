@@ -40,24 +40,24 @@ In a Group discussion with part of the DDD/FAE team.
 
 ### Standardized Item Names
 
-| **Name**                   | **Item**                     |
-|----------------------------|------------------------------|
-| **ROBOT**                  | Robot                        |
-| **HEALTH**                 | Health Regeneration          |
-| **ENERGY**                 | Energy Regeneration          |
-| **ROCKET**                 | Rocket Item                  |
-| **WORMHOLE**               | Wormhole Item                |
-| **LONG_RANGE_BOMBARDMENT** | Long range Bombardment Item  |
-| **SELF_DESTRUCTION**       | Self Destruction Item        |
-| **REPERATION_SWARM**       | Reperation Swarm Item        |
-| **NUKE**                   | Nuke Item                    |
-| **STORAGE_1**              | Storage Level 1 Upgrade      |
-| **STORAGE_2**              | Storage Level 2 Upgrade      |
-| **STORAGE_3**              | Storage Level 3 Upgrade      |
-| **STORAGE_4**              | Storage Level 4 Upgrade      |
-| **STORAGE_5**              | Storage Level 5 Upgrade      |
-| **MINING_SPEED_1**         | Mining Speed Level 1 Upgrade |
-| ...                        | ...                          |
+| **Name**                   | **Item**                            |
+|----------------------------|-------------------------------------|
+| **ROBOT**                  | Robot                               |
+| **HEALTH**                 | Health Regeneration                 |
+| **ENERGY**                 | Energy Regeneration                 | 
+| **ROCKET**                 | Rocket Item                         | 
+| **WORMHOLE**               | Wormhole Item                       |
+| **LONG_RANGE_BOMBARDMENT** | Long range Bombardment Item         |
+| **SELF_DESTRUCTION**       | Self Destruction Item               |
+| **REPAIR_SWARM**           | Repair Swarm Item                   |
+| **NUKE**                   | Nuke Item                           |
+| **STORAGE_N**              | Storage Level N=1-5 Upgrade         |
+| **MINING_SPEED_N**         | Mining Speed Level N=1-5 Upgrade    |
+| **MINING_STRENGTH_N**      | Mining Strength Level N=1-5 Upgrade |
+| **ENERGY_CAPACITY_N**      | Energy Capacity Level N=1-5 Upgrade |
+| **ENERGY_REGEN_N**         | Energy Regen Level N=1-5 Upgrade    |
+| **SCOUNTING_N**            | Scouting Level Level N=1-5 Upgrade  |
+| ...                        | ...                                 |
 
 This Naming-Convention goes on for all [avaliable Upgrades](https://the-microservice-dungeon.github.io/docs/rules/gameplay#robot-upgrades).
 
