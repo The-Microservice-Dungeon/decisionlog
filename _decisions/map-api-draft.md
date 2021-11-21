@@ -4,7 +4,7 @@ acronym: map-api-draft
 title: First draft of the REST API for Map service (not yet formally specified)
 decision_type: must
 service: map
-status: _2_draft
+status: _3_agreed
 responsible: psc;sbe
 deadline: 2021-10-29
 priority: 1-high

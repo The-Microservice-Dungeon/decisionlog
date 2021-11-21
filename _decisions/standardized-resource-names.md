@@ -3,7 +3,7 @@ type: decision
 acronym: standardized-resource-names
 title: Resources names that are of strategic importance for players
 decision_type: must
-status: _2_draft
+status: _3_agreed
 responsible: tla
 deadline: 2021-11-19
 priority: 2-medium
