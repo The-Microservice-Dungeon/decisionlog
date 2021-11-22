@@ -27,6 +27,7 @@ This decision mainly relates to game play related topics. Discussion with team.
 ## Resolution Details
 
 ### Special Items
+
 #### How many? 
     1 per robot per round.
 #### Why?
@@ -34,6 +35,7 @@ This decision mainly relates to game play related topics. Discussion with team.
 
 
 ### Robots
+
 #### How many? 
     Multiple robots per round.
 #### Why?
@@ -41,6 +43,7 @@ This decision mainly relates to game play related topics. Discussion with team.
 
 
 ### Regeneration
+
 #### How many? 
     1 per robot per round
 #### Why?
@@ -48,6 +51,7 @@ This decision mainly relates to game play related topics. Discussion with team.
 
 
 ### Upgrades
+
 #### How many? 
     1 per robot per round
 #### Restrictions
