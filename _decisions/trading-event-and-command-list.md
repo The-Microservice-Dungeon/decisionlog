@@ -19,7 +19,10 @@ history:
     comment: added events
   v3:
     date: 2021-10-27
-    comment: added sequence diagrams
+    comment: added stuff
+  v4:
+    date: 2021-11-22
+    comment: informal event specs
 ---
 
 ## Why is there need for such a decision?
@@ -40,23 +43,98 @@ Evaluation of [Event Storming results](https://miro.com/app/board/o9J_lsQV7ZA=/)
 ### Needed Events
 
 #### Init
-  - Game Started with all players
-  - Map initalized with all spacestations and spawn positions
-  - All available resources and price factors
-  - All available items and price factors
-  - All available upgrades and price factors
+  - Player Joined 
+  - On Player join created -> create bank
+  For every player listen to:
+  - Spawn Created
+  Save spawn planet id
+
+  - Spacestation Created
+  Save spacestation planet id
+
+  - All items and price factors (Special Items, Upgrades, Energy/Health Restore) ???
+  Save all items and calculate prices
+  
+  - All resources and prices ???
+  Save all resources and calculate prices
+
+#### During Game
+  - Round Started (with current round number)
+  - Round Ended
+  - Game Ended
+  - Robot Spawned ??? Need to discuss with robot
+  - Robot Destroyed ??? Need to discuss with robot
 
 ### Broadcasted Events
 
 #### Init
-  - Prices Initally Calculated (Resources + Items + Upgrades)
-  - Player Banks created (with amount)
 
-### During Game
-  - Prices updated (start of trading phase)
-  - Player bought something (Regen/Upgrade/Item/Robot)
-  - Player sold something (Resources)
-  - Player money changed
+  - Player Banks created (with amount)
+  
+
+### Round Start
+  - Current Prices (Resources + Items + Upgrades) 
+  ```json
+    [{
+            "name": "WORMHOLE",
+            "price": 100
+        },
+        {
+            "name": "REPAIR_SWARM",
+            "price": 10
+        },
+        {
+            "name": "MINING_SPEED_1",
+            "price": 100
+        },
+        {
+            ...
+        },
+    ]
+  ```
+
+### On Command
+Always with transactionId.
+
+### Buying
+#### Success
+  ```json
+    {
+      "transactionId" : "12345",
+      "success": true,
+      "moneyChangedBy": -50,
+      "message": "success"
+    }
+  ```
+#### Failure
+  ```json
+    {
+      "transactionId" : "12345",
+      "success": false,
+      "moneyChangedBy": 0,
+      "message": "Item does not exist"
+    }
+  ```
+### Selling
+#### Success
+  ```json
+    {
+      "transactionId" : "12345",
+      "success": true,
+      "moneyChangedBy": 500,
+      "message": "success"
+    }
+  ```
+#### Failure
+  ```json
+    {
+      "transactionId" : "12345",
+      "success": false,
+      "moneyChangedBy": 0,
+      "message": "Robot position is not on a spacestation"
+    }
+  ```
+
 
 ## Reasons for the resolution
 
