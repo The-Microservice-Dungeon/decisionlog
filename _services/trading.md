@@ -4,7 +4,7 @@ acronym: trading
 title: Trading
 repo: github.com/The-Microservice-Dungeon/trading
 documentation:
-apiSpec:
+apiSpec: https://github.com/The-Microservice-Dungeon/trading/blob/main/swagger/v1/swagger.yaml
 eventSpec:
 members:
     - jsi
