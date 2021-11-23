@@ -4,7 +4,7 @@ acronym: trading-buy-semantics
 title: Semantics of all trades
 decision_type: team
 service: trading
-status: _2_draft
+status: _3_agreed
 responsible: tla;tpa
 deadline:
 priority: 2-medium
@@ -30,6 +30,7 @@ This decision mainly relates to game play related topics. Discussion with team.
 
 #### How many? 
     1 per robot per round.
+
 #### Why?
     To prevent price manipulation through a single robot.
 
@@ -38,6 +39,7 @@ This decision mainly relates to game play related topics. Discussion with team.
 
 #### How many? 
     Multiple robots per round.
+
 #### Why?
     Buying a robot should not be bound to an existing robot. You can buy as many robots as you have money. 
 
@@ -46,6 +48,7 @@ This decision mainly relates to game play related topics. Discussion with team.
 
 #### How many? 
     1 per robot per round
+
 #### Why?
     You get max health/energy with one purchase. So you do not need to buy multiple.
 
@@ -54,8 +57,10 @@ This decision mainly relates to game play related topics. Discussion with team.
 
 #### How many? 
     1 per robot per round
+
 #### Restrictions
     Only next upgrade level (1-5)
+
 #### Why?
     Upgrading a robot is seen as an action. The overall game is designed for only a single action per round. You can only buy the next higher upgrade level for each category.
     E.g. a robot with MINING_2 can only buy MINING_3. Any other upgrade to MINING will result in an error. This design takes into account the loose coupling of the trading service and avoids saving robot informations.

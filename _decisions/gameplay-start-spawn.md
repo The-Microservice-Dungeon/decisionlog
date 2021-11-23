@@ -5,9 +5,8 @@ title: Inital spawn of robots
 decision_type: must
 status: _2_draft
 responsible: tpa
-deadline: 
+deadline:  2021-11-22
 priority: 2-medium
-todo:
 aspects:
     - gameplayrule
 history:
