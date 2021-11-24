@@ -10,6 +10,8 @@ deadline: 2021-10-22
 priority: 2-medium
 aspects: 
     - eventing
+todos:
+    - (cpo) finish event WIP
 history:
     v1:
         date: 2021-10-17
@@ -20,8 +22,6 @@ history:
     v3:
         date: 2021-11-24
         comment specified events
-todos:
-    - (cpo) finish event WIP
 ---
 
 ## Why is there need for such a decision?
