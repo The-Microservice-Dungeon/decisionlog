@@ -34,41 +34,45 @@ This endpoints gets an stack of commands, that contain the transactionuuid, play
   { 
   "transactionId" : uuid 
 
-  "playerid" :uuid 
+  "playerId" :uuid 
   
-  "robotid": uuid, 
+  "robotId": uuid, 
   
-  "commandobject"
+  "commandObject"
   
-           { "commandtype": string
+           { "commandType": string
 
-           "robotid": uuid
+           "robotId": uuid
 
-           "planetid": uuid
+           "planetId": uuid
+           
+           "targetId": uuid
 
-           "itemname": String}
+           "itemName": String}
    }   
-   { 
+    { 
   "transactionId" : uuid 
 
-  "playerid" :uuid 
+  "playerId" :uuid 
   
-  "robotid": uuid, 
+  "robotId": uuid, 
   
-  "commandobject"
+  "commandObject"
   
-           { "commandtype": string
+           { "commandType": string
 
-           "robotid": uuid
+           "robotId": uuid
 
-           "planetid": uuid
+           "planetId": uuid
+           
+           "targetId": uuid
 
-           "itemname": String}
-   } 
+           "itemName": String}
+   }     
    ...
 ]
 
-Planetid an itemname can be null, if they are not needed in the command
+planetId ,targetId and itemName can be null, if they are not needed in the command
 If an error oncours the service can invoke an error with the transactionuuid.
 
 ## Reasons for the resolution
