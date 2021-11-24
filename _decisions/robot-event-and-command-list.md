@@ -21,7 +21,7 @@ history:
         comment: added business events
     v3:
         date: 2021-11-24
-        comment specified events
+        comment: specified events
 ---
 
 ## Why is there need for such a decision?
