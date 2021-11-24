@@ -9,7 +9,7 @@ responsible: ngi;cpo
 deadline: 2021-10-22
 priority: 2-medium
 aspects: 
-    - eventing
+  - eventing
 history:
     v1:
         date: 2021-10-17
