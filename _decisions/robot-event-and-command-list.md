@@ -9,17 +9,14 @@ responsible: ngi;cpo
 deadline: 2021-10-22
 priority: 2-medium
 aspects: 
-  - eventing
+    - eventing
 history:
     v1:
         date: 2021-10-17
         comment: created initially
     v2:
         date: 2021-10-21
-        comment: added business events 
-    v3:
-        date: 2021-11-24
-        comment specified events
+        comment: added business events
 ---
 
 ## Why is there need for such a decision?
@@ -116,7 +113,7 @@ Spawn new robots
          }
       },
       {
-        ...      
+        "...": "..."     
       }   
 
    ]
