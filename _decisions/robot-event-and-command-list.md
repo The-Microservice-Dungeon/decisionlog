@@ -20,7 +20,8 @@ history:
     v3:
         date: 2021-11-24
         comment specified events
-todo: complete current WIP version cpo   
+todos:
+    - (cpo) Complete current WIP
 ---
 
 ## Why is there need for such a decision?
