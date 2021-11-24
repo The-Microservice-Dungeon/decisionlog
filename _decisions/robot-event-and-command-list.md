@@ -10,8 +10,6 @@ deadline: 2021-10-22
 priority: 2-medium
 aspects: 
     - eventing
-todos:
-    - (cpo) Complete current WIP
 history:
     v1:
         date: 2021-10-17
