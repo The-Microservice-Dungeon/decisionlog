@@ -17,6 +17,11 @@ history:
     v2:
         date: 2021-10-21
         comment: added business events
+    v3:
+        date: 2021-11-24
+        comment specified events
+todos:
+    - (cpo) finish event WIP
 ---
 
 ## Why is there need for such a decision?
