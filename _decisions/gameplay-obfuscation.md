@@ -14,6 +14,9 @@ history:
     v1:
         date: 2021-11-24
         comment: created initially
+    v2:
+        date: 2021-11-24
+        comment: added results of discussion with gameplay team
 ---
 
 ## Why is there need for such a decision?
