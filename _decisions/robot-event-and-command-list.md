@@ -134,9 +134,11 @@ Spawn new robots
 
 ### Movement
 Successful movement
+
+This event is thrown after a successful movement and shows the information of the target planet. player ids have to be redacted.
+This event is public and not associated with a transactionId.
 ```json
 {
-   "transactionId":"07421f12-5354-4462-a31b-eba71f634585",
    "message":"success",
    "energyChangedBy": -10,
    "remainingEnergy": 15,
@@ -149,10 +151,7 @@ Successful movement
       "created_at":"2019-08-24T14:15:22Z",
       "updated_at":"2019-08-24T14:15:22Z"
    },
-   "otherRobots":[
-      
-   ],
-   "neighbours":[
+   "robots":[
       
    ]
 }
@@ -168,9 +167,18 @@ Failure
 }
 ```
 
-Publish Neighbour Planets??
+Publish Neighbour Planets.
+This event is thrown after a successful movement and shows the associated neighbours off the target planet.
 ```json
-
+{
+   "transactionId":"07421f12-5354-4462-a31b-eba71f634585",
+   "neighbours":[
+      "planet_uuid1",
+      "planet_uuid2",
+      "planet_uuid3",
+      "planet_uuid4"
+   ]
+}
 ```
 
 ### Blocking
