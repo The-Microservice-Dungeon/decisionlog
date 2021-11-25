@@ -1,9 +1,9 @@
 ---
 type: decision
 acronym: build-pipeline
-title: Tools for Build Pipeline
+title: Github Actions for Build Pipeline
 decision_type: must
-status: _2_draft
+status: _3_agreed
 responsible: tra
 deadline: 2021-10-22
 priority: 2-medium
@@ -44,7 +44,7 @@ During the evaluation, special attention was paid to compatibility with GitHub. 
 
 ## Resolution Details
 
-tbd
+Github actions is the perfect tool for this project, since all code is hosted on github. Furthermore there are many predefined actions the de v ops team can use.
 
 ## Reasons for the resolution
 
