@@ -42,8 +42,6 @@ This endpoints gets an stack of commands, that contain the transactionuuid, play
   
            { "commandType": string
 
-           "robotId": uuid
-
            "planetId": uuid
            
            "targetId": uuid
@@ -60,8 +58,6 @@ This endpoints gets an stack of commands, that contain the transactionuuid, play
   "commandObject"
   
            { "commandType": string
-
-           "robotId": uuid
 
            "planetId": uuid
            
