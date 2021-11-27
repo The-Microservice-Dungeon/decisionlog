@@ -5,7 +5,7 @@ title: Trading
 repo: github.com/The-Microservice-Dungeon/trading
 documentation:
 apiSpec: github.com/The-Microservice-Dungeon/trading/blob/main/swagger/v1/swagger.yaml
-eventSpec:
+eventSpec: github.com/The-Microservice-Dungeon/trading/blob/main/swagger/v1/asyncAPI.yaml
 members:
     - jsi
     - krö
