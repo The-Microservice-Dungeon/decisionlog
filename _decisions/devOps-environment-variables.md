@@ -47,7 +47,7 @@ tbd
 ## Resolution Details
 
  Every service needs to create a .env file which contains the needed variables
- The variables will be discribed in our [GitHub Repo](https://github.com/The-Microservice-Dungeon/devops)
+ The variables will be discribed in our [GitHub Repo](https://github.com/The-Microservice-Dungeon/devops/wiki/Environment-Variables)
 
 ## Reasons for the resolution
 
