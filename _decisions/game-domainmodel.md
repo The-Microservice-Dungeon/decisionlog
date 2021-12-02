@@ -4,7 +4,7 @@ acronym: game-domainmodel
 title: (Sub-)Domain Model for Game Service
 decision_type: team
 service: game
-status: _2_draft
+status: _3_agreed
 responsible: mba
 deadline: 2021-10-22
 priority: 1-high
