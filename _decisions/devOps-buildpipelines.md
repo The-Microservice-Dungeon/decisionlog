@@ -1,7 +1,7 @@
 ---
 type: decision
 acronym: devOps-buildpipelines
-title: you build it. you run it
+title: Buildpipeline extensions and changes. (you build it. you run it)
 decision_type: must
 status: _3_agreed
 responsible: tra
