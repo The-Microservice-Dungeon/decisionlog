@@ -1,7 +1,7 @@
 ---
 type: decision
 acronym: gameplay-robot-spawn
-title: Inital spawn of robots
+title: spawn of robots
 decision_type: must
 status: _2_draft
 responsible: tpa;ngi;cpo
@@ -20,16 +20,19 @@ history:
 
 ## Why is there need for such a decision?
 
-To set uniform rules for the start of the game. It is also important to keep the scope reachable and therefore a simple solution is prefered.
+To set uniform rules for the start of the game. It is also important to keep the scope reachable and therefore a simple solution is prefered.  
+
+An efficient way to handle robot spawns is needed. Extra features with the help of designated spawn locations for every player would enhance the overall gameplay and provide further depth. However, this comes at a cost. 
 
 ## Alternatives not seriously considered
 
 - One service (game service) is responsible for initially spawing one robot for each player.
+- Separate spawn locations for every player which provide extra gameplay features such as spawn protection (movement on foreign spawnlocations is prevented), better energy regeneration rate and using the own spawn location as space station.
 - Players can buy robots regardless of the position of their other robots as long as they have enough money. Owning a robot is no requirement. The newly bought robots spawn on a designet spawn planet. Every player has its own spawn location.
 
 ## How is this decision evaluated?
 
-Discussion with all project members - iteratively.
+Discussion with all project members - iteratively.  
 
 ## Resolution Details
 
