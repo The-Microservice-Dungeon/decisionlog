@@ -3,9 +3,9 @@ type: service
 acronym: robot
 title: Robot
 repo: github.com/The-Microservice-Dungeon/robot
-documentation:
-apiSpec:
-eventSpec:
+documentation: github.com/The-Microservice-Dungeon/robot/wiki
+apiSpec: the-microservice-dungeon.github.io/docs/openapi/robot
+eventSpec: the-microservice-dungeon.github.io/docs/asyncapi/robot
 members:
     - dwä
     - jmi
