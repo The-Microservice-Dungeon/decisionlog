@@ -1,7 +1,7 @@
 ---
 type: decision
 acronym: gameplay-robot-spawn
-title: spawn of robots
+title: Spawn of robots
 decision_type: must
 status: _2_draft
 responsible: tpa;ngi;cpo
