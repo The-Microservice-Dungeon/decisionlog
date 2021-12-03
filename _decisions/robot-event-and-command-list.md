@@ -4,7 +4,7 @@ acronym: robot-event-and-command-list
 title: List of business events and commands from Event Storming, for Robot service
 decision_type: team
 service: robot
-status: _3_done
+status: _3_agreed
 responsible: ngi;cpo
 deadline: 2021-10-22
 priority: 2-medium
