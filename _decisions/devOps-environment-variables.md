@@ -1,6 +1,6 @@
 ---
 type: decision
-acronym: env-vari
+acronym: devOps-environment-variables
 title: .env variables for db connections
 decision_type: must
 status: _3_agreed
