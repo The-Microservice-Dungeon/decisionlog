@@ -1,6 +1,6 @@
 ---
 type: decision
-acronym: one-instance
+acronym: devOps-one-instance-per-service
 title: Only one instance per service
 decision_type: must
 status: _3_agreed

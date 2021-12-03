@@ -1,6 +1,6 @@
 ---
 type: decision
-acronym: versions
+acronym: devOps-versions
 title: versioning for services
 decision_type: must
 status: _3_agreed

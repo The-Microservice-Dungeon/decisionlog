@@ -1,6 +1,6 @@
 ---
 type: decision
-acronym: buildpipelines
+acronym: devOps-buildpipelines
 title: you build it. you run it
 decision_type: must
 status: _3_agreed
