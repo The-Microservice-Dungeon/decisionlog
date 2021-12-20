@@ -18,6 +18,9 @@ history:
     v2:
         date: 2021-11-17
         comment: moved destribution responsibility to robot
+    v3:
+        date: 2021-12-20
+        comment: minimized map involvement
 ---
 
 ## Sequence diagram
@@ -32,6 +35,6 @@ history:
 
 ## Additional information
 
-All mining requests issued to the map service have to be processed by them before sending the results back to the robot service.    
-The player states which resource should be mined, so the robot service just checks if the specific robot is able to do that (mining level) and if yes, calculates the amount. The robot service then combines all requests for one planet and sends a mining request with the total amount per planet to the map service. Map then returns the amount which can be mined (requested value or below) and robot then distributes the received resources fairly between all participating robots for the planet.
+All mining requests are received as a package from the game service and processed together. To determine if the requests are valid and the corresponding robot has the ability to mine the resource on its location, the robot service first requests the type of the resource from the map service.  
+The robot service then combines all valid requests for one planet and sends a mining request with the total amount per planet to the map service. Map then returns the amount which can be mined (requested value or below) and robot then distributes the received resources fairly between all participating robots for the planet.
 
