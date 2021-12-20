@@ -3,7 +3,7 @@ type: decision
 acronym: gameplay-robot-spawn
 title: Spawn of robots
 decision_type: must
-status: _2_draft
+status: _3_agreed
 responsible: tpa;ngi;cpo
 deadline:  2021-12-07
 priority: 2-medium
