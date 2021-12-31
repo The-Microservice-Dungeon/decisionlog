@@ -18,6 +18,9 @@ history:
     v2:  
         date: 2021-10-24
         comment: added first draft of the decision
+    v3:  
+        date: 2021-12-31
+        comment: Updated draft to the final form   
 ---
 
 ## Why is there need for such a decision?
@@ -44,30 +47,38 @@ Discussion in workshop on 22.10.
 
 The game services provides api calls for its different tasks. 
 For the user-management: 
-* Post Admin/               
-    * (Creates a new admin)
-* Post Player/              
+* Post player/              
     * (Creates a new player with uuid)
-* Delete Player/            
-    * (Deletes a player and removes him from the game)
 
 For the generell game-management: 
-* Post Game/                
+* Post games/                
     * Payload: {number of rounds, number of max players}
     * (Creates a new game, where people can join)
-* Get time/                
+* Get games/{gameid]/time/                
     * (Showes how long one round is going on)
-
+* Post games/{gameId}/gameCommands/start
+    * (Starts a game with given gameid)
+* Post games/{gameId}/gameCommands/end
+    * (Ends a game with given gameid)
+* Put games/{gameId}/players/{playerToken}/
+    * (Registers a player to the game)      
+* Patch games/{gameId}/roundDuration/{newDuration}/
+    * (Changes the duration of the given game)   
+* Patch games/{gameId}/maxRounds/{maxRounds}/
+    * (Changes the maximal amount of rounds for the given game) 
+    
 For the command-management: 
-*   Post Command/
-    *  Payload: {playeruuid,robotuuid,command,commandtype,item}
-    *  (playeruuid,robotuuid,command are not used in game and just get delievered; commandtype says to which service it gets delivered, item says if the command includes the usage of an item and is needed for correct ordering)
-    *  Response: CommandUUID for the player
+*   Post command/
+    *  Payload: {gameid,playerid,robotid,commandObject,commandtype}
+    *  (gameid,playerid,robotid,commandObjec are not used in game and just get delievered; commandtype says to which service it gets delivered)
+    *  Response: Transactionid for the player
     *  (Creates a new Command, that will get delievered to the fitting service)
+*   Get command/
+    *  (Gives all the commands, that where sent to the other services)
 
 API's needed from the game service, that must be provided by the trading- and robotservice:
-*   PUT Command/
-    *   Payload: {List of (CommandUUID,Commandtype,RobotUUid,command)} 
+*   Post commands/
+    *   Payload: {List of (transactionid,playerid,robotid,commandobject)} 
     *   Response: Flag, that commands are recieved
 
 ## Reasons for the resolution
