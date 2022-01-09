@@ -1,7 +1,7 @@
 ---
 type: decision
-acronym: devOps-one-instance-per-service
-title: Only one instance per service
+acronym: devOps-environment-variables
+title: .env variables for db connections
 decision_type: must
 status: _3_agreed
 responsible: tra
@@ -20,7 +20,7 @@ history:
 
 ## Why is there need for such a decision?
 
-Some services discussed the usage of two servce instances. this indtroduces more complexity to the project
+All services need to provide us the nessesary information for the db connection
 
 ## Additional sources for better understanding the background
 
@@ -28,24 +28,26 @@ tbd
 
 ## Viable Options
 
-* Only one instance per service
+* .env varables
+
 
 
 ## Alternatives not seriously considered
 
-* multiple instances per service
+
 
 
 ## How is this decision evaluated?
 
 * Discussion during team meeting
+* resarch other projects
+* Docker documentation
 
 
 ## Resolution Details
 
-Running multiple instances of the same service would introduce too much complexity.
+ Every service needs to create a .env file which contains the needed variables
+ The variables will be discribed in our [GitHub Repo](https://github.com/The-Microservice-Dungeon/devops/wiki/Environment-Variables)
 
 ## Reasons for the resolution
-
-* see resolution
 

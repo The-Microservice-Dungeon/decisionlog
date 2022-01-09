@@ -1,11 +1,11 @@
 ---
 type: decision
-acronym: devOps-one-instance-per-service
-title: Only one instance per service
+acronym: devOps-buildpipelines
+title: Buildpipeline extensions and changes. (you build it. you run it)
 decision_type: must
 status: _3_agreed
 responsible: tra
-deadline: 2021-11-25
+deadline: 2021-12-03
 priority: 2-medium
 aspects:
     - devOps
@@ -20,32 +20,31 @@ history:
 
 ## Why is there need for such a decision?
 
-Some services discussed the usage of two servce instances. this indtroduces more complexity to the project
+The devOps team provides the inital build pipeline. Any extension or change must be handled by the service team
 
 ## Additional sources for better understanding the background
 
-tbd
+We don't have the resources to provide the support
 
 ## Viable Options
 
-* Only one instance per service
+
+
 
 
 ## Alternatives not seriously considered
 
-* multiple instances per service
+
 
 
 ## How is this decision evaluated?
 
-* Discussion during team meeting
+* benevolent dictator (thms)
 
 
 ## Resolution Details
 
-Running multiple instances of the same service would introduce too much complexity.
+* The devOps team provides the inital build pipeline. Any extension or change must be handled by the service team
 
 ## Reasons for the resolution
-
-* see resolution
-
+* benevolent dictator (thms)

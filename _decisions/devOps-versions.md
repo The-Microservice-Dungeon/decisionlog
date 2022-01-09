@@ -1,11 +1,11 @@
 ---
 type: decision
-acronym: env-vari
-title: .env variables for db connections
+acronym: devOps-versions
+title: versioning for services
 decision_type: must
 status: _3_agreed
 responsible: tra
-deadline: 2021-11-25
+deadline: 2021-12-03
 priority: 2-medium
 aspects:
     - devOps
@@ -20,15 +20,16 @@ history:
 
 ## Why is there need for such a decision?
 
-All services need to provide us the nessesary information for the db connection
+Each service should use versioning in order to be able to revert a change.
 
 ## Additional sources for better understanding the background
 
-tbd
+* A new version of the service could be broken
 
 ## Viable Options
 
-* .env varables
+* versioning handled by teams
+* versioning handled by devOps
 
 
 
@@ -39,15 +40,12 @@ tbd
 
 ## How is this decision evaluated?
 
-* Discussion during team meeting
-* resarch other projects
-* Docker documentation
+* team decision
 
 
 ## Resolution Details
 
- Every service needs to create a .env file which contains the needed variables
- The variables will be discribed in our [GitHub Repo](https://github.com/The-Microservice-Dungeon/devops)
+* Each team should use a git tag for versioning on ervery realease artifact
 
 ## Reasons for the resolution
 

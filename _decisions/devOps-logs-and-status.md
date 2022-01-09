@@ -1,6 +1,6 @@
 ---
 type: decision
-acronym: logs-status
+acronym: devOps-logs-and-status
 title: Logs and Status
 decision_type: must
 status: _3_agreed
