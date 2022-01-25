@@ -5,7 +5,7 @@ title: Final (Sub-)Domain Model for Game Service
 decision_type: team
 service: game
 status: _3_agreed
-responsible: mba, fgr
+responsible: fgr;mba
 deadline: 2021-10-22
 priority: 1-high
 aspects: 
