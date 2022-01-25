@@ -1,6 +1,6 @@
 ---
 type: decision
-acronym: admin_retired
+acronym: game-admin-retired
 title: Admins are retired in Game Service
 decision_type: must
 service: game
