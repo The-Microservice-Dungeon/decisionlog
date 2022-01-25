@@ -4,7 +4,7 @@ acronym: game-event-command-list
 title: List of business events and commands from Event Storming, for Game service
 decision_type: team
 service: game
-status: _2_draft
+status: _3_agreed
 responsible: fgr
 deadline: 2021-10-22
 priority: 2-medium
@@ -19,6 +19,9 @@ history:
     v2:
         date: 2021-10-21
         comment: documenting the decisions    
+    v2:
+        date: 2021-01-23
+        comment: changed status to agreed
 ---
 
 ## Why is there need for such a decision?
