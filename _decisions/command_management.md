@@ -4,7 +4,7 @@ acronym: command_management
 title: Management of the commands
 decision_type: must
 service: game
-status: _2_draft
+status: _3_agreed
 responsible: fgr;mba
 deadline: 2021-11-12
 priority: 2-medium
@@ -15,6 +15,9 @@ history:
     v1:
         date: 2021-11-12
         comment: created initially
+    v1:
+        date: 2022-01-25
+        comment: changed status to agreed
 ---
 
 ## Why is there need for such a decision?
