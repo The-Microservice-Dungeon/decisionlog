@@ -5,13 +5,12 @@ title: List of business events and commands from Event Storming, for Game servic
 decision_type: team
 service: game
 status: _3_agreed
-responsible: fgr
+responsible: fgr; mba
 deadline: 2021-10-22
 priority: 2-medium
 aspects: 
     - eventing
 todos:
-    - (sb) set status to _3_agreed, once it has been really finalized
 history:
     v1:
         date: 2021-10-17
@@ -21,7 +20,7 @@ history:
         comment: documenting the decisions    
     v2:
         date: 2021-01-23
-        comment: changed status to agreed
+        comment: changed status to agreed, todos done
 ---
 
 ## Why is there need for such a decision?
