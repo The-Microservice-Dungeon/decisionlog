@@ -5,14 +5,12 @@ title: (Sub-)Domain Model for Game Service
 decision_type: team
 service: game
 status: _3_agreed
-responsible: mba
+responsible: fbr;mba
 deadline: 2021-10-22
 priority: 1-high
 aspects: 
     - model
 todos:
-    - (sb) update when the open issues listed below have been resolved
-    - (sb) set status to _3_agreed, once it has been really finalized
 history:
     v1:
         date: 2021-10-17
@@ -23,6 +21,9 @@ history:
     v3:
         date: 2021-11-12
         comment: updated documentation after changes on decisions
+    v4:
+        date: 2021-01-25
+        comment: updated documentation after changes on decisions and todos done
 ---
 
 ## Why is there need for such a decision?
@@ -31,7 +32,8 @@ The (sub-)domain model is a prerequisite for planning the development - which en
 do I have? 
 
 In addition, it needs to be checked if the domain model is consistent with the other teams' (sub-)domain models.
-Especially: Are there any conflicts with regard to entity ownership?
+Especially: Are there any conflicts with regard to entity ownership? There were some conflicts about the ownership of 
+the commands which has resolved in decision domain-model-for-commands.
 
 ## Additional sources for better understanding the background
 
@@ -43,36 +45,28 @@ Addison-Wesley Professional.
 ![Fachliches_Datenmodell_Game](./images/Fachliches_Datenmodell_Game_Updated.png)
 
 ### Player
-The Player gets commands which are excuted in the game.
+The Player gets commands which are executed in the game.
 
 ### Round
 A Round follows certain conditions which are part of the Game. The conditions are initiated in the Round Phase...?
 The timer is a composition of the round.
-- potential sub-domain: Round end
 
 ### Game
-A Game follows certain conditions. The timer is a composition of the round.
-- potential sub-domain: Game start
-- potential sub-domain: Game end
-- potential sub-domain: Game Creation  
-    + Are the Game conditions set her?
+A Game follows certain conditions as max rounds an max players. The timer is a composition of the round.
 
     
 ### Command
-Commands are excuted through th ePlayer in a Round. The command need the information about a certain Robot and which
-phase or type is be choosen.
-- potential sub-domain: Command input
-- potential sub-domain: Command processing
+Commands are executed through the Player in a Round. The command need the information about a certain Robot and which
+phase or type is be chosen. For a detailed specification please read the domain-model-for-commands decision.
 
 ### Admin 
-Admins can create new Admins,Player and start or end the game.
+Admins are retired look decision game-admin-retired.
 
 ### Robot
 The game manages a list of the robots from the players, to verify, that all the commands for the robots are from the right players.
 
 ### Further potential (sub) domains:
 - Authentication
-- Outside of Game (getting all player, achievments ...)
 
 ## Alternatives not seriously considered
 
